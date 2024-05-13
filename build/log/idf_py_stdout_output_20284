@@ -1,0 +1,658 @@
+ (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_dJ��ѹesp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI �ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May  1 2024 10:16:43[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a888h ( 43144) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001a8b0 vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001ca10 vaddr=40080000 size=03608h ( 13832) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16cf4h ( 93428) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036d1c vaddr=40083608 size=098f8h ( 39160) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     IoT_Speaker[0m
+[0;32mI (231) cpu_start: App version:      1[0m
+[0;32mI (236) cpu_start: Compile time:     May  1 2024 10:22:59[0m
+[0;32mI (242) cpu_start: ELF file SHA256:  2e0340bda9611be6...[0m
+[0;32mI (248) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (253) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (258) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (263) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (267) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (275) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (281) heap_init: At 3FFB29E0 len 0002D620 (181 KiB): DRAM[0m
+[0;32mI (287) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (300) heap_init: At 4008CF00 len 00013100 (76 KiB): IRAM[0m
+[0;32mI (307) spi_flash: detected chip: generic[0m
+[0;32mI (310) spi_flash: flash io: dio[0m
+[0;33mW (314) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (328) app_start: Starting scheduler on CPU0[0m
+[0;32mI (333) app_start: Starting scheduler on CPU1[0m
+[0;32mI (333) main_task: Started on CPU0[0m
+[0;32mI (343) main_task: Calling app_main()[0m
+[0;32mI (1343) ESP32: Send data[0m
+7E FF 06 06 00 00 0A FE EB EF 
+[0;32mI (3343) ESP32: Send data[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+[0;32mI (6343) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (6343) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (6343) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (6343) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (6343) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6353) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6353) RX_TASK: Read 10 bytes: '0A'[0m
+[0;32mI (6353) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (6363) RX_TASK: Read 10 bytes: 'EB'[0m
+[0;32mI (6363) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (6373) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (6373) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (6383) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (6383) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (6383) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6393) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6393) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (6403) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (6403) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (6413) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (6413) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (6423) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (6423) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (6423) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (6433) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6433) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6443) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (6443) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (6453) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (6453) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (6453) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (6463) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (6463) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (6473) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (6473) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6483) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6483) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (6483) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (6493) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (6493) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (6503) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (6503) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (6513) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (6513) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (6523) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6523) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6523) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (6533) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (6533) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (6543) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (6543) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (6553) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (6553) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (6553) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (6563) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6563) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6573) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (6573) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (6583) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (6583) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (6583) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (6593) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (6593) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (6603) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (6603) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6613) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6613) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (6623) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (6623) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (6623) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (6633) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (6633) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (6643) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (6643) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (6653) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6653) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6653) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (6663) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (6663) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (6673) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (6673) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (6683) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (6683) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (6683) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (6693) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6693) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6703) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (6703) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (6713) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (6713) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (6713) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (6723) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (6723) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (6733) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (6733) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6743) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6743) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (6753) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (6753) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (6753) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (6763) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (6763) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (6773) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (6773) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (6783) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6783) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6783) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (6793) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (6793) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (6803) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (6803) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (6813) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (6813) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (6813) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (6823) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6823) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6833) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (6833) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (6843) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (6843) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (6853) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (6853) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (6853) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (6863) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (6863) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6873) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6873) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (6883) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (6883) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (6883) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (6893) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (6893) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (6903) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (6903) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (6913) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6913) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6913) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (6923) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (6923) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (6933) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (6933) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (6943) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (6943) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (6943) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (6953) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6953) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (6963) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (6963) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (6973) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (6973) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (6983) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (6983) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (6983) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (6993) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (6993) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7003) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7003) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (7013) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (7013) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (7013) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (7023) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (7023) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (7033) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (7033) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (7043) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7043) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7043) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (7053) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (7053) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (7063) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (7063) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (7073) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (7073) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (7083) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (7083) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7083) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7093) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (7093) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (7103) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (7103) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (7113) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (7113) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (7113) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (7123) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (7123) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7133) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7133) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (7143) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (7143) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (7143) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (7153) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (7153) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (7163) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (7163) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (7173) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7173) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7173) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (7183) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (7183) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (7193) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (7193) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (7203) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (7203) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (7213) RX_TASK: Read 10 bytes: '0D'[0m
+[0;32mI (7213) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7213) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7223) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7223) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (7233) RX_TASK: Read 10 bytes: 'EE'[0m
+[0;32mI (7233) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (7243) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (7243) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (7243) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (7253) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (7253) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7263) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7263) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (7273) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (7273) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (7273) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (7283) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (7283) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (7293) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (7293) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (7303) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7303) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7313) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (7313) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (7313) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (7323) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (7323) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (7333) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (7333) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (7343) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (7343) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7343) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7353) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (7353) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (7363) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (7363) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (7373) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (7373) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (7373) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (7383) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (7383) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7393) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7393) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (7403) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (7403) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (7403) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (7413) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (7413) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (7423) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (7423) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (7433) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7433) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7443) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (7443) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (7443) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (7453) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (7453) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (7463) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (7463) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (7473) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (7473) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7473) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7483) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (7483) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (7493) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (7493) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (7503) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (7503) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (7503) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (7513) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (7513) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7523) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7523) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (7533) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (7533) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (7543) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (7543) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (7543) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (7553) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (7553) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (7563) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7563) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7573) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (7573) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (7573) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (7583) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (7583) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (7593) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (7593) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (7603) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (7603) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7603) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7613) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (7613) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (7623) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (7623) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (7633) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (7633) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (7633) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (7643) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (7643) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7653) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7653) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (7663) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (7663) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (7673) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (7673) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (7673) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (7683) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (7683) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (7693) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7693) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (7703) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (7703) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (7703) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (7713) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (10713) ESP32: Send data[0m
+[0;32mI (10733) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (10733) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (10733) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (10733) RX_TASK: Read 10 bytes: '01'[0m
+[0;32mI (10733) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (10743) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (10743) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (10753) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (10753) RX_TASK: Read 10 bytes: 'FA'[0m
+[0;32mI (10753) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (10843) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (10843) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (10843) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (10843) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (10843) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (10853) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (10853) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (10863) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (10863) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (10863) RX_TASK: Read 10 bytes: 'EF'[0m
+7E FF 06 01 00 00 00 FE FA EF 
+[0;32mI (23643) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (23643) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (23643) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (23643) RX_TASK: Read 10 bytes: 'C8'[0m
+[0;32mI (23653) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (23653) RX_TASK: Read 10 bytes: 'C0'[0m
+[0;32mI (23663) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (23663) RX_TASK: Read 10 bytes: 'E0'[0m
+[0;32mI (23673) RX_TASK: Read 10 bytes: '80'[0m
+[0;32mI (23673) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (23763) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (23763) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (23763) RX_TASK: Read 10 bytes: '80'[0m
+[0;32mI (23763) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (23773) RX_TASK: Read 10 bytes: '80'[0m
+[0;32mI (23773) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (23783) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (23783) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (23793) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (23793) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (24343) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (24343) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (24343) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (24343) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (24353) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (24353) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (24363) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (24363) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (24373) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (24373) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (24463) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (24463) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (24463) RX_TASK: Read 10 bytes: '04'[0m
+[0;32mI (24463) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (24473) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (24473) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (24483) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (24483) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (24493) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (24493) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (24563) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (24563) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (24563) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (24573) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (24573) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (24583) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (24583) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (24583) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (24593) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (24593) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (25203) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (25203) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (25203) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (25213) RX_TASK: Read 10 bytes: '3F'[0m
+[0;32mI (25213) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (25223) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (25223) RX_TASK: Read 10 bytes: '02'[0m
+[0;32mI (25223) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (25233) RX_TASK: Read 10 bytes: 'BA'[0m
+[0;32mI (25233) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (32713) ESP32: Send data[0m
+[0;32mI (32733) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (32733) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (32733) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (32733) RX_TASK: Read 10 bytes: '01'[0m
+[0;32mI (32733) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (32743) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (32743) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (32753) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (32753) RX_TASK: Read 10 bytes: 'FA'[0m
+[0;32mI (32753) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (32843) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (32843) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (32843) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (32843) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (32843) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (32853) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (32853) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (32863) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (32863) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (32863) RX_TASK: Read 10 bytes: 'EF'[0m
+7E FF 06 01 00 00 00 FE FA EF 
+[0;32mI (36953) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (36953) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (36963) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (36963) RX_TASK: Read 10 bytes: '3B'[0m
+[0;32mI (36963) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (36973) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (36973) RX_TASK: Read 10 bytes: '02'[0m
+[0;32mI (36973) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (36983) RX_TASK: Read 10 bytes: 'BE'[0m
+[0;32mI (36983) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (37263) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (37263) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (37263) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (37263) RX_TASK: Read 10 bytes: '3A'[0m
+[0;32mI (37273) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (37273) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (37283) RX_TASK: Read 10 bytes: '02'[0m
+[0;32mI (37283) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (37293) RX_TASK: Read 10 bytes: 'BF'[0m
+[0;32mI (37293) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (43873) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (43873) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (43873) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (43883) RX_TASK: Read 10 bytes: '3B'[0m
+[0;32mI (43883) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (43883) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (43893) RX_TASK: Read 10 bytes: '02'[0m
+[0;32mI (43893) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (43903) RX_TASK: Read 10 bytes: 'BE'[0m
+[0;32mI (43903) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (43913) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (43913) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (43913) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (43923) RX_TASK: Read 10 bytes: '3A'[0m
+[0;32mI (43923) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (43933) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (43933) RX_TASK: Read 10 bytes: '02'[0m
+[0;32mI (43943) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (43943) RX_TASK: Read 10 bytes: 'BF'[0m
+[0;32mI (43953) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (49893) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (49893) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (49893) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (49893) RX_TASK: Read 10 bytes: '3B'[0m
+[0;32mI (49893) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (49903) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (49903) RX_TASK: Read 10 bytes: '02'[0m
+[0;32mI (49913) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (49913) RX_TASK: Read 10 bytes: 'BE'[0m
+[0;32mI (49913) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (49923) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (49923) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (49933) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (49933) RX_TASK: Read 10 bytes: '3A'[0m
+[0;32mI (49943) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (49943) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (49943) RX_TASK: Read 10 bytes: '02'[0m
+[0;32mI (49953) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (49953) RX_TASK: Read 10 bytes: 'BF'[0m
+[0;32mI (49963) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (49993) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (49993) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (49993) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (49993) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (49993) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (50003) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (50003) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (50013) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (50013) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (50013) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (53893) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (53893) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (53893) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (53893) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (53903) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (53903) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (53913) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (53913) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (53923) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (53923) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (54713) ESP32: Send data[0m
+[0;32mI (54733) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (54733) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (54733) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (54733) RX_TASK: Read 10 bytes: '01'[0m
+[0;32mI (54733) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (54743) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (54743) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (54753) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (54753) RX_TASK: Read 10 bytes: 'FA'[0m
+[0;32mI (54753) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (54843) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (54843) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (54843) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (54843) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (54843) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (54853) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (54853) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (54863) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (54863) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (54863) RX_TASK: Read 10 bytes: 'EF'[0m
+7E FF 06 01 00 00 00 FE FA EF 
+[0;32mI (66293) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (66293) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (66293) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (66303) RX_TASK: Read 10 bytes: '3B'[0m
+[0;32mI (66303) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (66303) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (66313) RX_TASK: Read 10 bytes: '02'[0m
+[0;32mI (66313) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (66323) RX_TASK: Read 10 bytes: 'BE'[0m
+[0;32mI (66323) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (66333) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (66333) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (66333) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (66343) RX_TASK: Read 10 bytes: '3A'[0m
+[0;32mI (66343) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (66353) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (66353) RX_TASK: Read 10 bytes: '02'[0m
+[0;32mI (66363) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (66363) RX_TASK: Read 10 bytes: 'BF'[0m
+[0;32mI (66373) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (69323) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (69323) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (69323) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (69323) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (69323) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (69333) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (69333) RX_TASK: Read 10 bytes: '05'[0m
+[0;32mI (69343) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (69343) RX_TASK: Read 10 bytes: 'B6'[0m
+[0;32mI (69353) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (76573) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (76573) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (76573) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (76583) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (76583) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (76583) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (76593) RX_TASK: Read 10 bytes: '05'[0m
+[0;32mI (76593) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (76603) RX_TASK: Read 10 bytes: 'B6'[0m
+[0;32mI (76603) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (76713) ESP32: Send data[0m
+[0;32mI (76733) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (76733) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (76733) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (76733) RX_TASK: Read 10 bytes: '01'[0m
+[0;32mI (76733) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (76743) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (76743) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (76753) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (76753) RX_TASK: Read 10 bytes: 'FA'[0m
+[0;32mI (76753) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (76783) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (76783) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (76783) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (76783) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (76793) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (76793) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (76803) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (76803) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (76813) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (76813) RX_TASK: Read 10 bytes: 'EF'[0m
+7E FF 06 01 00 00 00 FE FA EF 
