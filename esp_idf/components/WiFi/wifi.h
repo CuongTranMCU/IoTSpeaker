@@ -9,15 +9,14 @@
 #include "esp_wifi.h"
 #include "esp_event.h"
 #include "esp_log.h"
-#include "nvs_flash.h"
 
 #include "lwip/err.h"
 #include "lwip/sys.h"
 
 #include "mqtt.h"
 
-#define EXAMPLE_ESP_WIFI_SSID "ChiCuong"
-#define EXAMPLE_ESP_WIFI_PASS "04092003"
+#define EXAMPLE_ESP_WIFI_SSID "KTMT - SinhVien"
+#define EXAMPLE_ESP_WIFI_PASS "sinhvien"
 #define EXAMPLE_ESP_MAXIMUM_RETRY 5
 #define WIFI_AUTH_WPA2_PSK 1
 

@@ -19,6 +19,7 @@ Huong dan su dung:
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "esp_log.h"
+#include "mqtt.h"
 
 typedef struct
 {
@@ -26,7 +27,14 @@ typedef struct
 	uint8_t SendBuff[10];
 	uint16_t Checksum;
 }DFPLAYER_Name;
-
+typedef struct {
+	uint16_t songId;
+	uint16_t volume;
+	bool finished;
+	bool play;
+} DFPLAYER_Control;
+extern DFPLAYER_Control DFControl;
+extern DFPLAYER_Name MP3;
 #define DFP_PLAYTRACK 				0X12
 #define DFP_NEXT 							0X01
 #define DFP_PREV		  				0X02
@@ -47,4 +55,5 @@ void DFPLAYER_Pause(DFPLAYER_Name* MP3);
 void DFPLAYER_Stop(DFPLAYER_Name* MP3);
 void DFPLAYER_RandomPlay(DFPLAYER_Name* MP3);
 void DFPLAYER_PlayFileInFolder(DFPLAYER_Name* MP3, uint8_t folder, uint32_t num);
+void mqtt_get_data_callback(char *data, uint16_t length);
 #endif

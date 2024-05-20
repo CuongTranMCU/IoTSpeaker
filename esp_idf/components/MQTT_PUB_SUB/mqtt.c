@@ -1,8 +1,8 @@
 #include "mqtt.h"
 
-static const char *TAG = "MQTT_EXAMPLE";
-static mqtt_data_pt_t mqtt_data_pt = NULL;
+static const char *TAG = "MQTT";
 static esp_mqtt_client_handle_t global_client;
+static mqtt_data_pt_t mqtt_data_pt = NULL;
 
 static void log_error_if_nonzero(const char *message, int error_code)
 {
@@ -32,16 +32,15 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
     {
     case MQTT_EVENT_CONNECTED:
         ESP_LOGI(TAG, "MQTT_EVENT_CONNECTED");
+        MQTT_CONNECTED = 1;
 
-        // msg_id = esp_mqtt_client_publish(client, "ToDataBase", "Hello from ESP32C6", 0, 1, 0);
-
-        msg_id = esp_mqtt_client_subscribe(client, "FromDataBase", 0);
+        msg_id = esp_mqtt_client_subscribe(client, "esp_sub", 0);
         ESP_LOGI(TAG, "sent subscribe successful, msg_id=%d", msg_id);
-
         break;
 
     case MQTT_EVENT_DISCONNECTED:
         ESP_LOGI(TAG, "MQTT_EVENT_DISCONNECTED");
+        MQTT_CONNECTED = 0;
         break;
 
     case MQTT_EVENT_SUBSCRIBED:
@@ -60,7 +59,8 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
         printf("TOPIC=%.*s\r\n", event->topic_len, event->topic);
         printf("DATA=%.*s\r\n", event->data_len, event->data);
         event->data[event->data_len] = '\0';
-        mqtt_data_pt(event->data, event->data_len);
+        mqtt_data_pt(event->data, event->data_len);// thực hiện hàm get_data_call_back
+                                                    // mqtt_data_callback_: gán địa chỉ = get_data_call_back
         break;
     case MQTT_EVENT_ERROR:
         ESP_LOGI(TAG, "MQTT_EVENT_ERROR");
@@ -83,22 +83,35 @@ esp_mqtt_client_handle_t get_mqtt_client_handle(void)
     return global_client;
 }
 
-void mqtt_data_pt_set_callback(void *cb)
+char *convert_model_sensor_to_json(int temperature, int success)
 {
-    if (cb)
+    // create a new cJSON object
+    cJSON *json = cJSON_CreateObject();
+    if (json == NULL)
     {
-        mqtt_data_pt = cb;
+        printf("Error: Failed to create cJSON object\n");
+        return NULL;
     }
+    // modify the JSON data
+    cJSON_AddNumberToObject(json, "sucess", success);
+
+    // convert the cJSON object to a JSON string
+    char *json_str = cJSON_Print(json);
+
+    // free the JSON string and cJSON object
+    cJSON_Delete(json);
+
+    return json_str;
 }
 
-void mqtt_data_publish_callbak(const char *data, size_t len)
+void mqtt_data_publish_callback(const char *data)
 {
 
     esp_mqtt_client_handle_t client = get_mqtt_client_handle();
     if (client != NULL)
     {
-        // Gửi dữ liệu lên broker MQTT với chủ đề là "ToDataBase"
-        int msg_id = esp_mqtt_client_publish(client, "ToDataBase", data, len, 0, 0);
+        // Gửi dữ liệu lên broker MQTT với chủ đề là "data"
+        int msg_id = esp_mqtt_client_publish(client, "esp_pub", data, 0, 0, 0);
         if (msg_id < 0)
         {
             ESP_LOGE(TAG, "Failed to publish data to MQTT broker");
@@ -127,4 +140,9 @@ void mqtt_app_start()
     /* The last argument may be used to pass data to the event handler, in this example mqtt_event_handler */
     esp_mqtt_client_register_event(global_client, ESP_EVENT_ANY_ID, mqtt_event_handler, NULL);
     esp_mqtt_client_start(global_client);
+}
+// callback:
+void mqtt_data_pt_set_callback(mqtt_data_pt_t mqtt_func_ptr)
+{
+    mqtt_data_pt = mqtt_func_ptr;
 }

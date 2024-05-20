@@ -17,7 +17,6 @@
 #include <string.h>
 #include "esp_wifi.h"
 #include "esp_system.h"
-#include "nvs_flash.h"
 #include "esp_event.h"
 #include "esp_netif.h"
 
@@ -32,17 +31,19 @@
 
 #include "esp_log.h"
 #include "mqtt_client.h"
+#include <cJSON.h>
 
 #define EXAMPLE_ESP_MQQT_BORKER_URI "mqtt://mqtt.flespi.io"
 #define EXAMPLE_ESP_MQQT_BORKER_PORT 1883
 #define EXAMPLE_ESP_MQQT_BORKER_TRANSPORT MQTT_TRANSPORT_OVER_TCP
-#define EXAMPLE_ESP_MQQT_CREDENTIALS_USERNAME "NLbaNpU1SUgaBhQSS9duq2LMgV4JaCCdRIDNBRz6b3eElk0iGfBUULPU9E52R1AC"
-
+#define EXAMPLE_ESP_MQQT_CREDENTIALS_USERNAME "oiGjHdBbBIvM0gOgrc0oLFTFt5ev1frmO6r8SOQURW1Gr7qYjFflB5IdeKutDcUk"
+esp_mqtt_client_handle_t get_mqtt_client_handle(void);
+extern uint32_t MQTT_CONNECTED;
 typedef void (*mqtt_data_pt_t)(char *data, uint16_t length);
-void mqtt_data_pt_set_callback(void *cb);
-void mqtt_data_publish_callbak(const char *data, size_t len);
+void mqtt_data_publish_callback(const char *data);
+void mqtt_data_pt_set_callback(mqtt_data_pt_t mqtt_func_ptr);
+char *convert_model_sensor_to_json(int temperature, int humidity);
 
-void mqtt_data_callback(char *data, uint16_t length);
 void mqtt_app_start(void);
 
 #endif

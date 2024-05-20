@@ -19,7 +19,10 @@
         "stdio.h": "c",
         "dfplayer.h": "c",
         "gpio.h": "c",
-        "esp_log.h": "c"
+        "esp_log.h": "c",
+        "wifi.h": "c",
+        "sys.h": "c",
+        "mqtt.h": "c"
     },
     "idf.portWin": "COM5"
 }

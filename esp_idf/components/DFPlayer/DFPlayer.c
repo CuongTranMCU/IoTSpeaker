@@ -13,6 +13,8 @@ Huong dan su dung:
 	DFPLAYER_Play(&MP3);
 ******************************************************************************************************************/
 #include "DFPLAYER.h"
+static const char *TAG = "DFPLAYER";
+
 uint8_t SendFrame[10] = {0x7E, 0xFF, 0x06, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xEF};
 
 //******************************** LOW Level Functions ****************************//
@@ -62,8 +64,13 @@ static void DFPLAYER_SendCmd(DFPLAYER_Name* MP3, uint8_t cmd, uint16_t high_arg,
 }
 
 //******************************** High Level Functions ****************************//
+
 void DFPLAYER_Init(DFPLAYER_Name* MP3, uart_port_t * UART)
 {
+	DFControl.finished= false;
+	DFControl.play = false;
+	DFControl.songId = 0;
+	DFControl.volume = 0;
 	for(int i = 0; i<10; i++)
 	{
 		MP3->SendBuff[i] = SendFrame[i];
@@ -120,4 +127,38 @@ void DFPLAYER_RandomPlay(DFPLAYER_Name* MP3)
 void DFPLAYER_PlayFileInFolder(DFPLAYER_Name* MP3, uint8_t folder, uint32_t num) 
 {
 	DFPLAYER_SendCmd (MP3, DFP_PLAYFILEINFOLDER, folder, num);
+}
+void mqtt_get_data_callback(char *data, uint16_t length)
+{
+	uint16_t songIDRev = DFControl.songId;
+	uint16_t volumeRev = DFControl.volume;
+	bool finishedRev = DFControl.finished;
+	bool playRev = DFControl.play;
+	
+	// Parse JSON Data
+        cJSON *root = cJSON_Parse(data);
+        if (root) {
+            // Extract Integer Values
+            finishedRev = cJSON_GetObjectItem(root, "finished")->valueint;
+            playRev = cJSON_GetObjectItem(root, "play")->valueint;
+            songIDRev = cJSON_GetObjectItem(root, "songID")->valueint;
+            volumeRev = cJSON_GetObjectItem(root, "volume")->valueint;
+            // Print Extracted Receive Value
+			printf("CURRENT VALUE");
+            printf("finished: %d\n", DFControl.finished);
+            printf("play: %d\n", DFControl.play);
+            printf("songID: %d\n", DFControl.songId);
+            printf("volume: %d\n", DFControl.volume);
+			//
+			printf("RECEIVED VALUE");
+			printf("finished: %d\n", finishedRev);
+            printf("play: %d\n", playRev);
+            printf("songID: %d\n", songIDRev);
+            printf("volume: %d\n", volumeRev);
+            // Free the cJSON object
+            cJSON_Delete(root);
+        } else {
+            ESP_LOGE(TAG, "Error parsing JSON data");
+        }
+		DFPLAYER_PlayTrack(&MP3,songIDRev);		
 }
