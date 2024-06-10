@@ -1,0 +1,317 @@
+�m
+[0;32mI (35) boot: chip revision: v3.1ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 20 2024 15:24:38[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26024h (155684) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=0003604c vaddr=3ffb0000 size=03b44h ( 15172) load[0m
+[0;32mI (167) esp_image: segment 2: paddr=00039b98 vaddr=40080000 size=06480h ( 25728) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9e7c4h (649156) map[0m
+[0;32mI (412) esp_image: segment 4: paddr=000de7ec vaddr=40086480 size=10524h ( 66852) load[0m
+[0;32mI (452) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (452) boot: Disabling RNG early entropy source...[0m
+[0;32mI (463) cpu_start: Multicore app[0m
+[0;32mI (464) cpu_start: Pro cpu up.[0m
+[0;32mI (464) cpu_start: Starting app cpu, entry point is 0x4008146c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (481) cpu_start: Pro cpu start user code[0m
+[0;32mI (481) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (482) cpu_start: Application information:[0m
+[0;32mI (486) cpu_start: Project name:     IoT_Speaker[0m
+[0;32mI (492) cpu_start: App version:      f46fe8d-dirty[0m
+[0;32mI (497) cpu_start: Compile time:     May 20 2024 15:23:59[0m
+[0;32mI (503) cpu_start: ELF file SHA256:  182fdca53f19f3af...[0m
+[0;32mI (509) cpu_start: ESP-IDF:          v5.1.2[0m
+[0;32mI (514) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (519) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (523) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (528) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (536) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (541) heap_init: At 3FFB81E8 len 00027E18 (159 KiB): DRAM[0m
+[0;32mI (548) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (554) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (560) heap_init: At 400969A4 len 0000965C (37 KiB): IRAM[0m
+[0;32mI (568) spi_flash: detected chip: generic[0m
+[0;32mI (571) spi_flash: flash io: dio[0m
+[0;33mW (575) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (589) app_start: Starting scheduler on CPU0[0m
+[0;32mI (593) app_start: Starting scheduler on CPU1[0m
+[0;32mI (593) main_task: Started on CPU0[0m
+[0;32mI (603) main_task: Calling app_main()[0m
+I (653) wifi:wifi driver task: 3ffc01d8, prio:23, stack:6656, core=0
+I (663) wifi:wifi firmware version: 91b9630
+I (663) wifi:wifi certification version: v7.0
+I (663) wifi:config NVS flash: enabled
+I (673) wifi:config nano formating: disabled
+I (673) wifi:Init data frame dynamic rx buffer num: 32
+I (673) wifi:Init static rx mgmt buffer num: 5
+I (683) wifi:Init management short buffer num: 32
+I (683) wifi:Init dynamic tx buffer num: 32
+I (693) wifi:Init static rx buffer size: 1600
+I (693) wifi:Init static rx buffer num: 10
+I (693) wifi:Init dynamic rx buffer num: 32
+[0;32mI (703) wifi_init: rx ba win: 6[0m
+[0;32mI (703) wifi_init: tcpip mbox: 32[0m
+[0;32mI (713) wifi_init: udp mbox: 6[0m
+[0;32mI (713) wifi_init: tcp mbox: 6[0m
+[0;32mI (713) wifi_init: tcp tx win: 5744[0m
+[0;32mI (723) wifi_init: tcp rx win: 5744[0m
+[0;32mI (723) wifi_init: tcp mss: 1440[0m
+[0;32mI (733) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (733) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (743) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (833) wifi:mode : sta (d8:bc:38:fc:1d:e0)
+I (833) wifi:enable tsf
+[0;32mI (833) WIFI_EXAMPLE: wifi_init_sta finished.[0m
+I (843) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (853) wifi:state: init -> auth (b0)
+I (913) wifi:state: auth -> assoc (0)
+I (923) wifi:state: assoc -> run (10)
+I (983) wifi:connected with KTMT - SinhVien, aid = 4, channel 1, BW20, bssid = 62:bf:1e:f1:2e:8e
+I (983) wifi:security: WPA2-PSK, phy: bgn, rssi: -58
+I (993) wifi:pm start, type: 1
+
+I (1033) wifi:<ba-add>idx:0 (ifx:0, 62:bf:1e:f1:2e:8e), tid:0, ssn:0, winSize:64
+I (1043) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (1843) ESP32: Send data[0m
+[0;32mI (1993) esp_netif_handlers: sta ip: 192.168.155.134, mask: 255.255.255.0, gw: 192.168.155.1[0m
+[0;32mI (1993) WIFI_EXAMPLE: got ip:192.168.155.134[0m
+[0;32mI (1993) MQTT: Other event id:7[0m
+I (2653) wifi:<ba-add>idx:1 (ifx:0, 62:bf:1e:f1:2e:8e), tid:7, ssn:0, winSize:64
+7E FF 06 06 00 00 0F FE E6 EF 
+[0;32mI (3943) ESP32: Send data[0m
+[0;32mI (4413) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (4413) MQTT: sent subscribe successful, msg_id=32706[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+[0;32mI (5143) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=32706[0m
+[0;32mI (5243) main_task: Returned from app_main()[0m
+[0;32mI (22273) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (22283) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (22283) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (22283) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (22283) RX_TASK: Read 10 bytes: 'CF'[0m
+[0;32mI (22293) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (22293) RX_TASK: Read 10 bytes: 'CE'[0m
+[0;32mI (22303) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (22303) RX_TASK: Read 10 bytes: '83'[0m
+[0;32mI (22303) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (22313) RX_TASK: Read 10 bytes: 'C6'[0m
+[0;32mI (22313) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (22323) RX_TASK: Read 10 bytes: '86'[0m
+[0;32mI (22323) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (22333) RX_TASK: Read 10 bytes: '8E'[0m
+[0;32mI (22333) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (22343) RX_TASK: Read 10 bytes: 'C7'[0m
+[0;32mI (22343) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (22343) RX_TASK: Read 10 bytes: '8E'[0m
+[0;32mI (22353) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (26593) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (26593) RX_TASK: Read 10 bytes: 'C0'[0m
+[0;32mI (26593) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (26593) RX_TASK: Read 10 bytes: '80'[0m
+[0;32mI (26603) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (26603) RX_TASK: Read 10 bytes: '81'[0m
+[0;32mI (26603) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (26613) RX_TASK: Read 10 bytes: '80'[0m
+[0;32mI (26613) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (26623) RX_TASK: Read 10 bytes: '80'[0m
+[0;32mI (27123) RX_TASK: Read 7 bytes: '00'[0m
+[0;32mI (27123) RX_TASK: Read 7 bytes: '80'[0m
+[0;32mI (27123) RX_TASK: Read 7 bytes: '00'[0m
+[0;32mI (27123) RX_TASK: Read 7 bytes: '00'[0m
+[0;32mI (27123) RX_TASK: Read 7 bytes: '00'[0m
+[0;32mI (27133) RX_TASK: Read 7 bytes: '80'[0m
+[0;32mI (27133) RX_TASK: Read 7 bytes: '00'[0m
+[0;32mI (27133) RX_TASK: Read 7 bytes: '00'[0m
+[0;32mI (27143) RX_TASK: Read 7 bytes: '00'[0m
+[0;32mI (27143) RX_TASK: Read 7 bytes: '80'[0m
+[0;32mI (27723) RX_TASK: Read 10 bytes: '35'[0m
+[0;32mI (27723) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (27723) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (27723) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (27723) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (27733) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (27733) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (27743) RX_TASK: Read 10 bytes: 'DE'[0m
+[0;32mI (27743) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (27753) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (27753) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (27753) RX_TASK: Read 10 bytes: '4E'[0m
+[0;32mI (27763) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (27763) RX_TASK: Read 10 bytes: '8F'[0m
+[0;32mI (27773) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (27773) RX_TASK: Read 10 bytes: '87'[0m
+[0;32mI (27783) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (27783) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (27793) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (27793) RX_TASK: Read 10 bytes: '8F'[0m
+[0;32mI (28293) RX_TASK: Read 3 bytes: '00'[0m
+[0;32mI (28293) RX_TASK: Read 3 bytes: 'CF'[0m
+[0;32mI (28293) RX_TASK: Read 3 bytes: '80'[0m
+[0;32mI (28293) RX_TASK: Read 3 bytes: '00'[0m
+[0;32mI (28293) RX_TASK: Read 3 bytes: '00'[0m
+[0;32mI (28303) RX_TASK: Read 3 bytes: '87'[0m
+[0;32mI (28303) RX_TASK: Read 3 bytes: '00'[0m
+[0;32mI (28303) RX_TASK: Read 3 bytes: '06'[0m
+[0;32mI (28313) RX_TASK: Read 3 bytes: '00'[0m
+[0;32mI (28313) RX_TASK: Read 3 bytes: '8F'[0m
+[0;32mI (55443) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55443) RX_TASK: Read 10 bytes: 'F0'[0m
+[0;32mI (55443) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55443) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55443) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55453) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (55453) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55463) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (55463) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55473) RX_TASK: Read 10 bytes: '80'[0m
+[0;32mI (55473) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55483) RX_TASK: Read 10 bytes: '80'[0m
+[0;32mI (55483) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55483) RX_TASK: Read 10 bytes: '80'[0m
+[0;32mI (55493) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55493) RX_TASK: Read 10 bytes: '80'[0m
+[0;32mI (55503) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55503) RX_TASK: Read 10 bytes: '80'[0m
+[0;32mI (55513) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55513) RX_TASK: Read 10 bytes: '80'[0m
+[0;32mI (56013) RX_TASK: Read 3 bytes: '00'[0m
+[0;32mI (56013) RX_TASK: Read 3 bytes: '00'[0m
+[0;32mI (56013) RX_TASK: Read 3 bytes: 'FF'[0m
+[0;32mI (56013) RX_TASK: Read 3 bytes: '00'[0m
+[0;32mI (56013) RX_TASK: Read 3 bytes: '00'[0m
+[0;32mI (56023) RX_TASK: Read 3 bytes: '80'[0m
+[0;32mI (56023) RX_TASK: Read 3 bytes: '00'[0m
+[0;32mI (56023) RX_TASK: Read 3 bytes: '80'[0m
+[0;32mI (56033) RX_TASK: Read 3 bytes: '00'[0m
+[0;32mI (56033) RX_TASK: Read 3 bytes: '80'[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 20 2024 15:24:38[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26024h (155684) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=0003604c vaddr=3ffb0000 size=03b44h ( 15172) load[0m
+[0;32mI (167) esp_image: segment 2: paddr=00039b98 vaddr=40080000 size=06480h ( 25728) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9e7c4h (649156) map[0m
+[0;32mI (412) esp_image: segment 4: paddr=000de7ec vaddr=40086480 size=10524h ( 66852) load[0m
+[0;32mI (452) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (452) boot: Disabling RNG early entropy source...[0m
+[0;32mI (463) cpu_start: Multicore app[0m
+[0;32mI (464) cpu_start: Pro cpu up.[0m
+[0;32mI (464) cpu_start: Starting app cpu, entry point is 0x4008146c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (481) cpu_start: Pro cpu start user code[0m
+[0;32mI (481) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (482) cpu_start: Application information:[0m
+[0;32mI (486) cpu_start: Project name:     IoT_Speaker[0m
+[0;32mI (492) cpu_start: App version:      f46fe8d-dirty[0m
+[0;32mI (497) cpu_start: Compile time:     May 20 2024 15:23:59[0m
+[0;32mI (503) cpu_start: ELF file SHA256:  182fdca53f19f3af...[0m
+[0;32mI (509) cpu_start: ESP-IDF:          v5.1.2[0m
+[0;32mI (514) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (519) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (523) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (528) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (536) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (541) heap_init: At 3FFB81E8 len 00027E18 (159 KiB): DRAM[0m
+[0;32mI (548) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (554) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (560) heap_init: At 400969A4 len 0000965C (37 KiB): IRAM[0m
+[0;32mI (568) spi_flash: detected chip: generic[0m
+[0;32mI (571) spi_flash: flash io: dio[0m
+[0;33mW (575) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (589) app_start: Starting scheduler on CPU0[0m
+[0;32mI (593) app_start: Starting scheduler on CPU1[0m
+[0;32mI (593) main_task: Started on CPU0[0m
+[0;32mI (603) main_task: Calling app_main()[0m
+I (653) wifi:wifi driver task: 3ffc01d8, prio:23, stack:6656, core=0
+I (663) wifi:wifi firmware version: 91b9630
+I (663) wifi:wifi certification version: v7.0
+I (663) wifi:config NVS flash: enabled
+I (673) wifi:config nano formating: disabled
+I (673) wifi:Init data frame dynamic rx buffer num: 32
+I (673) wifi:Init static rx mgmt buffer num: 5
+I (683) wifi:Init management short buffer num: 32
+I (683) wifi:Init dynamic tx buffer num: 32
+I (693) wifi:Init static rx buffer size: 1600
+I (693) wifi:Init static rx buffer num: 10
+I (693) wifi:Init dynamic rx buffer num: 32
+[0;32mI (703) wifi_init: rx ba win: 6[0m
+[0;32mI (703) wifi_init: tcpip mbox: 32[0m
+[0;32mI (713) wifi_init: udp mbox: 6[0m
+[0;32mI (713) wifi_init: tcp mbox: 6[0m
+[0;32mI (713) wifi_init: tcp tx win: 5744[0m
+[0;32mI (723) wifi_init: tcp rx win: 5744[0m
+[0;32mI (723) wifi_init: tcp mss: 1440[0m
+[0;32mI (733) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (733) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (743) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (833) wifi:mode : sta (d8:bc:38:fc:1d:e0)
+I (833) wifi:enable tsf
+[0;32mI (833) WIFI_EXAMPLE: wifi_init_sta finished.[0m
+I (843) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (853) wifi:state: init -> auth (b0)
+I (893) wifi:state: auth -> assoc (0)
+I (913) wifi:state: assoc -> run (10)
+I (963) wifi:connected with KTMT - SinhVien, aid = 4, channel 1, BW20, bssid = 62:bf:1e:f1:2e:8e
+I (963) wifi:security: WPA2-PSK, phy: bgn, rssi: -57
+I (973) wifi:pm start, type: 1
+
+I (1003) wifi:<ba-add>idx:0 (ifx:0, 62:bf:1e:f1:2e:8e), tid:0, ssn:0, winSize:64
+I (1043) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (1843) ESP32: Send data[0m
+[0;32mI (1973) esp_netif_handlers: sta ip: 192.168.155.134, mask: 255.255.255.0, gw: 192.168.155.1[0m
+[0;32mI (1973) WIFI_EXAMPLE: got ip:192.168.155.134[0m
+[0;32mI (1973) MQTT: Other event id:7[0m
+I (2373) wifi:<ba-add>idx:1 (ifx:0, 62:bf:1e:f1:2e:8e), tid:7, ssn:0, winSize:64
+7E FF 06 06 00 00 0F FE E6 EF 
+[0;32mI (3913) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (3923) MQTT: sent subscribe successful, msg_id=60312[0m
+[0;32mI (3943) ESP32: Send data[0m
+[0;32mI (4633) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=60312[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+[0;32mI (5243) main_task: Returned from app_main()[0m

@@ -10,7 +10,8 @@
 static const int RX_BUF_SIZE = 1024;
 uint32_t MQTT_CONNECTED = 0;
 DFPLAYER_Name MP3;
-DFPLAYER_Control DFControl; 
+int a;
+DFPLAYER_Control DFControl;
 void init_uart(DFPLAYER_Name *MP3)
 {
     const uart_config_t uart_config = {
@@ -54,25 +55,28 @@ static void rx_task(void *arg)
 
 void app_main(void)
 {
+
     esp_err_t ret = nvs_flash_init();
-    if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
-      ESP_ERROR_CHECK(nvs_flash_erase());
-      ret = nvs_flash_init();
+    if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND)
+    {
+        ESP_ERROR_CHECK(nvs_flash_erase());
+        ret = nvs_flash_init();
     }
     ESP_ERROR_CHECK(ret);
     wifi_init_sta();
     mqtt_data_pt_set_callback(mqtt_get_data_callback);
-    DFPLAYER_Init(&MP3,UART_NUM_2);
+    DFPLAYER_Init(&MP3, UART_NUM_2);
     init_uart(&MP3);
-    DFPLAYER_SetVolume(&MP3,15);
-    DFPLAYER_Play(&MP3);
-    vTaskDelay(2000/portTICK_PERIOD_MS);
-    xTaskCreate(rx_task, "rx_task", 1024*2, NULL, configMAX_PRIORITIES-1, NULL);
-    vTaskDelay(2000/portTICK_PERIOD_MS);
-    while (true)
-    {
-        DFPLAYER_Next(&MP3);
-        vTaskDelay(100000/portTICK_PERIOD_MS);
-    }
-    
+    DFPLAYER_SetVolume(&MP3, 15);
+    vTaskDelay(100 / portTICK_PERIOD_MS);
+    // DFPLAYER_Play(&MP3);
+    DFPLAYER_PlayTrack(&MP3, 3);
+    vTaskDelay(100 / portTICK_PERIOD_MS);
+    xTaskCreate(rx_task, "rx_task", 1024 * 2, NULL, configMAX_PRIORITIES - 1, NULL);
+    vTaskDelay(200 / portTICK_PERIOD_MS);
+    // while (true)
+    // {
+    //     DFPLAYER_Next(&MP3);
+    //     vTaskDelay(100000/portTICK_PERIOD_MS);
+    // }
 }
