@@ -133,8 +133,8 @@ void DFPLAYER_PlayFileInFolder(DFPLAYER_Name* MP3, uint8_t folder, uint32_t num)
 }
 void mqtt_get_data_callback(char *data, uint16_t length)
 {
-	uint16_t songIDRev = DFControl.songId;
-	uint16_t volumeRev = DFControl.volume;
+	int songIDRev = DFControl.songId;
+	int volumeRev = DFControl.volume;
 	bool finishedRev = DFControl.finished;
 	bool playRev = DFControl.play;	
 	bool stopRev = DFControl.stop;
@@ -169,7 +169,6 @@ void mqtt_get_data_callback(char *data, uint16_t length)
 		else {
             ESP_LOGE(TAG, "Error parsing JSON data");
         }
-    	// ssd1306_clear_screen(&dev,false);
 		if(songIDRev != DFControl.songId && songIDRev != 0 && volumeRev != DFControl.volume )
 		{
 			printf("\nPlay song id and set volume");
@@ -177,7 +176,14 @@ void mqtt_get_data_callback(char *data, uint16_t length)
 			mqtt_data_publish_update("updatePlay");
 			DFPLAYER_SetVolume(&MP3,volumeRev*3);
 			DFPLAYER_PlayTrack(&MP3,songIDRev);		
-			// ssd1306_display_text(&dev, page, "Playing", 20, false);
+			char text[20];
+			sprintf(text, "Song %d:Playing", songIDRev);
+			ssd1306_clear_line(&dev,3,false);
+			ssd1306_display_text(&dev, 3, text, strlen(text), false);
+			char volumeText[10];
+			sprintf(volumeText, "Volume: %d", volumeRev);
+			ssd1306_clear_line(&dev,5,false);
+			ssd1306_display_text(&dev, 5, volumeText, strlen(volumeText), false);
 		}
 		else if (songIDRev != DFControl.songId && songIDRev != 0 )
 		{
@@ -185,14 +191,20 @@ void mqtt_get_data_callback(char *data, uint16_t length)
 			mqtt_data_publish_update("updateSong");
 			mqtt_data_publish_update("updatePlay");
 			DFPLAYER_PlayTrack(&MP3,songIDRev);		
-			// ssd1306_display_text(&dev, page, "Playing", 20, false);
+			char songText[20];
+			sprintf(songText, "Song %d: Playing", songIDRev);
+			ssd1306_clear_line(&dev,3,false);
+			ssd1306_display_text(&dev, 3, songText, strlen(songText), false);
 		}
 		
 		else if (volumeRev != DFControl.volume && songIDRev == DFControl.songId )
 		{
 		printf("\nset volume");
 		DFPLAYER_SetVolume(&MP3,volumeRev*3);
-
+		char volumeText[10];
+		sprintf(volumeText, "Volume: %d", volumeRev);
+		ssd1306_clear_line(&dev,5,false);
+		ssd1306_display_text(&dev, 5, volumeText, strlen(volumeText), false);
 		}
 		
 		if( finishedRev == 1 && songIDRev == DFControl.songId)
@@ -200,7 +212,14 @@ void mqtt_get_data_callback(char *data, uint16_t length)
 			printf("\nLoop");
 			mqtt_data_publish_update("updateSong");
 			DFPLAYER_PlayTrack(&MP3,songIDRev);	
-			// ssd1306_display_text(&dev, page, "Playing", 20, false);
+			char songText[20];
+			sprintf(songText, "Song %d: Playing", songIDRev);
+			ssd1306_clear_line(&dev,3,false);
+			ssd1306_display_text(&dev, 3, songText, strlen(songText), false);
+			char volumeText[10];
+			sprintf(volumeText, "Volume: %d", volumeRev);
+			ssd1306_clear_line(&dev,5,false);
+			ssd1306_display_text(&dev, 5, volumeText, strlen(volumeText), false);
 		}
 		
 		if (playRev != DFControl.play &&  playRev == true  && songIDRev == DFControl.songId )
@@ -208,7 +227,10 @@ void mqtt_get_data_callback(char *data, uint16_t length)
 			printf("\nResume");
 			mqtt_data_publish_update("updatePlay");
 			DFPLAYER_Play(&MP3);
-			// ssd1306_display_text(&dev, page, "Playing", 20, false);
+			char songText[20];
+			sprintf(songText, "Song %d: Playing", songIDRev);
+			ssd1306_clear_line(&dev,3,false);
+			ssd1306_display_text(&dev, 3, songText, strlen(songText), false);
 		}
 		
 		if (playRev != DFControl.play &&  playRev == false && songIDRev == DFControl.songId ) 
@@ -216,14 +238,19 @@ void mqtt_get_data_callback(char *data, uint16_t length)
 			printf("\nPause");
 			mqtt_data_publish_update("updatePlay");
 			DFPLAYER_Pause(&MP3);
-			// ssd1306_display_text(&dev, page, "Pausing", 20, false);
+			char songText[20];
+			sprintf(songText, "Song %d: Pausing", songIDRev);
+			ssd1306_clear_line(&dev,3,false);
+			ssd1306_display_text(&dev, 3, songText, strlen(songText), false);
 		}	
 		if (stopRev != DFControl.stop && stopRev == true)
 		{
 			printf("\n Stop");
 			mqtt_data_publish_update("updateStop");
 			DFPLAYER_Stop(&MP3);
-			// ssd1306_display_text(&dev, page, "Turn Off", 20, false);
+			ssd1306_clear_line(&dev,3,false);
+			ssd1306_clear_line(&dev,5,false);
+			ssd1306_display_text(&dev, 3, "Turn Off", 8, false);
 
 		}
 		DFControl.songId = songIDRev;

@@ -14,14 +14,15 @@
 #include "lwip/sys.h"
 
 #include "mqtt.h"
-
+#include "ssd1306.h"
 #define EXAMPLE_ESP_WIFI_SSID "KTMT - SinhVien"
 #define EXAMPLE_ESP_WIFI_PASS "sinhvien"
 // #define EXAMPLE_ESP_WIFI_SSID "A06.15"
 // #define EXAMPLE_ESP_WIFI_PASS "hoihuecon"
 #define EXAMPLE_ESP_MAXIMUM_RETRY 5
 #define WIFI_AUTH_WPA2_PSK 1
-
+extern SSD1306_t dev;
+extern int page;
 void wifi_event_handler(void *arg, esp_event_base_t event_base,
                         int32_t event_id, void *event_data);
 

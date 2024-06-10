@@ -28,8 +28,8 @@ typedef struct
 	uint16_t Checksum;
 }DFPLAYER_Name;
 typedef struct {
-	uint16_t songId;
-	uint16_t volume;
+	int songId;
+	int volume;
 	bool finished;
 	bool play;
 	bool stop;

@@ -35,7 +35,6 @@ void initOLED()
 	ssd1306_init(&dev,128,64);
 	ssd1306_clear_screen(&dev,false);
 	ssd1306_contrast(&dev,0xff);
-    page +=2;
 }
 static void rx_task(void *arg)
 {
@@ -75,7 +74,7 @@ void app_main(void)
     wifi_init_sta();
     mqtt_data_pt_set_callback(mqtt_get_data_callback);
     DFPLAYER_Init(&MP3,UART_NUM_2);
-    // initOLED();
+    initOLED();
     init_uart(&MP3);
     vTaskDelay(20/portTICK_PERIOD_MS);
     xTaskCreate(rx_task, "rx_task", 1024*2, NULL, configMAX_PRIORITIES-1, NULL);
