@@ -2,6 +2,7 @@
 #include "wifi.h"
 #include "nvs_flash.h"
 #include "DFPlayer.h"
+#include "ssd1306.h"
 
 #define TXD_PIN (GPIO_NUM_17)
 #define RXD_PIN (GPIO_NUM_16)
@@ -11,6 +12,8 @@ static const int RX_BUF_SIZE = 1024;
 uint32_t MQTT_CONNECTED = 0;
 DFPLAYER_Name MP3;
 DFPLAYER_Control DFControl; 
+SSD1306_t dev;
+int page = 0;
 void init_uart(DFPLAYER_Name *MP3)
 {
     const uart_config_t uart_config = {
@@ -25,6 +28,14 @@ void init_uart(DFPLAYER_Name *MP3)
     ESP_ERROR_CHECK(uart_driver_install(MP3->DFP_UART, RX_BUF_SIZE * 2, 0, 0, NULL, 0));
     ESP_ERROR_CHECK(uart_param_config(MP3->DFP_UART, &uart_config));
     ESP_ERROR_CHECK(uart_set_pin(MP3->DFP_UART, TXD_PIN, RXD_PIN, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE));
+}
+void initOLED()
+{
+	i2c_master_init(&dev,CONFIG_SDA_GPIO,CONFIG_SCL_GPIO,CONFIG_RESET_GPIO);
+	ssd1306_init(&dev,128,64);
+	ssd1306_clear_screen(&dev,false);
+	ssd1306_contrast(&dev,0xff);
+    page +=2;
 }
 static void rx_task(void *arg)
 {
@@ -48,6 +59,7 @@ static void rx_task(void *arg)
             ESP_LOGI(RX_TASK_TAG, "Read %d bytes: '%02X'", rxBytes, data[8]);
             ESP_LOGI(RX_TASK_TAG, "Read %d bytes: '%02X'", rxBytes, data[9]);
         }
+        
     }
     free(data);
 }
@@ -63,16 +75,14 @@ void app_main(void)
     wifi_init_sta();
     mqtt_data_pt_set_callback(mqtt_get_data_callback);
     DFPLAYER_Init(&MP3,UART_NUM_2);
+    // initOLED();
     init_uart(&MP3);
-    DFPLAYER_SetVolume(&MP3,15);
-    DFPLAYER_Play(&MP3);
-    vTaskDelay(2000/portTICK_PERIOD_MS);
+    vTaskDelay(20/portTICK_PERIOD_MS);
     xTaskCreate(rx_task, "rx_task", 1024*2, NULL, configMAX_PRIORITIES-1, NULL);
-    vTaskDelay(2000/portTICK_PERIOD_MS);
+    vTaskDelay(20/portTICK_PERIOD_MS);
     while (true)
     {
-        DFPLAYER_Next(&MP3);
-        vTaskDelay(100000/portTICK_PERIOD_MS);
+        vTaskDelay(20/portTICK_PERIOD_MS);
     }
     
 }

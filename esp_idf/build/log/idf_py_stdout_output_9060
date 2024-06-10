@@ -1,0 +1,1921 @@
+_FLASH_BOOT)S���      : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 22 2024 21:43:34[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26074h (155764) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=0003609c vaddr=3ffb0000 size=03b44h ( 15172) load[0m
+[0;32mI (167) esp_image: segment 2: paddr=00039be8 vaddr=40080000 size=06430h ( 25648) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9e8b0h (649392) map[0m
+[0;32mI (413) esp_image: segment 4: paddr=000de8d8 vaddr=40086430 size=10574h ( 66932) load[0m
+[0;32mI (452) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (452) boot: Disabling RNG early entropy source...[0m
+[0;32mI (464) cpu_start: Multicore app[0m
+[0;32mI (464) cpu_start: Pro cpu up.[0m
+[0;32mI (464) cpu_start: Starting app cpu, entry point is 0x4008146c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (482) cpu_start: Pro cpu start user code[0m
+[0;32mI (482) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (482) cpu_start: Application information:[0m
+[0;32mI (487) cpu_start: Project name:     IoT_Speaker[0m
+[0;32mI (492) cpu_start: App version:      f46fe8d-dirty[0m
+[0;32mI (498) cpu_start: Compile time:     May 22 2024 21:43:10[0m
+[0;32mI (504) cpu_start: ELF file SHA256:  ca7f21c9a220b583...[0m
+[0;32mI (510) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (515) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (520) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (525) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (529) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (537) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (543) heap_init: At 3FFB81E8 len 00027E18 (159 KiB): DRAM[0m
+[0;32mI (549) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (555) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (562) heap_init: At 400969A4 len 0000965C (37 KiB): IRAM[0m
+[0;32mI (569) spi_flash: detected chip: generic[0m
+[0;32mI (572) spi_flash: flash io: dio[0m
+[0;32mI (577) app_start: Starting scheduler on CPU0[0m
+[0;32mI (581) app_start: Starting scheduler on CPU1[0m
+[0;32mI (581) main_task: Started on CPU0[0m
+[0;32mI (591) main_task: Calling app_main()[0m
+I (631) wifi:wifi driver task: 3ffc023c, prio:23, stack:6656, core=0
+I (641) wifi:wifi firmware version: 91b9630
+I (651) wifi:wifi certification version: v7.0
+I (651) wifi:config NVS flash: enabled
+I (651) wifi:config nano formating: disabled
+I (651) wifi:Init data frame dynamic rx buffer num: 32
+I (651) wifi:Init static rx mgmt buffer num: 5
+I (661) wifi:Init management short buffer num: 32
+I (661) wifi:Init dynamic tx buffer num: 32
+I (671) wifi:Init static rx buffer size: 1600
+I (671) wifi:Init static rx buffer num: 10
+I (671) wifi:Init dynamic rx buffer num: 32
+[0;32mI (681) wifi_init: rx ba win: 6[0m
+[0;32mI (681) wifi_init: tcpip mbox: 32[0m
+[0;32mI (691) wifi_init: udp mbox: 6[0m
+[0;32mI (691) wifi_init: tcp mbox: 6[0m
+[0;32mI (691) wifi_init: tcp tx win: 5744[0m
+[0;32mI (701) wifi_init: tcp rx win: 5744[0m
+[0;32mI (701) wifi_init: tcp mss: 1440[0m
+[0;32mI (711) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (711) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (721) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (811) wifi:mode : sta (a4:e5:7c:f7:c2:fc)
+I (811) wifi:enable tsf
+[0;32mI (811) WIFI_EXAMPLE: wifi_init_sta finished.[0m
+I (831) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (831) wifi:state: init -> auth (b0)
+I (851) wifi:state: auth -> assoc (0)
+I (861) wifi:state: assoc -> run (10)
+I (901) wifi:connected with KTMT - SinhVien, aid = 2, channel 1, BW20, bssid = 62:bf:1e:f1:2e:8e
+I (901) wifi:security: WPA2-PSK, phy: bgn, rssi: -54
+I (921) wifi:pm start, type: 1
+
+I (951) wifi:<ba-add>idx:0 (ifx:0, 62:bf:1e:f1:2e:8e), tid:0, ssn:0, winSize:64
+I (971) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (1821) ESP32: Send data[0m
+[0;32mI (1921) esp_netif_handlers: sta ip: 192.168.155.132, mask: 255.255.255.0, gw: 192.168.155.1[0m
+[0;32mI (1921) WIFI_EXAMPLE: got ip:192.168.155.132[0m
+[0;32mI (1921) MQTT: Other event id:7[0m
+I (2411) wifi:<ba-add>idx:1 (ifx:0, 62:bf:1e:f1:2e:8e), tid:7, ssn:0, winSize:64
+7E FF 06 06 00 00 0F FE E6 EF 
+[0;32mI (2821) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (2821) MQTT: sent subscribe successful, msg_id=10831[0m
+[0;32mI (3231) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=10831[0m
+[0;32mI (3821) ESP32: Send data[0m
+7E FF 06 03 00 00 01 FE F7 EF 
+[0;32mI (54871) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (54871) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (54871) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (54871) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (54881) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (54881) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (54891) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (54891) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (54891) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (54901) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (54931) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (54931) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (54931) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (54931) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (54941) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (54941) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (54941) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (54951) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (54951) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (54961) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (55041) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (55041) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (55041) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (55041) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (55041) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55051) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55051) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (55061) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (55061) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (55071) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (55101) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (55101) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (55101) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (55101) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (55101) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55111) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55111) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (55121) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (55121) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (55131) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (55161) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (55161) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (55161) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (55161) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (55161) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55171) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55171) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (55181) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (55181) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (55191) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (55221) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (55221) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (55221) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (55221) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (55221) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55231) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55231) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (55241) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (55241) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (55251) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (55281) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (55281) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (55281) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (55281) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (55281) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55291) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55291) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (55301) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (55301) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (55311) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (55341) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (55341) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (55341) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (55341) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (55341) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55351) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55351) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (55361) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (55361) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (55371) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (55401) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (55401) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (55401) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (55401) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (55401) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55411) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55411) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (55421) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (55421) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (55431) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (55461) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (55461) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (55461) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (55461) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (55461) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55471) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55471) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (55481) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (55481) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (55491) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (55521) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (55521) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (55521) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (55521) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (55521) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55531) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55531) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (55541) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (55541) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (55551) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (55581) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (55581) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (55581) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (55581) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (55581) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55591) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55591) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (55601) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (55601) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (55611) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (55641) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (55641) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (55641) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (55641) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (55641) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55651) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55651) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (55661) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (55661) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (55671) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (55831) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (55831) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (55831) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (55831) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (55841) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55841) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55851) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (55851) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (55861) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (55861) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (55951) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (55951) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (55951) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (55951) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (55951) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55961) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55961) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (55971) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (55971) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (55981) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (56001) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (56001) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (56001) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (56001) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (56001) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (56011) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (56011) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (56021) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (56021) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (56031) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (57341) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (57341) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (57341) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (57341) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (57341) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (57351) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (57351) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (57361) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (57361) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (57361) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (57401) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (57401) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (57401) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (57401) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (57411) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (57411) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (57421) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (57421) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (57421) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (57431) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (57461) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (57461) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (57461) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (57461) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (57471) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (57471) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (57481) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (57481) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (57481) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (57491) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (57521) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (57521) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (57521) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (57521) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (57531) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (57531) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (57541) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (57541) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (57541) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (57551) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (57581) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (57581) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (57581) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (57581) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (57591) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (57591) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (57601) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (57601) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (57601) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (57611) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (57641) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (57641) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (57641) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (57641) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (57651) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (57651) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (57661) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (57661) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (57661) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (57671) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (57701) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (57701) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (57701) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (57701) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (57711) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (57711) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (57721) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (57721) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (57721) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (57731) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (57761) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (57761) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (57761) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (57761) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (57771) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (57771) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (57781) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (57781) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (57781) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (57791) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (57821) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (57821) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (57821) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (57821) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (57831) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (57831) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (57841) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (57841) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (57841) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (57851) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (57931) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (57931) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (57931) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (57941) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (57941) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (57951) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (57951) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (57951) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (57961) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (57961) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (58641) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (58641) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (58641) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (58651) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (58651) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (58651) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (58661) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (58661) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (58671) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (58671) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (59531) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (59531) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (59531) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (59531) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (59531) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (59541) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (59541) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (59551) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (59551) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (59561) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (68231) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (68231) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (68231) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (68231) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (68241) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (68241) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (68251) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (68251) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (68261) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (68261) RX_TASK: Read 10 bytes: 'EF'[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 22 2024 21:43:34[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26074h (155764) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=0003609c vaddr=3ffb0000 size=03b44h ( 15172) load[0m
+[0;32mI (167) esp_image: segment 2: paddr=00039be8 vaddr=40080000 size=06430h ( 25648) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9e8b0h (649392) map[0m
+[0;32mI (413) esp_image: segment 4: paddr=000de8d8 vaddr=40086430 size=10574h ( 66932) load[0m
+[0;32mI (452) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (452) boot: Disabling RNG early entropy source...[0m
+[0;32mI (464) cpu_start: Multicore app[0m
+[0;32mI (464) cpu_start: Pro cpu up.[0m
+[0;32mI (464) cpu_start: Starting app cpu, entry point is 0x4008146c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (482) cpu_start: Pro cpu start user code[0m
+[0;32mI (482) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (482) cpu_start: Application information:[0m
+[0;32mI (487) cpu_start: Project name:     IoT_Speaker[0m
+[0;32mI (492) cpu_start: App version:      f46fe8d-dirty[0m
+[0;32mI (497) cpu_start: Compile time:     May 22 2024 21:43:10[0m
+[0;32mI (504) cpu_start: ELF file SHA256:  ca7f21c9a220b583...[0m
+[0;32mI (510) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (515) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (520) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (524) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (529) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (537) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (542) heap_init: At 3FFB81E8 len 00027E18 (159 KiB): DRAM[0m
+[0;32mI (549) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (555) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (561) heap_init: At 400969A4 len 0000965C (37 KiB): IRAM[0m
+[0;32mI (569) spi_flash: detected chip: generic[0m
+[0;32mI (572) spi_flash: flash io: dio[0m
+[0;32mI (577) app_start: Starting scheduler on CPU0[0m
+[0;32mI (581) app_start: Starting scheduler on CPU1[0m
+[0;32mI (581) main_task: Started on CPU0[0m
+[0;32mI (591) main_task: Calling app_main()[0m
+I (631) wifi:wifi driver task: 3ffc023c, prio:23, stack:6656, core=0
+I (641) wifi:wifi firmware version: 91b9630
+I (651) wifi:wifi certification version: v7.0
+I (651) wifi:config NVS flash: enabled
+I (651) wifi:config nano formating: disabled
+I (651) wifi:Init data frame dynamic rx buffer num: 32
+I (651) wifi:Init static rx mgmt buffer num: 5
+I (661) wifi:Init management short buffer num: 32
+I (661) wifi:Init dynamic tx buffer num: 32
+I (671) wifi:Init static rx buffer size: 1600
+I (671) wifi:Init static rx buffer num: 10
+I (671) wifi:Init dynamic rx buffer num: 32
+[0;32mI (681) wifi_init: rx ba win: 6[0m
+[0;32mI (681) wifi_init: tcpip mbox: 32[0m
+[0;32mI (691) wifi_init: udp mbox: 6[0m
+[0;32mI (691) wifi_init: tcp mbox: 6[0m
+[0;32mI (691) wifi_init: tcp tx win: 5744[0m
+[0;32mI (701) wifi_init: tcp rx win: 5744[0m
+[0;32mI (701) wifi_init: tcp mss: 1440[0m
+[0;32mI (711) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (711) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (721) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (811) wifi:mode : sta (a4:e5:7c:f7:c2:fc)
+I (811) wifi:enable tsf
+[0;32mI (811) WIFI_EXAMPLE: wifi_init_sta finished.[0m
+I (831) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (831) wifi:state: init -> auth (b0)
+I (861) wifi:state: auth -> assoc (0)
+I (881) wifi:state: assoc -> run (10)
+I (921) wifi:connected with KTMT - SinhVien, aid = 2, channel 1, BW20, bssid = 62:bf:1e:f1:2e:8e
+I (921) wifi:security: WPA2-PSK, phy: bgn, rssi: -53
+I (921) wifi:pm start, type: 1
+
+I (1071) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (1461) wifi:<ba-add>idx:0 (ifx:0, 62:bf:1e:f1:2e:8e), tid:0, ssn:0, winSize:64
+[0;32mI (1821) ESP32: Send data[0m
+[0;32mI (2431) esp_netif_handlers: sta ip: 192.168.155.132, mask: 255.255.255.0, gw: 192.168.155.1[0m
+[0;32mI (2431) WIFI_EXAMPLE: got ip:192.168.155.132[0m
+[0;32mI (2431) MQTT: Other event id:7[0m
+7E FF 06 06 00 00 0F FE E6 EF 
+I (2821) wifi:<ba-add>idx:1 (ifx:0, 62:bf:1e:f1:2e:8e), tid:7, ssn:0, winSize:64
+[0;32mI (3821) ESP32: Send data[0m
+[0;32mI (4261) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (4261) MQTT: sent subscribe successful, msg_id=3904[0m
+[0;32mI (4621) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=3904[0m
+7E FF 06 03 00 00 01 FE F7 EF 
+[0;32mI (13001) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13001) RX_TASK: Read 10 bytes: 'F0'[0m
+[0;32mI (13001) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13001) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13001) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13011) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13011) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13021) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13021) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13031) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13031) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13041) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13041) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13041) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13051) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13051) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13061) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13061) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13071) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13071) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13071) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13081) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13081) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13091) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13091) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13101) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13101) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13111) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13111) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13111) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13121) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13121) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13131) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13131) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13141) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13141) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13151) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13151) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13151) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13161) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13621) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13621) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13621) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13621) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13621) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (13631) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (13631) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (13641) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (13641) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (13651) RX_TASK: Read 10 bytes: '3F'[0m
+[0;32mI (14151) RX_TASK: Read 6 bytes: '00'[0m
+[0;32mI (14151) RX_TASK: Read 6 bytes: '00'[0m
+[0;32mI (14151) RX_TASK: Read 6 bytes: '02'[0m
+[0;32mI (14151) RX_TASK: Read 6 bytes: 'FE'[0m
+[0;32mI (14151) RX_TASK: Read 6 bytes: 'BA'[0m
+[0;32mI (14161) RX_TASK: Read 6 bytes: 'EF'[0m
+[0;32mI (14161) RX_TASK: Read 6 bytes: '00'[0m
+[0;32mI (14161) RX_TASK: Read 6 bytes: 'FF'[0m
+[0;32mI (14171) RX_TASK: Read 6 bytes: '06'[0m
+[0;32mI (14171) RX_TASK: Read 6 bytes: '3F'[0m
+[0;32mI (15691) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (15691) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (15691) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (15691) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (15701) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (15701) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (15711) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (15711) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (15711) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (15721) RX_TASK: Read 10 bytes: '00'[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 22 2024 21:43:34[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26074h (155764) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=0003609c vaddr=3ffb0000 size=03b44h ( 15172) load[0m
+[0;32mI (167) esp_image: segment 2: paddr=00039be8 vaddr=40080000 size=06430h ( 25648) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9e8b0h (649392) map[0m
+[0;32mI (413) esp_image: segment 4: paddr=000de8d8 vaddr=40086430 size=10574h ( 66932) load[0m
+[0;32mI (452) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (452) boot: Disabling RNG early entropy source...[0m
+[0;32mI (464) cpu_start: Multicore app[0m
+[0;32mI (464) cpu_start: Pro cpu up.[0m
+[0;32mI (464) cpu_start: Starting app cpu, entry point is 0x4008146c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (482) cpu_start: Pro cpu start user code[0m
+[0;32mI (482) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (482) cpu_start: Application information:[0m
+[0;32mI (487) cpu_start: Project name:     IoT_Speaker[0m
+[0;32mI (492) cpu_start: App version:      f46fe8d-dirty[0m
+[0;32mI (497) cpu_start: Compile time:     May 22 2024 21:43:10[0m
+[0;32mI (504) cpu_start: ELF file SHA256:  ca7f21c9a220b583...[0m
+[0;32mI (510) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (515) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (520) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (524) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (529) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (537) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (542) heap_init: At 3FFB81E8 len 00027E18 (159 KiB): DRAM[0m
+[0;32mI (549) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (555) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (562) heap_init: At 400969A4 len 0000965C (37 KiB): IRAM[0m
+[0;32mI (569) spi_flash: detected chip: generic[0m
+[0;32mI (572) spi_flash: flash io: dio[0m
+[0;32mI (577) app_start: Starting scheduler on CPU0[0m
+[0;32mI (581) app_start: Starting scheduler on CPU1[0m
+[0;32mI (581) main_task: Started on CPU0[0m
+[0;32mI (591) main_task: Calling app_main()[0m
+I (631) wifi:wifi driver task: 3ffc023c, prio:23, stack:6656, core=0
+I (641) wifi:wifi firmware version: 91b9630
+I (651) wifi:wifi certification version: v7.0
+I (651) wifi:config NVS flash: enabled
+I (651) wifi:config nano formating: disabled
+I (651) wifi:Init data frame dynamic rx buffer num: 32
+I (651) wifi:Init static rx mgmt buffer num: 5
+I (661) wifi:Init management short buffer num: 32
+I (661) wifi:Init dynamic tx buffer num: 32
+I (671) wifi:Init static rx buffer size: 1600
+I (671) wifi:Init static rx buffer num: 10
+I (671) wifi:Init dynamic rx buffer num: 32
+[0;32mI (681) wifi_init: rx ba win: 6[0m
+[0;32mI (681) wifi_init: tcpip mbox: 32[0m
+[0;32mI (691) wifi_init: udp mbox: 6[0m
+[0;32mI (691) wifi_init: tcp mbox: 6[0m
+[0;32mI (691) wifi_init: tcp tx win: 5744[0m
+[0;32mI (701) wifi_init: tcp rx win: 5744[0m
+[0;32mI (701) wifi_init: tcp mss: 1440[0m
+[0;32mI (711) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (711) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (721) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (811) wifi:mode : sta (a4:e5:7c:f7:c2:fc)
+I (811) wifi:enable tsf
+[0;32mI (811) WIFI_EXAMPLE: wifi_init_sta finished.[0m
+I (831) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (831) wifi:state: init -> auth (b0)
+I (881) wifi:state: auth -> assoc (0)
+I (891) wifi:state: assoc -> run (10)
+I (951) wifi:connected with KTMT - SinhVien, aid = 2, channel 1, BW20, bssid = 62:bf:1e:f1:2e:8e
+I (951) wifi:security: WPA2-PSK, phy: bgn, rssi: -50
+I (961) wifi:pm start, type: 1
+
+I (981) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (1001) wifi:<ba-add>idx:0 (ifx:0, 62:bf:1e:f1:2e:8e), tid:0, ssn:0, winSize:64
+[0;32mI (1821) ESP32: Send data[0m
+[0;32mI (1961) esp_netif_handlers: sta ip: 192.168.155.132, mask: 255.255.255.0, gw: 192.168.155.1[0m
+[0;32mI (1961) WIFI_EXAMPLE: got ip:192.168.155.132[0m
+[0;32mI (1961) MQTT: Other event id:7[0m
+I (2311) wifi:<ba-add>idx:1 (ifx:0, 62:bf:1e:f1:2e:8e), tid:7, ssn:0, winSize:64
+7E FF 06 06 00 00 0F FE E6 EF 
+[0;32mI (3751) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (3761) MQTT: sent subscribe successful, msg_id=40616[0m
+[0;32mI (3821) ESP32: Send data[0m
+7E FF 06 03 00 00 01 FE F7 EF 
+[0;32mI (5601) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=40616[0m
+[0;32mI (12871) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (12871) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (12871) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (12871) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (12871) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (12881) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (12881) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (12891) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (12891) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (12891) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (15441) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (15441) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (15441) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (15441) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (15441) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (15451) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (15451) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (15461) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (15461) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (15461) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (15501) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (15501) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (15501) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (15501) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (15501) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (15511) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (15511) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (15521) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (15521) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (15521) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (15591) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (15591) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (15591) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (15601) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (15601) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (15611) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (15611) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (15611) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (15621) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (15621) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (15651) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (15651) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (15651) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (15661) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (15661) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (15671) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (15671) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (15671) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (15681) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (15681) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (15711) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (15711) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (15711) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (15721) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (15721) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (15731) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (15731) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (15731) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (15741) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (15741) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (15771) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (15771) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (15771) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (15781) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (15781) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (15791) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (15791) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (15791) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (15801) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (15801) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (15821) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (15821) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (15821) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (15831) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (15831) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (15841) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (15841) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (15841) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (15851) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (15851) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (15881) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (15881) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (15881) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (15881) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (15891) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (15891) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (15901) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (15901) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (15911) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (15911) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (15941) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (15941) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (15941) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (15941) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (15951) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (15951) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (15961) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (15961) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (15971) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (15971) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (16001) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (16001) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (16001) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (16001) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (16011) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (16011) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (16021) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (16021) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (16031) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (16031) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (16221) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (16221) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (16221) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (16221) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (16221) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (16231) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (16231) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (16241) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (16241) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (16241) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (16751) RX_TASK: Read 6 bytes: '3F'[0m
+[0;32mI (16751) RX_TASK: Read 6 bytes: 'E0'[0m
+[0;32mI (16751) RX_TASK: Read 6 bytes: 'FF'[0m
+[0;32mI (16751) RX_TASK: Read 6 bytes: '01'[0m
+[0;32mI (16751) RX_TASK: Read 6 bytes: '00'[0m
+[0;32mI (16761) RX_TASK: Read 6 bytes: 'F0'[0m
+[0;32mI (16761) RX_TASK: Read 6 bytes: '00'[0m
+[0;32mI (16761) RX_TASK: Read 6 bytes: '00'[0m
+[0;32mI (16771) RX_TASK: Read 6 bytes: '00'[0m
+[0;32mI (16771) RX_TASK: Read 6 bytes: '00'[0m
+[0;32mI (20011) RX_TASK: Read 10 bytes: '80'[0m
+[0;32mI (20011) RX_TASK: Read 10 bytes: '01'[0m
+[0;32mI (20011) RX_TASK: Read 10 bytes: 'BE'[0m
+[0;32mI (20011) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (20021) RX_TASK: Read 10 bytes: '01'[0m
+[0;32mI (20021) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (20031) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (20031) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (20041) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (20041) RX_TASK: Read 10 bytes: 'F0'[0m
+[0;32mI (20041) RX_TASK: Read 10 bytes: '0F'[0m
+[0;32mI (20051) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (20051) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (20061) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (20061) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (20071) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (20071) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (20081) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (20081) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (20081) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (20091) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (20091) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (20101) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (20101) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (20111) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (20111) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (20121) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (20121) RX_TASK: Read 10 bytes: '84'[0m
+[0;32mI (20121) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (20131) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (25951) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (25951) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (25951) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (25951) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (25961) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (25961) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (25961) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (25971) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (25971) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (25981) RX_TASK: Read 10 bytes: 'EF'[0m
+(POWERON_RES[C��+ښ�j%�(44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entrop�ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 22 2024 21:43:34[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26074h (155764) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=0003609c vaddr=3ffb0000 size=03b44h ( 15172) load[0m
+[0;32mI (167) esp_image: segment 2: paddr=00039be8 vaddr=40080000 size=06430h ( 25648) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9e8b0h (649392) map[0m
+[0;32mI (413) esp_image: segment 4: paddr=000de8d8 vaddr=40086430 size=10574h ( 66932) load[0m
+[0;32mI (452) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (452) boot: Disabling RNG early entropy source...[0m
+[0;32mI (464) cpu_start: Multicore app[0m
+[0;32mI (464) cpu_start: Pro cpu up.[0m
+[0;32mI (464) cpu_start: Starting app cpu, entry point is 0x4008146c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (482) cpu_start: Pro cpu start user code[0m
+[0;32mI (482) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (482) cpu_start: Application information:[0m
+[0;32mI (487) cpu_start: Project name:     IoT_Speaker[0m
+[0;32mI (492) cpu_start: App version:      f46fe8d-dirty[0m
+[0;32mI (497) cpu_start: Compile time:     May 22 2024 21:43:10[0m
+[0;32mI (504) cpu_start: ELF file SHA256:  ca7f21c9a220b583...[0m
+[0;32mI (509) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (515) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (520) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (524) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (529) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (537) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (542) heap_init: At 3FFB81E8 len 00027E18 (159 KiB): DRAM[0m
+[0;32mI (549) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (555) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (561) heap_init: At 400969A4 len 0000965C (37 KiB): IRAM[0m
+[0;32mI (569) spi_flash: detected chip: generic[0m
+[0;32mI (572) spi_flash: flash io: dio[0m
+[0;32mI (577) app_start: Starting scheduler on CPU0[0m
+[0;32mI (581) app_start: Starting scheduler on CPU1[0m
+[0;32mI (581) main_task: Started on CPU0[0m
+[0;32mI (591) main_task: Calling app_main()[0m
+I (631) wifi:wifi driver task: 3ffc023c, prio:23, stack:6656, core=0
+I (641) wifi:wifi firmware version: 91b9630
+I (651) wifi:wifi certification version: v7.0
+I (651) wifi:config NVS flash: enabled
+I (651) wifi:config nano formating: disabled
+I (651) wifi:Init data frame dynamic rx buffer num: 32
+I (651) wifi:Init static rx mgmt buffer num: 5
+I (661) wifi:Init management short buffer num: 32
+I (661) wifi:Init dynamic tx buffer num: 32
+I (671) wifi:Init static rx buffer size: 1600
+I (671) wifi:Init static rx buffer num: 10
+I (671) wifi:Init dynamic rx buffer num: 32
+[0;32mI (681) wifi_init: rx ba win: 6[0m
+[0;32mI (681) wifi_init: tcpip mbox: 32[0m
+[0;32mI (691) wifi_init: udp mbox: 6[0m
+[0;32mI (691) wifi_init: tcp mbox: 6[0m
+[0;32mI (691) wifi_init: tcp tx win: 5744[0m
+[0;32mI (701) wifi_init: tcp rx win: 5744[0m
+[0;32mI (701) wifi_init: tcp mss: 1440[0m
+[0;32mI (711) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (711) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (721) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (811) wifi:mode : sta (a4:e5:7c:f7:c2:fc)
+I (811) wifi:enable tsf
+[0;32mI (821) WIFI_EXAMPLE: wifi_init_sta finished.[0m
+I (831) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (831) wifi:state: init -> auth (b0)
+I (861) wifi:state: auth -> assoc (0)
+I (871) wifi:state: assoc -> run (10)
+I (921) wifi:connected with KTMT - SinhVien, aid = 2, channel 1, BW20, bssid = 62:bf:1e:f1:2e:8e
+I (921) wifi:security: WPA2-PSK, phy: bgn, rssi: -49
+I (931) wifi:pm start, type: 1
+
+I (1011) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (1461) wifi:<ba-add>idx:0 (ifx:0, 62:bf:1e:f1:2e:8e), tid:0, ssn:0, winSize:64
+[0;32mI (1821) ESP32: Send data[0m
+[0;32mI (2431) esp_netif_handlers: sta ip: 192.168.155.132, mask: 255.255.255.0, gw: 192.168.155.1[0m
+[0;32mI (2431) WIFI_EXAMPLE: got ip:192.168.155.132[0m
+[0;32mI (2431) MQTT: Other event id:7[0m
+7E FF 06 06 00 00 0F FE E6 EF 
+I (2861) wifi:<ba-add>idx:1 (ifx:0, 62:bf:1e:f1:2e:8e), tid:7, ssn:0, winSize:64
+[0;32mI (3821) ESP32: Send data[0m
+[0;32mI (4311) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (4311) MQTT: sent subscribe successful, msg_id=32019[0m
+[0;32mI (4641) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=32019[0m
+7E FF 06 03 00 00 01 FE F7 EF 
+[0;32mI (31921) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (31931) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (31931) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (31931) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (31931) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (31941) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (31941) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (31951) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (31951) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (31951) RX_TASK: Read 10 bytes: 'EF'[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 22 2024 21:43:34[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26074h (155764) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=0003609c vaddr=3ffb0000 size=03b44h ( 15172) load[0m
+[0;32mI (167) esp_image: segment 2: paddr=00039be8 vaddr=40080000 size=06430h ( 25648) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9e8b0h (649392) map[0m
+[0;32mI (413) esp_image: segment 4: paddr=000de8d8 vaddr=40086430 size=10574h ( 66932) load[0m
+[0;32mI (452) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (452) boot: Disabling RNG early entropy source...[0m
+[0;32mI (464) cpu_start: Multicore app[0m
+[0;32mI (464) cpu_start: Pro cpu up.[0m
+[0;32mI (464) cpu_start: Starting app cpu, entry point is 0x4008146c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (482) cpu_start: Pro cpu start user code[0m
+[0;32mI (482) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (482) cpu_start: Application information:[0m
+[0;32mI (487) cpu_start: Project name:     IoT_Speaker[0m
+[0;32mI (492) cpu_start: App version:      f46fe8d-dirty[0m
+[0;32mI (497) cpu_start: Compile time:     May 22 2024 21:43:10[0m
+[0;32mI (504) cpu_start: ELF file SHA256:  ca7f21c9a220b583...[0m
+[0;32mI (510) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (515) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (520) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (524) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (529) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (537) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (542) heap_init: At 3FFB81E8 len 00027E18 (159 KiB): DRAM[0m
+[0;32mI (549) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (555) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (562) heap_init: At 400969A4 len 0000965C (37 KiB): IRAM[0m
+[0;32mI (569) spi_flash: detected chip: generic[0m
+[0;32mI (572) spi_flash: flash io: dio[0m
+[0;32mI (577) app_start: Starting scheduler on CPU0[0m
+[0;32mI (581) app_start: Starting scheduler on CPU1[0m
+[0;32mI (581) main_task: Started on CPU0[0m
+[0;32mI (591) main_task: Calling app_main()[0m
+I (631) wifi:wifi driver task: 3ffc023c, prio:23, stack:6656, core=0
+I (641) wifi:wifi firmware version: 91b9630
+I (651) wifi:wifi certification version: v7.0
+I (651) wifi:config NVS flash: enabled
+I (651) wifi:config nano formating: disabled
+I (651) wifi:Init data frame dynamic rx buffer num: 32
+I (651) wifi:Init static rx mgmt buffer num: 5
+I (661) wifi:Init management short buffer num: 32
+I (661) wifi:Init dynamic tx buffer num: 32
+I (671) wifi:Init static rx buffer size: 1600
+I (671) wifi:Init static rx buffer num: 10
+I (671) wifi:Init dynamic rx buffer num: 32
+[0;32mI (681) wifi_init: rx ba win: 6[0m
+[0;32mI (681) wifi_init: tcpip mbox: 32[0m
+[0;32mI (691) wifi_init: udp mbox: 6[0m
+[0;32mI (691) wifi_init: tcp mbox: 6[0m
+[0;32mI (691) wifi_init: tcp tx win: 5744[0m
+[0;32mI (701) wifi_init: tcp rx win: 5744[0m
+[0;32mI (701) wifi_init: tcp mss: 1440[0m
+[0;32mI (711) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (711) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (721) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (811) wifi:mode : sta (a4:e5:7c:f7:c2:fc)
+I (811) wifi:enable tsf
+[0;32mI (811) WIFI_EXAMPLE: wifi_init_sta finished.[0m
+I (831) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (831) wifi:state: init -> auth (b0)
+I (881) wifi:state: auth -> assoc (0)
+I (891) wifi:state: assoc -> run (10)
+I (951) wifi:connected with KTMT - SinhVien, aid = 2, channel 1, BW20, bssid = 62:bf:1e:f1:2e:8e
+I (951) wifi:security: WPA2-PSK, phy: bgn, rssi: -56
+I (951) wifi:pm start, type: 1
+
+I (1001) wifi:<ba-add>idx:0 (ifx:0, 62:bf:1e:f1:2e:8e), tid:0, ssn:0, winSize:64
+I (1041) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (1821) ESP32: Send data[0m
+[0;32mI (1961) esp_netif_handlers: sta ip: 192.168.155.132, mask: 255.255.255.0, gw: 192.168.155.1[0m
+[0;32mI (1961) WIFI_EXAMPLE: got ip:192.168.155.132[0m
+[0;32mI (1961) MQTT: Other event id:7[0m
+I (2411) wifi:<ba-add>idx:1 (ifx:0, 62:bf:1e:f1:2e:8e), tid:7, ssn:0, winSize:64
+7E FF 06 06 00 00 0F FE E6 EF 
+[0;32mI (3821) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (3821) MQTT: sent subscribe successful, msg_id=25340[0m
+[0;32mI (3821) ESP32: Send data[0m
+[0;32mI (4221) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=25340[0m
+7E FF 06 03 00 00 01 FE F7 EF 
+[0;32mI (29561) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (29561) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (29561) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (29561) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (29571) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (29571) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (29581) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (29581) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (29591) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (29591) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (32831) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (32831) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (32831) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (32841) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (32841) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (32851) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (32851) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (32851) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (32861) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (32861) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (50781) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (50781) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (50781) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (50791) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (50791) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (50791) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (50801) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (50801) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (50811) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (50811) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (63641) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (63641) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (63641) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (63641) RX_TASK: Read 10 bytes: '3B'[0m
+[0;32mI (63651) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (63651) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (63661) RX_TASK: Read 10 bytes: '02'[0m
+[0;32mI (63661) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (63661) RX_TASK: Read 10 bytes: 'BE'[0m
+[0;32mI (63671) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (64141) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (64141) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (64141) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (64141) RX_TASK: Read 10 bytes: '3A'[0m
+[0;32mI (64151) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (64151) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (64151) RX_TASK: Read 10 bytes: '02'[0m
+[0;32mI (64161) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (64161) RX_TASK: Read 10 bytes: 'BF'[0m
+[0;32mI (64171) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (64271) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (64271) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (64271) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (64271) RX_TASK: Read 10 bytes: '3F'[0m
+[0;32mI (64271) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (64281) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (64281) RX_TASK: Read 10 bytes: '02'[0m
+[0;32mI (64291) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (64291) RX_TASK: Read 10 bytes: 'BA'[0m
+[0;32mI (64301) RX_TASK: Read 10 bytes: 'EF'[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 22 2024 21:43:34[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26074h (155764) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=0003609c vaddr=3ffb0000 size=03b44h ( 15172) load[0m
+[0;32mI (167) esp_image: segment 2: paddr=00039be8 vaddr=40080000 size=06430h ( 25648) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9e8b0h (649392) map[0m
+[0;32mI (413) esp_image: segment 4: paddr=000de8d8 vaddr=40086430 size=10574h ( 66932) load[0m
+[0;32mI (452) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (452) boot: Disabling RNG early entropy source...[0m
+[0;32mI (464) cpu_start: Multicore app[0m
+[0;32mI (464) cpu_start: Pro cpu up.[0m
+[0;32mI (464) cpu_start: Starting app cpu, entry point is 0x4008146c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (482) cpu_start: Pro cpu start user code[0m
+[0;32mI (482) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (482) cpu_start: Application information:[0m
+[0;32mI (487) cpu_start: Project name:     IoT_Speaker[0m
+[0;32mI (492) cpu_start: App version:      f46fe8d-dirty[0m
+[0;32mI (497) cpu_start: Compile time:     May 22 2024 21:43:10[0m
+[0;32mI (504) cpu_start: ELF file SHA256:  ca7f21c9a220b583...[0m
+[0;32mI (510) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (515) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (520) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (524) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (529) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (537) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (542) heap_init: At 3FFB81E8 len 00027E18 (159 KiB): DRAM[0m
+[0;32mI (549) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (555) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (562) heap_init: At 400969A4 len 0000965C (37 KiB): IRAM[0m
+[0;32mI (569) spi_flash: detected chip: generic[0m
+[0;32mI (572) spi_flash: flash io: dio[0m
+[0;32mI (577) app_start: Starting scheduler on CPU0[0m
+[0;32mI (581) app_start: Starting scheduler on CPU1[0m
+[0;32mI (581) main_task: Started on CPU0[0m
+[0;32mI (591) main_task: Calling app_main()[0m
+I (631) wifi:wifi driver task: 3ffc023c, prio:23, stack:6656, core=0
+I (641) wifi:wifi firmware version: 91b9630
+I (651) wifi:wifi certification version: v7.0
+I (651) wifi:config NVS flash: enabled
+I (651) wifi:config nano formating: disabled
+I (651) wifi:Init data frame dynamic rx buffer num: 32
+I (651) wifi:Init static rx mgmt buffer num: 5
+I (661) wifi:Init management short buffer num: 32
+I (661) wifi:Init dynamic tx buffer num: 32
+I (671) wifi:Init static rx buffer size: 1600
+I (671) wifi:Init static rx buffer num: 10
+I (671) wifi:Init dynamic rx buffer num: 32
+[0;32mI (681) wifi_init: rx ba win: 6[0m
+[0;32mI (681) wifi_init: tcpip mbox: 32[0m
+[0;32mI (691) wifi_init: udp mbox: 6[0m
+[0;32mI (691) wifi_init: tcp mbox: 6[0m
+[0;32mI (691) wifi_init: tcp tx win: 5744[0m
+[0;32mI (701) wifi_init: tcp rx win: 5744[0m
+[0;32mI (701) wifi_init: tcp mss: 1440[0m
+[0;32mI (711) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (711) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (721) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (811) wifi:mode : sta (a4:e5:7c:f7:c2:fc)
+I (811) wifi:enable tsf
+[0;32mI (811) WIFI_EXAMPLE: wifi_init_sta finished.[0m
+I (861) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (861) wifi:state: init -> auth (b0)
+I (891) wifi:state: auth -> assoc (0)
+I (901) wifi:state: assoc -> run (10)
+I (971) wifi:connected with KTMT - SinhVien, aid = 2, channel 1, BW20, bssid = 62:bf:1e:f1:2e:8e
+I (971) wifi:security: WPA2-PSK, phy: bgn, rssi: -56
+I (981) wifi:pm start, type: 1
+
+I (1061) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (1531) wifi:<ba-add>idx:0 (ifx:0, 62:bf:1e:f1:2e:8e), tid:0, ssn:0, winSize:64
+[0;32mI (1821) ESP32: Send data[0m
+[0;32mI (2481) esp_netif_handlers: sta ip: 192.168.155.132, mask: 255.255.255.0, gw: 192.168.155.1[0m
+[0;32mI (2481) WIFI_EXAMPLE: got ip:192.168.155.132[0m
+[0;32mI (2481) MQTT: Other event id:7[0m
+I (2511) wifi:<ba-add>idx:1 (ifx:0, 62:bf:1e:f1:2e:8e), tid:7, ssn:0, winSize:64
+7E FF 06 06 00 00 0F FE E6 EF 
+[0;32mI (3821) ESP32: Send data[0m
+[0;32mI (4151) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (4151) MQTT: sent subscribe successful, msg_id=26554[0m
+[0;32mI (4551) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=26554[0m
+7E FF 06 03 00 00 01 FE F7 EF 
+[0;32mI (138191) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":false,"songID":1,"volume":11}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 0
+RECEIVED VALUE
+finished: 1
+play: 0
+songID: 1
+volume: 11
+
+Condition 1[0;32mI (139201) ESP32: Send data[0m
+7E FF 06 03 00 00 01 FE F7 EF 
+
+Condition 2[0;32mI (141201) ESP32: Send data[0m
+7E FF 06 06 00 00 0B FE EA EF 
+[0;32mI (155401) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":false,"songID":1,"volume":10}
+CURRENT VALUE
+finished: 1
+play: 0
+songID: 1
+volume: 11
+RECEIVED VALUE
+finished: 1
+play: 0
+songID: 1
+volume: 10
+
+Condition 2[0;32mI (156421) ESP32: Send data[0m
+7E FF 06 06 00 00 0A FE EB EF 
+
+Condition 4[0;32mI (158421) ESP32: Send data[0m
+7E FF 06 03 00 00 01 FE F7 EF 
+[0;32mI (173101) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":1,"volume":10}
+CURRENT VALUE
+finished: 1
+play: 0
+songID: 1
+volume: 10
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 1
+volume: 10
+[0;32mI (187071) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":1,"volume":3}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 1
+volume: 10
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 1
+volume: 3
+
+Condition 2[0;32mI (188081) ESP32: Send data[0m
+7E FF 06 06 00 00 03 FE F2 EF 
+[0;32mI (210171) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":1,"volume":3}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 1
+volume: 3
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 1
+volume: 3
+
+Condition 3[0;32mI (211181) ESP32: Send data[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+[0;32mI (232021) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":1,"volume":3}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 1
+volume: 3
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 1
+volume: 3
+[0;32mI (233031) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+
+Condition 5[0;32mI (240391) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":1,"volume":3}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 1
+volume: 3
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 1
+volume: 3
+
+Condition 3[0;32mI (241411) ESP32: Send data[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+[0;32mI (252671) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":1,"volume":10}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 1
+volume: 3
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 1
+volume: 10
+
+Condition 2[0;32mI (253681) ESP32: Send data[0m
+7E FF 06 06 00 00 0A FE EB EF 
+[0;32mI (265771) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":2,"volume":10}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 1
+volume: 10
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 10
+
+Condition 1[0;32mI (266781) ESP32: Send data[0m
+7E FF 06 03 00 00 02 FE F6 EF 
+[0;32mI (273361) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":10}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 10
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 10
+
+Condition 1[0;32mI (274371) ESP32: Send data[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+[0;32mI (279301) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":4,"volume":10}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 10
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 10
+
+Condition 1[0;32mI (280311) ESP32: Send data[0m
+7E FF 06 03 00 00 04 FE F4 EF 
+[0;32mI (285541) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":4,"volume":15}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 10
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 15
+
+Condition 2[0;32mI (286551) ESP32: Send data[0m
+7E FF 06 06 00 00 0F FE E6 EF 
+[0;32mI (293831) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":true,"songID":4,"volume":15}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 15
+RECEIVED VALUE
+finished: 1
+play: 1
+songID: 4
+volume: 15
+
+Condition 4[0;32mI (294841) ESP32: Send data[0m
+7E FF 06 03 00 00 04 FE F4 EF 
+[0;32mI (315951) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":false,"songID":4,"volume":15}
+CURRENT VALUE
+finished: 1
+play: 1
+songID: 4
+volume: 15
+RECEIVED VALUE
+finished: 1
+play: 0
+songID: 4
+volume: 15
+
+Condition 4[0;32mI (316961) ESP32: Send data[0m
+7E FF 06 03 00 00 04 FE F4 EF 
+[0;32mI (318961) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+
+Condition 5[0;32mI (433091) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":true,"songID":4,"volume":15}
+CURRENT VALUE
+finished: 1
+play: 0
+songID: 4
+volume: 15
+RECEIVED VALUE
+finished: 1
+play: 1
+songID: 4
+volume: 15
+
+Condition 3[0;32mI (434111) ESP32: Send data[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+
+Condition 4[0;32mI (436111) ESP32: Send data[0m
+7E FF 06 03 00 00 04 FE F4 EF 
+[0;32mI (469651) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":true,"songID":4,"volume":10}
+CURRENT VALUE
+finished: 1
+play: 1
+songID: 4
+volume: 15
+RECEIVED VALUE
+finished: 1
+play: 1
+songID: 4
+volume: 10
+
+Condition 2[0;32mI (470661) ESP32: Send data[0m
+7E FF 06 06 00 00 0A FE EB EF 
+
+Condition 4[0;32mI (472661) ESP32: Send data[0m
+7E FF 06 03 00 00 04 FE F4 EF 
+[0;32mI (479791) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":4,"volume":10}
+CURRENT VALUE
+finished: 1
+play: 1
+songID: 4
+volume: 10
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 10
+[0;32mI (655721) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (655721) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (655721) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (655721) RX_TASK: Read 10 bytes: '3D'[0m
+[0;32mI (655731) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (655731) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (655741) RX_TASK: Read 10 bytes: '04'[0m
+[0;32mI (655741) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (655741) RX_TASK: Read 10 bytes: 'BA'[0m
+[0;32mI (655751) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (687451) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":5,"volume":10}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 10
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 5
+volume: 10
+
+Condition 1[0;32mI (688461) ESP32: Send data[0m
+7E FF 06 03 00 00 05 FE F3 EF 
+[0;32mI (910371) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (910371) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (910371) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (910381) RX_TASK: Read 10 bytes: '3D'[0m
+[0;32mI (910381) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (910391) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (910391) RX_TASK: Read 10 bytes: '05'[0m
+[0;32mI (910401) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (910401) RX_TASK: Read 10 bytes: 'B9'[0m
+[0;32mI (910401) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (1612421) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":10}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 5
+volume: 10
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 10
+
+Condition 1[0;32mI (1613431) ESP32: Send data[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+[0;32mI (1615291) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":3,"volume":10}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 10
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 10
+[0;32mI (1616301) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+
+Condition 5[0;32mI (1617541) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":10}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 10
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 10
+
+Condition 3[0;32mI (1618551) ESP32: Send data[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+[0;32mI (1619551) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":4,"volume":10}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 10
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 10
+
+Condition 1[0;32mI (1620561) ESP32: Send data[0m
+7E FF 06 03 00 00 04 FE F4 EF 
+[0;32mI (1621561) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":true,"songID":4,"volume":10}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 10
+RECEIVED VALUE
+finished: 1
+play: 1
+songID: 4
+volume: 10
+
+Condition 4[0;32mI (1622571) ESP32: Send data[0m
+7E FF 06 03 00 00 04 FE F4 EF 
+[0;32mI (1623571) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":false,"songID":4,"volume":10}
+CURRENT VALUE
+finished: 1
+play: 1
+songID: 4
+volume: 10
+RECEIVED VALUE
+finished: 1
+play: 0
+songID: 4
+volume: 10
+
+Condition 4[0;32mI (1624581) ESP32: Send data[0m
+7E FF 06 03 00 00 04 FE F4 EF 
+[0;32mI (1626581) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+
+Condition 5[0;32mI (1627581) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":true,"songID":4,"volume":10}
+CURRENT VALUE
+finished: 1
+play: 0
+songID: 4
+volume: 10
+RECEIVED VALUE
+finished: 1
+play: 1
+songID: 4
+volume: 10
+
+Condition 3[0;32mI (1628591) ESP32: Send data[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+
+Condition 4[0;32mI (1630591) ESP32: Send data[0m
+7E FF 06 03 00 00 04 FE F4 EF 
+[0;32mI (1631591) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":false,"songID":4,"volume":10}
+CURRENT VALUE
+finished: 1
+play: 1
+songID: 4
+volume: 10
+RECEIVED VALUE
+finished: 1
+play: 0
+songID: 4
+volume: 10
+
+Condition 4[0;32mI (1632601) ESP32: Send data[0m
+7E FF 06 03 00 00 04 FE F4 EF 
+[0;32mI (1634601) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+
+Condition 5[0;32mI (1635601) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":false,"songID":3,"volume":10}
+CURRENT VALUE
+finished: 1
+play: 0
+songID: 4
+volume: 10
+RECEIVED VALUE
+finished: 1
+play: 0
+songID: 3
+volume: 10
+
+Condition 1[0;32mI (1636611) ESP32: Send data[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+[0;32mI (1640791) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":false,"songID":2,"volume":10}
+CURRENT VALUE
+finished: 1
+play: 0
+songID: 3
+volume: 10
+RECEIVED VALUE
+finished: 1
+play: 0
+songID: 2
+volume: 10
+
+Condition 1[0;32mI (1641801) ESP32: Send data[0m
+7E FF 06 03 00 00 02 FE F6 EF 
+[0;32mI (1657171) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":true,"songID":2,"volume":10}
+CURRENT VALUE
+finished: 1
+play: 0
+songID: 2
+volume: 10
+RECEIVED VALUE
+finished: 1
+play: 1
+songID: 2
+volume: 10
+
+Condition 3[0;32mI (1658181) ESP32: Send data[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+
+Condition 4[0;32mI (1660181) ESP32: Send data[0m
+7E FF 06 03 00 00 02 FE F6 EF 
+[0;32mI (1661181) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":true,"songID":1,"volume":10}
+CURRENT VALUE
+finished: 1
+play: 1
+songID: 2
+volume: 10
+RECEIVED VALUE
+finished: 1
+play: 1
+songID: 1
+volume: 10
+
+Condition 1[0;32mI (1662191) ESP32: Send data[0m
+7E FF 06 03 00 00 01 FE F7 EF 
+[0;32mI (1663191) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":false,"songID":1,"volume":10}
+CURRENT VALUE
+finished: 1
+play: 1
+songID: 1
+volume: 10
+RECEIVED VALUE
+finished: 1
+play: 0
+songID: 1
+volume: 10
+
+Condition 4[0;32mI (1664201) ESP32: Send data[0m
+7E FF 06 03 00 00 01 FE F7 EF 
+[0;32mI (1666201) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+
+Condition 5[0;32mI (1667201) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":true,"songID":1,"volume":10}
+CURRENT VALUE
+finished: 1
+play: 0
+songID: 1
+volume: 10
+RECEIVED VALUE
+finished: 1
+play: 1
+songID: 1
+volume: 10
+
+Condition 3[0;32mI (1668211) ESP32: Send data[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+
+Condition 4[0;32mI (1670211) ESP32: Send data[0m
+7E FF 06 03 00 00 01 FE F7 EF 
+[0;32mI (1671211) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":false,"songID":1,"volume":10}
+CURRENT VALUE
+finished: 1
+play: 1
+songID: 1
+volume: 10
+RECEIVED VALUE
+finished: 1
+play: 0
+songID: 1
+volume: 10
+
+Condition 4[0;32mI (1672221) ESP32: Send data[0m
+7E FF 06 03 00 00 01 FE F7 EF 
+[0;32mI (1674221) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+
+Condition 5[0;32mI (1675221) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":1,"volume":10}
+CURRENT VALUE
+finished: 1
+play: 0
+songID: 1
+volume: 10
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 1
+volume: 10
+[0;32mI (1684001) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":1,"volume":15}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 1
+volume: 10
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 1
+volume: 15
+
+Condition 2[0;32mI (1685011) ESP32: Send data[0m
+7E FF 06 06 00 00 0F FE E6 EF 
+[0;32mI (1689531) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":2,"volume":15}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 1
+volume: 15
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 2
+volume: 15
+
+Condition 1[0;32mI (1690541) ESP32: Send data[0m
+7E FF 06 03 00 00 02 FE F6 EF 
+[0;32mI (1706641) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":2,"volume":12}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 2
+volume: 15
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 2
+volume: 12
+
+Condition 2[0;32mI (1707651) ESP32: Send data[0m
+7E FF 06 06 00 00 0C FE E9 EF 
+[0;32mI (1715341) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":2,"volume":12}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 2
+volume: 12
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 12
+
+Condition 3[0;32mI (1716351) ESP32: Send data[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+[0;32mI (1832791) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":2,"volume":10}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 12
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 10
+
+Condition 2[0;32mI (1833801) ESP32: Send data[0m
+7E FF 06 06 00 00 0A FE EB EF 
+[0;32mI (1856101) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (1856101) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (1856101) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (1856101) RX_TASK: Read 10 bytes: '3D'[0m
+[0;32mI (1856101) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (1856111) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (1856111) RX_TASK: Read 10 bytes: '02'[0m
+[0;32mI (1856121) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (1856121) RX_TASK: Read 10 bytes: 'BC'[0m
+[0;32mI (1856131) RX_TASK: Read 10 bytes: 'EF'[0m

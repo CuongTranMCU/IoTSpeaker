@@ -1,0 +1,74 @@
+[1/5] cmd.exe /C "cd /D "D:\NAM3\KI 2\DESIGN_WIRELESS_EMBEDDED_SYSTEM\PRACTICE\IOT_SPEAKER\IoT_Speaker\esp_idf\build\esp-idf\esptool_py" && D:\ESP3-IDF\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/partition_table/partition-table.bin" "D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/IoT_Speaker.bin""
+IoT_Speaker.bin binary size 0xded90 bytes. Smallest app partition is 0x100000 bytes. 0x21270 bytes (13%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "D:\NAM3\KI 2\DESIGN_WIRELESS_EMBEDDED_SYSTEM\PRACTICE\IOT_SPEAKER\IoT_Speaker\esp_idf\build\bootloader\esp-idf\esptool_py" && D:\ESP3-IDF\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
+[2/3] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.1.2\components\esptool_py && D:\ESP3-IDF\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.1.2 -D SERIAL_TOOL=D:/ESP3-IDF/Espressif/python_env/idf5.1_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build" -P C:/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM5 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 IoT_Speaker.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM5
+Connecting.....
+Chip is ESP32-D0WD (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: a4:e5:7c:f7:c2:fc
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000eefff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26640 bytes to 16689...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000768e... (100 %)
+Wrote 26640 bytes (16689 compressed) at 0x00001000 in 0.9 seconds (effective 232.8 kbit/s)...
+Hash of data verified.
+Compressed 912784 bytes to 587223...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001c8a0... (5 %)
+Writing at 0x000236e6... (8 %)
+Writing at 0x00028eb4... (11 %)
+Writing at 0x00034672... (13 %)
+Writing at 0x0003d2e6... (16 %)
+Writing at 0x00042eba... (19 %)
+Writing at 0x000487ab... (22 %)
+Writing at 0x0004e3fa... (25 %)
+Writing at 0x00053d6d... (27 %)
+Writing at 0x00059869... (30 %)
+Writing at 0x0005f0c8... (33 %)
+Writing at 0x00064d8b... (36 %)
+Writing at 0x0006b01d... (38 %)
+Writing at 0x00070bf4... (41 %)
+Writing at 0x000763df... (44 %)
+Writing at 0x0007b593... (47 %)
+Writing at 0x00080bbf... (50 %)
+Writing at 0x00085eb3... (52 %)
+Writing at 0x0008b513... (55 %)
+Writing at 0x00090aec... (58 %)
+Writing at 0x000962af... (61 %)
+Writing at 0x0009c14f... (63 %)
+Writing at 0x000a16bb... (66 %)
+Writing at 0x000a7056... (69 %)
+Writing at 0x000ac7f8... (72 %)
+Writing at 0x000b1f37... (75 %)
+Writing at 0x000b770e... (77 %)
+Writing at 0x000bd13c... (80 %)
+Writing at 0x000c2ba7... (83 %)
+Writing at 0x000c8302... (86 %)
+Writing at 0x000d1440... (88 %)
+Writing at 0x000d94f6... (91 %)
+Writing at 0x000df27d... (94 %)
+Writing at 0x000e4d19... (97 %)
+Writing at 0x000ea32c... (100 %)
+Wrote 912784 bytes (587223 compressed) at 0x00010000 in 14.5 seconds (effective 501.9 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 214.7 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

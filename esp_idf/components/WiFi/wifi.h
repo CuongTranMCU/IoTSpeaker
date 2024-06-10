@@ -17,6 +17,8 @@
 
 #define EXAMPLE_ESP_WIFI_SSID "KTMT - SinhVien"
 #define EXAMPLE_ESP_WIFI_PASS "sinhvien"
+// #define EXAMPLE_ESP_WIFI_SSID "A06.15"
+// #define EXAMPLE_ESP_WIFI_PASS "hoihuecon"
 #define EXAMPLE_ESP_MAXIMUM_RETRY 5
 #define WIFI_AUTH_WPA2_PSK 1
 

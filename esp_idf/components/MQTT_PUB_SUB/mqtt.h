@@ -40,7 +40,7 @@
 esp_mqtt_client_handle_t get_mqtt_client_handle(void);
 extern uint32_t MQTT_CONNECTED;
 typedef void (*mqtt_data_pt_t)(char *data, uint16_t length);
-void mqtt_data_publish_callback(const char *data);
+void mqtt_data_publish_update(char *field_name);
 void mqtt_data_pt_set_callback(mqtt_data_pt_t mqtt_func_ptr);
 char *convert_model_sensor_to_json(int temperature, int humidity);
 

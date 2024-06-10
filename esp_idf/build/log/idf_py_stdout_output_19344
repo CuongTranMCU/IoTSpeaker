@@ -1,0 +1,3032 @@
+ (POWERON_RE�+j5
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 22 2024 21:43:34[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=261d4h (156116) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=000361fc vaddr=3ffb0000 size=03b44h ( 15172) load[0m
+[0;32mI (167) esp_image: segment 2: paddr=00039d48 vaddr=40080000 size=062d0h ( 25296) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9ecach (650412) map[0m
+[0;32mI (413) esp_image: segment 4: paddr=000decd4 vaddr=400862d0 size=106d4h ( 67284) load[0m
+[0;32mI (453) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (453) boot: Disabling RNG early entropy source...[0m
+[0;32mI (464) cpu_start: Multicore app[0m
+[0;32mI (465) cpu_start: Pro cpu up.[0m
+[0;32mI (465) cpu_start: Starting app cpu, entry point is 0x4008146c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (482) cpu_start: Pro cpu start user code[0m
+[0;32mI (482) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (483) cpu_start: Application information:[0m
+[0;32mI (487) cpu_start: Project name:     IoT_Speaker[0m
+[0;32mI (493) cpu_start: App version:      f46fe8d-dirty[0m
+[0;32mI (498) cpu_start: Compile time:     May 22 2024 21:43:10[0m
+[0;32mI (504) cpu_start: ELF file SHA256:  e7f0cf855a1d2151...[0m
+[0;32mI (510) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (515) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (520) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (525) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (530) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (537) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (543) heap_init: At 3FFB81E8 len 00027E18 (159 KiB): DRAM[0m
+[0;32mI (549) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (556) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (562) heap_init: At 400969A4 len 0000965C (37 KiB): IRAM[0m
+[0;32mI (570) spi_flash: detected chip: generic[0m
+[0;32mI (573) spi_flash: flash io: dio[0m
+[0;32mI (578) app_start: Starting scheduler on CPU0[0m
+[0;32mI (582) app_start: Starting scheduler on CPU1[0m
+[0;32mI (582) main_task: Started on CPU0[0m
+[0;32mI (592) main_task: Calling app_main()[0m
+I (632) wifi:wifi driver task: 3ffc02c0, prio:23, stack:6656, core=0
+I (652) wifi:wifi firmware version: 91b9630
+I (652) wifi:wifi certification version: v7.0
+I (652) wifi:config NVS flash: enabled
+I (652) wifi:config nano formating: disabled
+I (652) wifi:Init data frame dynamic rx buffer num: 32
+I (652) wifi:Init static rx mgmt buffer num: 5
+I (662) wifi:Init management short buffer num: 32
+I (662) wifi:Init dynamic tx buffer num: 32
+I (672) wifi:Init static rx buffer size: 1600
+I (672) wifi:Init static rx buffer num: 10
+I (682) wifi:Init dynamic rx buffer num: 32
+[0;32mI (682) wifi_init: rx ba win: 6[0m
+[0;32mI (682) wifi_init: tcpip mbox: 32[0m
+[0;32mI (692) wifi_init: udp mbox: 6[0m
+[0;32mI (692) wifi_init: tcp mbox: 6[0m
+[0;32mI (692) wifi_init: tcp tx win: 5744[0m
+[0;32mI (702) wifi_init: tcp rx win: 5744[0m
+[0;32mI (702) wifi_init: tcp mss: 1440[0m
+[0;32mI (712) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (712) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (722) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (812) wifi:mode : sta (a4:e5:7c:f7:c2:fc)
+I (812) wifi:enable tsf
+[0;32mI (812) WIFI_EXAMPLE: wifi_init_sta finished.[0m
+I (832) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (842) wifi:state: init -> auth (b0)
+I (872) wifi:state: auth -> assoc (0)
+I (892) wifi:state: assoc -> run (10)
+I (942) wifi:connected with KTMT - SinhVien, aid = 1, channel 6, BW20, bssid = 62:bf:1e:f1:2e:8e
+I (942) wifi:security: WPA2-PSK, phy: bgn, rssi: -57
+I (952) wifi:pm start, type: 1
+
+I (992) wifi:<ba-add>idx:0 (ifx:0, 62:bf:1e:f1:2e:8e), tid:0, ssn:0, winSize:64
+I (1042) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (1952) esp_netif_handlers: sta ip: 192.168.155.214, mask: 255.255.255.0, gw: 192.168.155.1[0m
+[0;32mI (1952) WIFI_EXAMPLE: got ip:192.168.155.214[0m
+[0;32mI (1952) MQTT: Other event id:7[0m
+I (1992) wifi:<ba-add>idx:1 (ifx:0, 62:bf:1e:f1:2e:8e), tid:7, ssn:0, winSize:64
+[0;32mI (3092) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (3092) MQTT: sent subscribe successful, msg_id=33985[0m
+[0;32mI (3632) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=33985[0m
+[0;32mI (15382) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":true,"songID":3,"volume":3}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 0
+RECEIVED VALUE
+finished: 1
+play: 1
+songID: 3
+volume: 3
+
+Condition 1[0;32mI (15402) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (16402) ESP32: Send data[0m
+[0;32mI (16532) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (16532) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (16532) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (16532) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (16532) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (16542) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (16542) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (16552) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (16552) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (16552) RX_TASK: Read 10 bytes: 'EF'[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+
+Condition 2[0;32mI (17402) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (18402) ESP32: Send data[0m
+[0;32mI (18532) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (18532) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (18532) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (18532) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (18532) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (18542) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (18542) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (18552) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (18552) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (18562) RX_TASK: Read 10 bytes: 'EF'[0m
+7E FF 06 06 00 00 09 FE EC EF 
+[0;32mI (19402) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":3}
+CURRENT VALUE
+finished: 1
+play: 1
+songID: 3
+volume: 3
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 3
+
+Condition 4[0;32mI (19412) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (20422) ESP32: Send data[0m
+[0;32mI (20552) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (20552) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (20552) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (20552) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (20552) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (20562) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (20562) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (20572) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (20572) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (20582) RX_TASK: Read 10 bytes: 'EF'[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+[0;32mI (38312) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38312) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (38312) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38312) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (38322) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38322) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (38322) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38332) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (38332) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38342) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38342) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (38352) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38352) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38362) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (38362) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38362) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (38372) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38372) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (38382) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38382) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38392) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38392) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (38402) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38402) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (38402) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38412) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (38412) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38422) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38422) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38432) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38432) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (38442) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38442) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (38442) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38452) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (38452) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38462) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (38462) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38472) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (38472) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38472) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38482) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38482) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (38492) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38492) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38502) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (38502) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38512) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (38512) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38512) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38522) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38522) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (38532) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38532) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (38542) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38542) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (38552) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38552) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38552) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (38562) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38562) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (38572) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38572) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (38582) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38582) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (38592) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38592) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38592) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38602) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (38602) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38612) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (38612) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38622) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38622) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38632) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (38632) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38632) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (38642) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38642) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38652) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38652) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (38662) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38662) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38672) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (38672) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38672) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38682) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (38682) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38692) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (38692) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38702) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (38702) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38712) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38712) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (38712) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38722) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38722) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (38732) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38732) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (38742) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38742) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (38742) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38752) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38752) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (38762) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38762) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (38772) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38772) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (38782) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38782) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38782) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38792) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (38792) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38802) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (38802) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38812) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (38812) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38822) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (38822) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (38822) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39712) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (39712) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39712) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (39712) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39722) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39722) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39722) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (39732) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39732) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (39742) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39742) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39752) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39752) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (39762) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39762) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (39762) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39772) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39772) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39782) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (39782) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39792) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (39792) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39802) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (39802) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39802) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39812) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (39812) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39822) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (39822) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39832) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (39832) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39842) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39842) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (39842) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39852) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (39852) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39862) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (39862) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39872) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39872) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39882) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (39882) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39882) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39892) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (39892) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39902) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39902) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (39912) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39912) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (39922) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39922) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39922) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39932) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (39932) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39942) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (39942) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39952) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (39952) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39962) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (39962) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39962) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (39972) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39972) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39982) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (39982) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39992) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (39992) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (39992) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (40002) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40002) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (40012) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40012) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (40022) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40022) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (40032) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40032) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (40032) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40042) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (40042) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40052) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (40052) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40062) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (40062) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40072) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (40072) RX_TASK: Read 10 bytes: '01'[0m
+[0;32mI (40072) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40082) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40082) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40092) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40092) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40102) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40102) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40112) RX_TASK: Read 10 bytes: '2A'[0m
+[0;32mI (40112) RX_TASK: Read 10 bytes: 'FD'[0m
+[0;32mI (40112) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40122) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (40122) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40132) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (40132) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40142) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (40142) RX_TASK: Read 10 bytes: '04'[0m
+[0;32mI (40152) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40152) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (40152) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40162) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (40162) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40172) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (40172) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40182) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (40182) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40192) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (40192) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40192) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (40202) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40202) RX_TASK: Read 10 bytes: 'FD'[0m
+[0;32mI (40212) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40212) RX_TASK: Read 10 bytes: '05'[0m
+[0;32mI (40222) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (40222) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (40232) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40922) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (40922) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40922) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (40922) RX_TASK: Read 10 bytes: 'F0'[0m
+[0;32mI (40922) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40932) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40932) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (40942) RX_TASK: Read 10 bytes: '80'[0m
+[0;32mI (40942) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40942) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (40952) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40952) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40962) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (40962) RX_TASK: Read 10 bytes: 'F0'[0m
+[0;32mI (40972) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40972) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (40982) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40982) RX_TASK: Read 10 bytes: 'C3'[0m
+[0;32mI (40982) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (40992) RX_TASK: Read 10 bytes: 'DF'[0m
+[0;32mI (40992) RX_TASK: Read 10 bytes: 'C4'[0m
+[0;32mI (41002) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41002) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (41012) RX_TASK: Read 10 bytes: 'C0'[0m
+[0;32mI (41012) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41022) RX_TASK: Read 10 bytes: '8F'[0m
+[0;32mI (41022) RX_TASK: Read 10 bytes: 'F0'[0m
+[0;32mI (41022) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41032) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (41032) RX_TASK: Read 10 bytes: 'E2'[0m
+[0;32mI (41042) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41042) RX_TASK: Read 10 bytes: '07'[0m
+[0;32mI (41052) RX_TASK: Read 10 bytes: 'C0'[0m
+[0;32mI (41052) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41062) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (41062) RX_TASK: Read 10 bytes: 'F0'[0m
+[0;32mI (41062) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41072) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (41072) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41082) RX_TASK: Read 10 bytes: 'FD'[0m
+[0;32mI (41082) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41092) RX_TASK: Read 10 bytes: 'D9'[0m
+[0;32mI (41092) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41102) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41102) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (41102) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41112) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (41112) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41122) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (41122) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41132) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (41132) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41142) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41142) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (41142) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41152) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41152) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41162) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (41162) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41172) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41172) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (41182) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41182) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (41182) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41192) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (41192) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41202) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41202) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (41212) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41212) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (41212) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41222) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (41222) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41232) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41232) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41242) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (41242) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41252) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (41252) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41252) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41262) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41262) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (41272) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41272) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (41282) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41282) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (41292) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41292) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (41292) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41302) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41302) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (41312) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41312) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (41322) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41322) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (41332) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41332) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (41332) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41342) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (41342) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41352) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (41352) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41362) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (41362) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41372) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (41372) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41372) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (41382) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41382) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (41392) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41392) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41402) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (41402) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41412) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (41412) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41412) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (41422) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41422) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (41432) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41432) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (41952) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41952) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (41952) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41952) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (41962) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41962) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (41972) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41972) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (41982) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41982) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (41992) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (41992) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (41992) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42002) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (42002) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42012) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (42012) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42022) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (42022) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42032) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (42032) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42032) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (42042) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42042) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (42052) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42052) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (42062) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42062) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (42072) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42072) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (42072) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42082) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (42082) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42092) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (42092) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42102) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (42102) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42112) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (42112) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42112) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (42122) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42122) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (42132) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42132) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (42142) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42142) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (42152) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42152) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (42152) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42162) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (42162) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42172) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (42172) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42182) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (42182) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42182) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (42192) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42192) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (42202) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42202) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (42212) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42212) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (42222) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42222) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (42222) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42232) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (42232) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42242) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (42242) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42252) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (42252) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42262) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (42262) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42262) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (42272) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42272) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (42282) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42282) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (42292) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42292) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (42302) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42302) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (42302) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42312) RX_TASK: Read 10 bytes: 'F8'[0m
+[0;32mI (42312) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42322) RX_TASK: Read 10 bytes: 'FC'[0m
+[0;32mI (42322) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42332) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (42332) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42342) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42572) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42572) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42572) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42572) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42582) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42582) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (42592) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (42592) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (42602) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (42602) RX_TASK: Read 10 bytes: '3F'[0m
+[0;32mI (43102) RX_TASK: Read 6 bytes: '00'[0m
+[0;32mI (43102) RX_TASK: Read 6 bytes: '00'[0m
+[0;32mI (43102) RX_TASK: Read 6 bytes: '02'[0m
+[0;32mI (43102) RX_TASK: Read 6 bytes: 'FE'[0m
+[0;32mI (43102) RX_TASK: Read 6 bytes: 'BA'[0m
+[0;32mI (43112) RX_TASK: Read 6 bytes: 'EF'[0m
+[0;32mI (43112) RX_TASK: Read 6 bytes: '00'[0m
+[0;32mI (43112) RX_TASK: Read 6 bytes: 'FF'[0m
+[0;32mI (43122) RX_TASK: Read 6 bytes: '06'[0m
+[0;32mI (43122) RX_TASK: Read 6 bytes: '3F'[0m
+[0;32mI (44012) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (44012) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (44012) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (44012) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (44012) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (44022) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (44022) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (44032) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (44032) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (44042) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (45602) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (45602) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (45602) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (45602) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (45612) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (45612) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (45612) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (45622) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (45622) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (45632) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (47822) RX_TASK: Read 9 bytes: '00'[0m
+[0;32mI (47822) RX_TASK: Read 9 bytes: '00'[0m
+[0;32mI (47822) RX_TASK: Read 9 bytes: '00'[0m
+[0;32mI (47822) RX_TASK: Read 9 bytes: '00'[0m
+[0;32mI (47822) RX_TASK: Read 9 bytes: '00'[0m
+[0;32mI (47832) RX_TASK: Read 9 bytes: '00'[0m
+[0;32mI (47832) RX_TASK: Read 9 bytes: '00'[0m
+[0;32mI (47832) RX_TASK: Read 9 bytes: '00'[0m
+[0;32mI (47842) RX_TASK: Read 9 bytes: '00'[0m
+[0;32mI (47842) RX_TASK: Read 9 bytes: '00'[0m
+[0;32mI (47942) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (47942) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (47942) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (47942) RX_TASK: Read 10 bytes: '3F'[0m
+[0;32mI (47952) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (47952) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (47962) RX_TASK: Read 10 bytes: '02'[0m
+[0;32mI (47962) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (47972) RX_TASK: Read 10 bytes: 'BA'[0m
+[0;32mI (47972) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (54872) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (54872) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (54872) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (54872) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (54872) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (54882) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (54882) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (54892) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (54892) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (54902) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (54982) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (54982) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (54982) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (54982) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (54982) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (54992) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (54992) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (55002) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (55002) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (55012) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (55092) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (55092) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (55092) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (55092) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (55092) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55102) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55102) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (55112) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (55112) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (55122) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (55202) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (55202) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (55202) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (55202) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (55202) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55212) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55212) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (55222) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (55222) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (55232) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (55392) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (55392) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (55392) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (55392) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (55392) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55402) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55402) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (55412) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (55412) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (55412) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (55502) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (55502) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (55502) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (55502) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (55502) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55512) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55512) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (55522) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (55522) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (55522) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (55612) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (55612) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (55612) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (55612) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (55612) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55622) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55622) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (55632) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (55632) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (55632) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (55722) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (55722) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (55722) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (55722) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (55722) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55732) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55732) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (55742) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (55742) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (55742) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (55832) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (55832) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (55832) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (55832) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (55832) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55842) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55842) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (55852) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (55852) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (55852) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (55942) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (55942) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (55942) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (55942) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (55942) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55952) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (55952) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (55962) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (55962) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (55962) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (56052) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (56052) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (56052) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (56052) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (56052) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (56062) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (56062) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (56072) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (56072) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (56072) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (56252) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (56252) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (56252) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (56252) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (56262) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (56262) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (56272) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (56272) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (56272) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (56282) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (56362) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (56362) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (56362) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (56362) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (56372) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (56372) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (56382) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (56382) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (56382) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (56392) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (56472) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (56472) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (56472) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (56472) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (56482) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (56482) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (56492) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (56492) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (56492) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (56502) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (56582) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (56582) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (56582) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (56582) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (56592) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (56592) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (56602) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (56602) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (56602) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (56612) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (56692) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (56692) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (56692) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (56692) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (56702) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (56702) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (56712) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (56712) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (56712) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (56722) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (56802) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (56802) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (56802) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (56802) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (56812) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (56812) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (56822) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (56822) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (56822) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (56832) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (76932) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":4,"volume":3}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 3
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 3
+
+Condition 1[0;32mI (76942) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (77952) ESP32: Send data[0m
+7E FF 06 03 00 00 04 FE F4 EF 
+[0;32mI (81332) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":4,"volume":2}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 3
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 2
+
+Condition 2[0;32mI (81342) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (82342) ESP32: Send data[0m
+7E FF 06 06 00 00 06 FE EF EF 
+[0;32mI (147992) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":2}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 2
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 2
+
+Condition 1[0;32mI (148002) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (149002) ESP32: Send data[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+[0;32mI (154752) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":8}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 2
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 8
+
+Condition 2[0;32mI (154762) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (155762) ESP32: Send data[0m
+7E FF 06 06 00 00 18 FE DD EF 
+[0;32mI (164272) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":2}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 8
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 2
+
+Condition 2[0;32mI (164282) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (165292) ESP32: Send data[0m
+7E FF 06 06 00 00 06 FE EF EF 
+[0;32mI (170412) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":6}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 2
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 6
+
+Condition 2[0;32mI (170432) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (171432) ESP32: Send data[0m
+7E FF 06 06 00 00 12 FE E3 EF 
+[0;32mI (338832) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (338832) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (338832) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (338842) RX_TASK: Read 10 bytes: '3D'[0m
+[0;32mI (338842) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (338852) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (338852) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (338852) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (338862) RX_TASK: Read 10 bytes: 'BB'[0m
+[0;32mI (338862) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (484882) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (484882) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (484882) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (484882) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (484892) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (484892) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (484892) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (484902) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (484902) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (484912) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (525642) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (525642) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (525642) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (525642) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (525652) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (525652) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (525662) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (525662) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (525672) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (525672) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (543272) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (543272) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (543272) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (543272) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (543272) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (543282) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (543282) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (543292) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (543292) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (543302) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (543322) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (543322) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (543322) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (543322) RX_TASK: Read 10 bytes: '40'[0m
+[0;32mI (543332) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (543332) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (543342) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (543342) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (543352) RX_TASK: Read 10 bytes: 'B8'[0m
+[0;32mI (543352) RX_TASK: Read 10 bytes: 'EF'[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 22 2024 21:43:34[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=261d4h (156116) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=000361fc vaddr=3ffb0000 size=03b44h ( 15172) load[0m
+[0;32mI (167) esp_image: segment 2: paddr=00039d48 vaddr=40080000 size=062d0h ( 25296) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9ecach (650412) map[0m
+[0;32mI (413) esp_image: segment 4: paddr=000decd4 vaddr=400862d0 size=106d4h ( 67284) load[0m
+[0;32mI (452) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (453) boot: Disabling RNG early entropy source...[0m
+[0;32mI (464) cpu_start: Multicore app[0m
+[0;32mI (464) cpu_start: Pro cpu up.[0m
+[0;32mI (465) cpu_start: Starting app cpu, entry point is 0x4008146c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (482) cpu_start: Pro cpu start user code[0m
+[0;32mI (482) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (482) cpu_start: Application information:[0m
+[0;32mI (487) cpu_start: Project name:     IoT_Speaker[0m
+[0;32mI (492) cpu_start: App version:      f46fe8d-dirty[0m
+[0;32mI (498) cpu_start: Compile time:     May 22 2024 21:43:10[0m
+[0;32mI (504) cpu_start: ELF file SHA256:  e7f0cf855a1d2151...[0m
+[0;32mI (510) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (515) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (520) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (525) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (530) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (537) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (543) heap_init: At 3FFB81E8 len 00027E18 (159 KiB): DRAM[0m
+[0;32mI (549) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (555) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (562) heap_init: At 400969A4 len 0000965C (37 KiB): IRAM[0m
+[0;32mI (570) spi_flash: detected chip: generic[0m
+[0;32mI (573) spi_flash: flash io: dio[0m
+[0;32mI (578) app_start: Starting scheduler on CPU0[0m
+[0;32mI (582) app_start: Starting scheduler on CPU1[0m
+[0;32mI (582) main_task: Started on CPU0[0m
+[0;32mI (592) main_task: Calling app_main()[0m
+I (632) wifi:wifi driver task: 3ffc02c0, prio:23, stack:6656, core=0
+I (652) wifi:wifi firmware version: 91b9630
+I (652) wifi:wifi certification version: v7.0
+I (652) wifi:config NVS flash: enabled
+I (652) wifi:config nano formating: disabled
+I (652) wifi:Init data frame dynamic rx buffer num: 32
+I (652) wifi:Init static rx mgmt buffer num: 5
+I (662) wifi:Init management short buffer num: 32
+I (662) wifi:Init dynamic tx buffer num: 32
+I (672) wifi:Init static rx buffer size: 1600
+I (672) wifi:Init static rx buffer num: 10
+I (682) wifi:Init dynamic rx buffer num: 32
+[0;32mI (682) wifi_init: rx ba win: 6[0m
+[0;32mI (682) wifi_init: tcpip mbox: 32[0m
+[0;32mI (692) wifi_init: udp mbox: 6[0m
+[0;32mI (692) wifi_init: tcp mbox: 6[0m
+[0;32mI (692) wifi_init: tcp tx win: 5744[0m
+[0;32mI (702) wifi_init: tcp rx win: 5744[0m
+[0;32mI (702) wifi_init: tcp mss: 1440[0m
+[0;32mI (712) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (712) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (722) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (812) wifi:mode : sta (a4:e5:7c:f7:c2:fc)
+I (812) wifi:enable tsf
+[0;32mI (812) WIFI_EXAMPLE: wifi_init_sta finished.[0m
+I (832) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (832) wifi:state: init -> auth (b0)
+I (862) wifi:state: auth -> assoc (0)
+I (882) wifi:state: assoc -> run (10)
+I (942) wifi:connected with KTMT - SinhVien, aid = 1, channel 6, BW20, bssid = 62:bf:1e:f1:2e:8e
+I (942) wifi:security: WPA2-PSK, phy: bgn, rssi: -52
+I (942) wifi:pm start, type: 1
+
+I (1012) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (1022) wifi:<ba-add>idx:0 (ifx:0, 62:bf:1e:f1:2e:8e), tid:0, ssn:0, winSize:64
+[0;32mI (1952) esp_netif_handlers: sta ip: 192.168.155.214, mask: 255.255.255.0, gw: 192.168.155.1[0m
+[0;32mI (1952) WIFI_EXAMPLE: got ip:192.168.155.214[0m
+[0;32mI (1952) MQTT: Other event id:7[0m
+I (2462) wifi:<ba-add>idx:1 (ifx:0, 62:bf:1e:f1:2e:8e), tid:7, ssn:0, winSize:64
+[0;32mI (4102) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (4102) MQTT: sent subscribe successful, msg_id=8833[0m
+[0;32mI (4632) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=8833[0m
+[0;32mI (35742) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":0}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 0
+
+Condition 1[0;32mI (35752) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (36752) ESP32: Send data[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+[0;32mI (49762) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":6}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 6
+
+Condition 2[0;32mI (49782) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (50782) ESP32: Send data[0m
+7E FF 06 06 00 00 12 FE E3 EF 
+[0;32mI (87042) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":3,"volume":6}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 6
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 6
+
+Condition 5[0;32mI (87052) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (88062) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+[0;32mI (90932) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":0,"volume":6}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 6
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 6
+
+Condition 1[0;32mI (90952) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (91952) ESP32: Send data[0m
+7E FF 06 03 00 00 00 FE F8 EF 
+[0;32mI (94032) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":0,"volume":0}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 6
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 0
+
+Condition 2[0;32mI (94042) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (95052) ESP32: Send data[0m
+7E FF 06 06 00 00 00 FE F5 EF 
+[0;32mI (105592) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":0}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 0
+
+Condition 1[0;32mI (105602) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (106612) ESP32: Send data[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+[0;32mI (116532) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":7}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 7
+
+Condition 2[0;32mI (116552) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (117552) ESP32: Send data[0m
+7E FF 06 06 00 00 15 FE E0 EF 
+[0;32mI (122472) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":3}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 7
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 3
+
+Condition 2[0;32mI (122492) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (123492) ESP32: Send data[0m
+7E FF 06 06 00 00 09 FE EC EF 
+[0;32mI (127892) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":6}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 3
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 6
+
+Condition 2[0;32mI (127912) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (128912) ESP32: Send data[0m
+7E FF 06 06 00 00 12 FE E3 EF 
+[0;32mI (129912) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":10}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 6
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 10
+
+Condition 2[0;32mI (129922) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (130932) ESP32: Send data[0m
+7E FF 06 06 00 00 1E FE D7 EF 
+[0;32mI (142042) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":8}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 10
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 8
+
+Condition 2[0;32mI (142052) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (143062) ESP32: Send data[0m
+7E FF 06 06 00 00 18 FE DD EF 
+[0;32mI (144062) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 8
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+
+Condition 2[0;32mI (144072) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (145082) ESP32: Send data[0m
+7E FF 06 06 00 00 0F FE E6 EF 
+[0;32mI (147352) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+
+Condition 2[0;32mI (147372) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (148372) ESP32: Send data[0m
+7E FF 06 06 00 00 0C FE E9 EF 
+[0;32mI (150942) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+
+Condition 2[0;32mI (150952) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (151962) ESP32: Send data[0m
+7E FF 06 06 00 00 0F FE E6 EF 
+[0;32mI (153502) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":8}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 8
+
+Condition 2[0;32mI (153522) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (154522) ESP32: Send data[0m
+7E FF 06 06 00 00 18 FE DD EF 
+[0;32mI (157592) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 8
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+
+Condition 2[0;32mI (157602) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (158612) ESP32: Send data[0m
+7E FF 06 06 00 00 0F FE E6 EF 
+[0;32mI (159612) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":3}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 3
+
+Condition 2[0;32mI (159622) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (160632) ESP32: Send data[0m
+7E FF 06 06 00 00 09 FE EC EF 
+[0;32mI (173872) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":8}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 3
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 8
+
+Condition 2[0;32mI (173892) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (174892) ESP32: Send data[0m
+7E FF 06 06 00 00 18 FE DD EF 
+[0;32mI (197652) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":2}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 8
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 2
+
+Condition 2[0;32mI (197662) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (198662) ESP32: Send data[0m
+7E FF 06 06 00 00 06 FE EF EF 
+[0;32mI (296462) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (296462) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (296462) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (296462) RX_TASK: Read 10 bytes: '3D'[0m
+[0;32mI (296462) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (296472) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (296472) RX_TASK: Read 10 bytes: '03'[0m
+[0;32mI (296482) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (296482) RX_TASK: Read 10 bytes: 'BB'[0m
+[0;32mI (296492) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (307512) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":4,"volume":2}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 2
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 2
+
+Condition 1[0;32mI (307522) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (308532) ESP32: Send data[0m
+7E FF 06 03 00 00 04 FE F4 EF 
+[0;32mI (320712) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":4,"volume":6}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 2
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 6
+
+Condition 2[0;32mI (320732) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (321732) ESP32: Send data[0m
+7E FF 06 06 00 00 12 FE E3 EF 
+[0;32mI (344472) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":4,"volume":7}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 6
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 7
+
+Condition 2[0;32mI (344482) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (345492) ESP32: Send data[0m
+7E FF 06 06 00 00 15 FE E0 EF 
+[0;32mI (367622) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":4,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 7
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 5
+
+Condition 2[0;32mI (367642) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (368642) ESP32: Send data[0m
+7E FF 06 06 00 00 0F FE E6 EF 
+[0;32mI (374072) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":4,"volume":3}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 3
+
+Condition 2[0;32mI (374082) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (375092) ESP32: Send data[0m
+7E FF 06 06 00 00 09 FE EC EF 
+[0;32mI (379492) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":4,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 3
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 4
+
+Condition 2[0;32mI (379512) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (380512) ESP32: Send data[0m
+7E FF 06 06 00 00 0C FE E9 EF 
+[0;32mI (461212) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":4,"volume":6}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 4
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 6
+
+Condition 2[0;32mI (461222) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (462222) ESP32: Send data[0m
+7E FF 06 06 00 00 12 FE E3 EF 
+[0;32mI (463222) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":4,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 6
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 4
+
+Condition 2[0;32mI (463232) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (464242) ESP32: Send data[0m
+7E FF 06 06 00 00 0C FE E9 EF 
+[0;32mI (490812) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":4,"volume":10}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 4
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 10
+
+Condition 2[0;32mI (490832) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (491832) ESP32: Send data[0m
+[0;32mI (492112) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (492112) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (492112) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (492122) RX_TASK: Read 10 bytes: '3D'[0m
+[0;32mI (492122) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (492132) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (492132) RX_TASK: Read 10 bytes: '04'[0m
+[0;32mI (492132) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (492142) RX_TASK: Read 10 bytes: 'BA'[0m
+[0;32mI (492142) RX_TASK: Read 10 bytes: 'EF'[0m
+7E FF 06 06 00 00 1E FE D7 EF 
+[0;32mI (492832) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":4,"volume":7}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 10
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 7
+
+Condition 2[0;32mI (492852) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (493852) ESP32: Send data[0m
+7E FF 06 06 00 00 15 FE E0 EF 
+[0;32mI (494852) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":4,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 7
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 4
+
+Condition 2[0;32mI (494862) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (495872) ESP32: Send data[0m
+7E FF 06 06 00 00 0C FE E9 EF 
+[0;32mI (496872) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":4,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 4
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 5
+
+Condition 2[0;32mI (496892) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (497892) ESP32: Send data[0m
+7E FF 06 06 00 00 0F FE E6 EF 
+[0;32mI (498892) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":4,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 4
+
+Condition 2[0;32mI (498902) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (499912) ESP32: Send data[0m
+7E FF 06 06 00 00 0C FE E9 EF 
+[0;32mI (500912) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":4,"volume":7}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 4
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 7
+
+Condition 2[0;32mI (500922) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (501932) ESP32: Send data[0m
+7E FF 06 06 00 00 15 FE E0 EF 
+[0;32mI (502932) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":4,"volume":9}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 7
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 9
+
+Condition 2[0;32mI (502942) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (503952) ESP32: Send data[0m
+7E FF 06 06 00 00 1B FE DA EF 
+[0;32mI (504952) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":4,"volume":10}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 9
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 10
+
+Condition 2[0;32mI (504962) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (505972) ESP32: Send data[0m
+7E FF 06 06 00 00 1E FE D7 EF 
+[0;32mI (506972) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":true,"songID":1,"volume":10}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 10
+RECEIVED VALUE
+finished: 1
+play: 1
+songID: 1
+volume: 10
+
+Condition 1[0;32mI (506982) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (507992) ESP32: Send data[0m
+7E FF 06 03 00 00 01 FE F7 EF 
+[0;32mI (508992) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":1,"volume":10}
+CURRENT VALUE
+finished: 1
+play: 1
+songID: 1
+volume: 10
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 1
+volume: 10
+
+Condition 4[0;32mI (509012) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (510012) ESP32: Send data[0m
+7E FF 06 03 00 00 01 FE F7 EF 
+[0;32mI (512322) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":1,"volume":7}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 1
+volume: 10
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 1
+volume: 7
+
+Condition 2[0;32mI (512332) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (513332) ESP32: Send data[0m
+7E FF 06 06 00 00 15 FE E0 EF 
+[0;32mI (529922) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":7}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 1
+volume: 7
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 7
+
+Condition 1[0;32mI (529942) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (530942) ESP32: Send data[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+[0;32mI (537202) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":2}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 7
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 2
+
+Condition 2[0;32mI (537212) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (538222) ESP32: Send data[0m
+7E FF 06 06 00 00 06 FE EF EF 
+[0;32mI (539222) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":9}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 2
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 9
+
+Condition 2[0;32mI (539232) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (540242) ESP32: Send data[0m
+7E FF 06 06 00 00 1B FE DA EF 
+[0;32mI (542812) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 9
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+
+Condition 2[0;32mI (542832) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (543832) ESP32: Send data[0m
+7E FF 06 06 00 00 0C FE E9 EF 
+[0;32mI (546302) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":7}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 7
+
+Condition 2[0;32mI (546312) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (547322) ESP32: Send data[0m
+7E FF 06 06 00 00 15 FE E0 EF 
+[0;32mI (548322) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":8}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 7
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 8
+
+Condition 2[0;32mI (548332) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (549342) ESP32: Send data[0m
+7E FF 06 06 00 00 18 FE DD EF 
+[0;32mI (550342) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 8
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+
+Condition 2[0;32mI (550352) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (551362) ESP32: Send data[0m
+7E FF 06 06 00 00 0F FE E6 EF 
+[0;32mI (552362) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+
+Condition 5[0;32mI (552372) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (553382) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+[0;32mI (605382) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+
+Condition 3[0;32mI (605402) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (606402) ESP32: Send data[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+[0;32mI (609892) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":2}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 2
+
+Condition 2[0;32mI (609902) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (610912) ESP32: Send data[0m
+7E FF 06 06 00 00 06 FE EF EF 
+[0;32mI (611912) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":8}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 2
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 8
+
+Condition 2[0;32mI (611922) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (612932) ESP32: Send data[0m
+7E FF 06 06 00 00 18 FE DD EF 
+[0;32mI (616962) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":3}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 8
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 3
+
+Condition 2[0;32mI (616972) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (617982) ESP32: Send data[0m
+7E FF 06 06 00 00 09 FE EC EF 
+[0;32mI (618982) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":3,"volume":3}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 3
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 3
+
+Condition 5[0;32mI (619002) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (620002) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+[0;32mI (651472) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":true,"songID":4,"volume":3}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 3
+RECEIVED VALUE
+finished: 1
+play: 1
+songID: 4
+volume: 3
+
+Condition 1[0;32mI (651482) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (652482) ESP32: Send data[0m
+7E FF 06 03 00 00 04 FE F4 EF 
+[0;32mI (653482) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":4,"volume":3}
+CURRENT VALUE
+finished: 1
+play: 1
+songID: 4
+volume: 3
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 3
+
+Condition 4[0;32mI (653492) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (654502) ESP32: Send data[0m
+7E FF 06 03 00 00 04 FE F4 EF 
+[0;32mI (661512) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":true,"songID":3,"volume":3}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 3
+RECEIVED VALUE
+finished: 1
+play: 1
+songID: 3
+volume: 3
+
+Condition 1[0;32mI (661532) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (662532) ESP32: Send data[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+[0;32mI (663532) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":3}
+CURRENT VALUE
+finished: 1
+play: 1
+songID: 3
+volume: 3
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 3
+
+Condition 4[0;32mI (663542) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (664552) ESP32: Send data[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+[0;32mI (670622) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":3,"volume":3}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 3
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 3
+
+Condition 5[0;32mI (670642) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (671642) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+[0;32mI (698162) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":true,"songID":4,"volume":3}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 3
+RECEIVED VALUE
+finished: 1
+play: 1
+songID: 4
+volume: 3
+
+Condition 1[0;32mI (698172) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (699182) ESP32: Send data[0m
+7E FF 06 03 00 00 04 FE F4 EF 
+[0;32mI (701032) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":4,"volume":3}
+CURRENT VALUE
+finished: 1
+play: 1
+songID: 4
+volume: 3
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 3
+
+Condition 4[0;32mI (701042) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (702042) ESP32: Send data[0m
+7E FF 06 03 00 00 04 FE F4 EF 
+[0;32mI (703692) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":4,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 3
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 5
+
+Condition 2[0;32mI (703702) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (704712) ESP32: Send data[0m
+7E FF 06 06 00 00 0F FE E6 EF 
+[0;32mI (739042) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+
+Condition 1[0;32mI (739052) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (740052) ESP32: Send data[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+[0;32mI (744152) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+
+Condition 5[0;32mI (744162) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (745172) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+[0;32mI (748852) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+
+Condition 3[0;32mI (748872) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (749872) ESP32: Send data[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+[0;32mI (756322) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+
+Condition 5[0;32mI (756332) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (757342) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+[0;32mI (766562) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+
+Condition 3[0;32mI (766572) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (767582) ESP32: Send data[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+[0;32mI (770462) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+
+Condition 5[0;32mI (770472) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (771482) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+[0;32mI (833432) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+
+Condition 3[0;32mI (833452) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (834452) ESP32: Send data[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+[0;32mI (835992) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+
+Condition 5[0;32mI (836002) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (837002) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+[0;32mI (838002) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+
+Condition 3[0;32mI (838022) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (839022) ESP32: Send data[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+[0;32mI (845722) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+
+Condition 5[0;32mI (845732) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (846732) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+[0;32mI (851042) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+
+Condition 3[0;32mI (851052) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (852052) ESP32: Send data[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+[0;32mI (855042) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+
+Condition 5[0;32mI (855052) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (856052) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+[0;32mI (863542) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+
+Condition 3[0;32mI (863552) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (864552) ESP32: Send data[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+[0;32mI (884322) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+
+Condition 5[0;32mI (884332) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (885342) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+[0;32mI (889962) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+
+Condition 3[0;32mI (889982) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (890982) ESP32: Send data[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+[0;32mI (898042) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+
+Condition 5[0;32mI (898052) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (899052) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+[0;32mI (1012632) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+
+Condition 3[0;32mI (1012642) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1013652) ESP32: Send data[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+[0;32mI (1030442) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+
+Condition 5[0;32mI (1030452) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1031462) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+[0;32mI (1037512) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+
+Condition 3[0;32mI (1037522) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1038532) ESP32: Send data[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+[0;32mI (1041512) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+
+Condition 5[0;32mI (1041532) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1042532) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+[0;32mI (1058902) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+
+Condition 3[0;32mI (1058922) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1059922) ESP32: Send data[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+[0;32mI (1064652) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+
+Condition 5[0;32mI (1064662) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1065662) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+[0;32mI (1085232) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+
+Condition 3[0;32mI (1085242) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1086242) ESP32: Send data[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+[0;32mI (1088702) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+
+Condition 5[0;32mI (1088722) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1089722) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+[0;32mI (1091782) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+
+Condition 3[0;32mI (1091802) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1092802) ESP32: Send data[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+[0;32mI (1094652) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+
+Condition 5[0;32mI (1094672) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1095672) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+[0;32mI (1151282) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+
+Condition 3[0;32mI (1151292) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1152292) ESP32: Send data[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+[0;32mI (1174832) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":2,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 5
+
+Condition 1[0;32mI (1174842) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1175842) ESP32: Send data[0m
+7E FF 06 03 00 00 02 FE F6 EF 
+[0;32mI (1178822) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":2,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 2
+volume: 5
+
+Condition 5[0;32mI (1178842) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1179842) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+[0;32mI (1182812) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":2,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 2
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 5
+
+Condition 3[0;32mI (1182832) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1183832) ESP32: Send data[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+[0;32mI (1186612) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":2,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 2
+volume: 5
+
+Condition 5[0;32mI (1186622) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1187622) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+[0;32mI (1193262) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":2,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 2
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 5
+
+Condition 3[0;32mI (1193282) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1194282) ESP32: Send data[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+[0;32mI (1199712) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":2,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 2
+volume: 5
+
+Condition 5[0;32mI (1199722) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1200732) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+[0;32mI (1205152) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":2,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 2
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 5
+
+Condition 3[0;32mI (1205172) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1206172) ESP32: Send data[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+[0;32mI (1211292) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":true,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 5
+RECEIVED VALUE
+finished: 1
+play: 1
+songID: 3
+volume: 5
+
+Condition 1[0;32mI (1211302) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1212312) ESP32: Send data[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+[0;32mI (1214562) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 1
+play: 1
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+
+Condition 4[0;32mI (1214582) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1215582) ESP32: Send data[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+[0;32mI (1260642) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":2,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 5
+
+Condition 1[0;32mI (1260652) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1261662) ESP32: Send data[0m
+7E FF 06 03 00 00 02 FE F6 EF 
+[0;32mI (1277852) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":true,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 5
+RECEIVED VALUE
+finished: 1
+play: 1
+songID: 3
+volume: 5
+
+Condition 1[0;32mI (1277862) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1278862) ESP32: Send data[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+[0;32mI (1281122) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 1
+play: 1
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+
+Condition 4[0;32mI (1281132) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1282142) ESP32: Send data[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+[0;32mI (1398462) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":true,"songID":2,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 1
+play: 1
+songID: 2
+volume: 5
+
+Condition 1[0;32mI (1398482) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1399482) ESP32: Send data[0m
+7E FF 06 03 00 00 02 FE F6 EF 
+[0;32mI (1400482) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":2,"volume":5}
+CURRENT VALUE
+finished: 1
+play: 1
+songID: 2
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 5
+
+Condition 4[0;32mI (1400502) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1401502) ESP32: Send data[0m
+7E FF 06 03 00 00 02 FE F6 EF 
+[0;32mI (1544292) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":true,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 5
+RECEIVED VALUE
+finished: 1
+play: 1
+songID: 3
+volume: 5
+
+Condition 1[0;32mI (1544312) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1545312) ESP32: Send data[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+[0;32mI (1546642) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 1
+play: 1
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+
+Condition 4[0;32mI (1546652) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1547652) ESP32: Send data[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+[0;32mI (1556462) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":4,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 5
+
+Condition 1[0;32mI (1556482) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1557482) ESP32: Send data[0m
+7E FF 06 03 00 00 04 FE F4 EF 
+[0;32mI (1559952) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":4,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 4
+volume: 5
+
+Condition 5[0;32mI (1559962) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1560962) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+[0;32mI (1565282) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":true,"songID":1,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 4
+volume: 5
+RECEIVED VALUE
+finished: 1
+play: 1
+songID: 1
+volume: 5
+
+Condition 1[0;32mI (1565292) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1566292) ESP32: Send data[0m
+7E FF 06 03 00 00 01 FE F7 EF 
+[0;32mI (1567292) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":1,"volume":5}
+CURRENT VALUE
+finished: 1
+play: 1
+songID: 1
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 1
+volume: 5
+
+Condition 4[0;32mI (1567302) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1568312) ESP32: Send data[0m
+7E FF 06 03 00 00 01 FE F7 EF 
+[0;32mI (1582592) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":2,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 1
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 5
+
+Condition 1[0;32mI (1582602) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1583602) ESP32: Send data[0m
+7E FF 06 03 00 00 02 FE F6 EF 
+[0;32mI (1585242) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":false,"songID":2,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 2
+volume: 5
+
+Condition 5[0;32mI (1585262) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1586262) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+[0;32mI (1597632) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":true,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 2
+volume: 5
+RECEIVED VALUE
+finished: 1
+play: 1
+songID: 3
+volume: 5
+
+Condition 1[0;32mI (1597652) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1598652) ESP32: Send data[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+[0;32mI (1599652) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":3,"volume":5}
+CURRENT VALUE
+finished: 1
+play: 1
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+
+Condition 4[0;32mI (1599662) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1600672) ESP32: Send data[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+[0;32mI (1723172) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":true,"play":true,"songID":4,"volume":5}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 5
+RECEIVED VALUE
+finished: 1
+play: 1
+songID: 4
+volume: 5
+
+Condition 1[0;32mI (1723182) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1724192) ESP32: Send data[0m
+7E FF 06 03 00 00 04 FE F4 EF 
+[0;32mI (1725192) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"play":true,"songID":4,"volume":5}
+CURRENT VALUE
+finished: 1
+play: 1
+songID: 4
+volume: 5
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 5
+
+Condition 4[0;32mI (1725212) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (1726212) ESP32: Send data[0m
+7E FF 06 03 00 00 04 FE F4 EF 
