@@ -73,7 +73,8 @@ void DFPLAYER_Init(DFPLAYER_Name *MP3, uart_port_t *UART)
 	DFControl.finished = false;
 	DFControl.play = false;
 	DFControl.songId = 0;
-	DFControl.volume = 0;
+	DFControl.volume = -1;
+	DFControl.stop = false;
 	for (int i = 0; i < 10; i++)
 	{
 		MP3->SendBuff[i] = SendFrame[i];
@@ -112,11 +113,13 @@ void DFPLAYER_Play(DFPLAYER_Name *MP3)
 
 void DFPLAYER_Pause(DFPLAYER_Name *MP3)
 {
+
 	DFPLAYER_SendCmd(MP3, DFP_PAUSE, 00, 00);
 }
 
 void DFPLAYER_Stop(DFPLAYER_Name *MP3)
 {
+	//
 	DFPLAYER_SendCmd(MP3, DFP_STOP, 00, 00);
 }
 
@@ -131,11 +134,11 @@ void DFPLAYER_PlayFileInFolder(DFPLAYER_Name *MP3, uint8_t folder, uint32_t num)
 }
 void mqtt_get_data_callback(char *data, uint16_t length)
 {
-	uint16_t songIDRev = DFControl.songId;
-	uint16_t volumeRev = DFControl.volume;
+	int songIDRev = DFControl.songId;
+	int volumeRev = DFControl.volume;
 	bool finishedRev = DFControl.finished;
 	bool playRev = DFControl.play;
-
+	bool stopRev = DFControl.stop;
 	// Parse JSON Data
 	cJSON *root = cJSON_Parse(data);
 	if (root)
@@ -145,18 +148,23 @@ void mqtt_get_data_callback(char *data, uint16_t length)
 		playRev = cJSON_GetObjectItem(root, "play")->valueint;
 		songIDRev = cJSON_GetObjectItem(root, "songID")->valueint;
 		volumeRev = cJSON_GetObjectItem(root, "volume")->valueint;
+		stopRev = cJSON_GetObjectItem(root, "stop")->valueint;
 		// Print Extracted Receive Value
-		printf("CURRENT VALUE");
+		printf("CURRENT VALUE\n");
 		printf("finished: %d\n", DFControl.finished);
 		printf("play: %d\n", DFControl.play);
 		printf("songID: %d\n", DFControl.songId);
 		printf("volume: %d\n", DFControl.volume);
+		printf("stop: %d\n", DFControl.stop);
+
 		//
-		printf("RECEIVED VALUE");
+		printf("RECEIVED VALUE\n");
 		printf("finished: %d\n", finishedRev);
 		printf("play: %d\n", playRev);
 		printf("songID: %d\n", songIDRev);
 		printf("volume: %d\n", volumeRev);
+		printf("stop: %d\n", stopRev);
+
 		// Free the cJSON object
 		cJSON_Delete(root);
 	}
@@ -164,5 +172,92 @@ void mqtt_get_data_callback(char *data, uint16_t length)
 	{
 		ESP_LOGE(TAG, "Error parsing JSON data");
 	}
-	DFPLAYER_PlayTrack(&MP3, songIDRev);
+	if (songIDRev != DFControl.songId && songIDRev != 0 && volumeRev != DFControl.volume)
+	{
+		printf("\nPlay song id and set volume");
+		mqtt_data_publish_update("updateSong");
+		mqtt_data_publish_update("updatePlay");
+		DFPLAYER_SetVolume(&MP3, volumeRev * 3);
+		DFPLAYER_PlayTrack(&MP3, songIDRev);
+		char text[20];
+		sprintf(text, "Song %d:Playing", songIDRev);
+		ssd1306_clear_line(&dev, 3, false);
+		ssd1306_display_text(&dev, 3, text, strlen(text), false);
+		char volumeText[10];
+		sprintf(volumeText, "Volume: %d", volumeRev);
+		ssd1306_clear_line(&dev, 5, false);
+		ssd1306_display_text(&dev, 5, volumeText, strlen(volumeText), false);
+	}
+	else if (songIDRev != DFControl.songId && songIDRev != 0)
+	{
+		printf("\nplay song id");
+		mqtt_data_publish_update("updateSong");
+		mqtt_data_publish_update("updatePlay");
+		DFPLAYER_PlayTrack(&MP3, songIDRev);
+		char songText[20];
+		sprintf(songText, "Song %d: Playing", songIDRev);
+		ssd1306_clear_line(&dev, 3, false);
+		ssd1306_display_text(&dev, 3, songText, strlen(songText), false);
+	}
+
+	else if (volumeRev != DFControl.volume && songIDRev == DFControl.songId)
+	{
+		printf("\nset volume");
+		DFPLAYER_SetVolume(&MP3, volumeRev * 3);
+		char volumeText[10];
+		sprintf(volumeText, "Volume: %d", volumeRev);
+		ssd1306_clear_line(&dev, 5, false);
+		ssd1306_display_text(&dev, 5, volumeText, strlen(volumeText), false);
+	}
+
+	if (finishedRev == 1 && songIDRev == DFControl.songId)
+	{
+		printf("\nLoop");
+		mqtt_data_publish_update("updateSong");
+		DFPLAYER_PlayTrack(&MP3, songIDRev);
+		char songText[20];
+		sprintf(songText, "Song %d: Playing", songIDRev);
+		ssd1306_clear_line(&dev, 3, false);
+		ssd1306_display_text(&dev, 3, songText, strlen(songText), false);
+		char volumeText[10];
+		sprintf(volumeText, "Volume: %d", volumeRev);
+		ssd1306_clear_line(&dev, 5, false);
+		ssd1306_display_text(&dev, 5, volumeText, strlen(volumeText), false);
+	}
+
+	if (playRev != DFControl.play && playRev == true && songIDRev == DFControl.songId)
+	{
+		printf("\nResume");
+		mqtt_data_publish_update("updatePlay");
+		DFPLAYER_Play(&MP3);
+		char songText[20];
+		sprintf(songText, "Song %d: Playing", songIDRev);
+		ssd1306_clear_line(&dev, 3, false);
+		ssd1306_display_text(&dev, 3, songText, strlen(songText), false);
+	}
+
+	if (playRev != DFControl.play && playRev == false && songIDRev == DFControl.songId)
+	{
+		printf("\nPause");
+		mqtt_data_publish_update("updatePlay");
+		DFPLAYER_Pause(&MP3);
+		char songText[20];
+		sprintf(songText, "Song %d: Pausing", songIDRev);
+		ssd1306_clear_line(&dev, 3, false);
+		ssd1306_display_text(&dev, 3, songText, strlen(songText), false);
+	}
+	if (stopRev != DFControl.stop && stopRev == true)
+	{
+		printf("\n Stop");
+		mqtt_data_publish_update("updateStop");
+		DFPLAYER_Stop(&MP3);
+		ssd1306_clear_line(&dev, 3, false);
+		ssd1306_clear_line(&dev, 5, false);
+		ssd1306_display_text(&dev, 3, "Turn Off", 8, false);
+	}
+	DFControl.songId = songIDRev;
+	DFControl.volume = volumeRev;
+	DFControl.finished = finishedRev;
+	DFControl.play = playRev;
+	DFControl.stop = stopRev;
 }

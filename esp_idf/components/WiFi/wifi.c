@@ -20,11 +20,15 @@ void wifi_event_handler(void *arg, esp_event_base_t event_base,
             esp_wifi_connect();
             s_retry_num++;
             ESP_LOGI(TAG, "retry to connect to the AP");
+            ssd1306_clear_screen(&dev,false);
+            ssd1306_display_text(&dev, 1, "WiFi Connecting", 15, false);
         }
         // else
         // {
         //     xEventGroupSetBits(s_wifi_event_group, WIFI_FAIL_BIT);
         // }
+        ssd1306_clear_screen(&dev,false);
+        ssd1306_display_text(&dev, 1, "Lost Connection", 15, false);
         ESP_LOGI(TAG, "connect to the AP fail");
     }
 
@@ -35,6 +39,8 @@ void wifi_event_handler(void *arg, esp_event_base_t event_base,
         ESP_LOGI(TAG, "got ip:" IPSTR, IP2STR(&event->ip_info.ip));
         s_retry_num = 0;
         // xEventGroupSetBits(s_wifi_event_group, WIFI_CONNECTED_BIT);
+        ssd1306_clear_screen(&dev,false);
+        ssd1306_display_text(&dev, 1, "WiFi Connected", 20, false);
         mqtt_app_start();
     }
 }

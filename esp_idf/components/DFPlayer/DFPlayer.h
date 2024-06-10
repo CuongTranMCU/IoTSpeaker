@@ -20,7 +20,7 @@ Huong dan su dung:
 #include "freertos/task.h"
 #include "esp_log.h"
 #include "mqtt.h"
-
+#include "ssd1306.h"
 typedef struct
 {
 	uart_port_t DFP_UART;
@@ -29,13 +29,25 @@ typedef struct
 } DFPLAYER_Name;
 typedef struct
 {
-	uint16_t songId;
-	uint16_t volume;
+	int songId;
+	int volume;
 	bool finished;
 	bool play;
+	bool stop;
 } DFPLAYER_Control;
 extern DFPLAYER_Control DFControl;
 extern DFPLAYER_Name MP3;
+extern SSD1306_t dev;
+extern int page;
+#define DFP_PLAYTRACK 0X03
+#define DFP_NEXT 0X01
+#define DFP_PREV 0X02
+#define DFP_SETVOLUME 0X06
+#define DFP_PLAY 0X0D
+#define DFP_PAUSE 0X0E
+#define DFP_STOP 0X16
+#define DFP_RANDOM 0X18
+#define DFP_PLAYFILEINFOLDER 0X0F
 
 #define DFP_PLAYTRACK 0X03
 #define DFP_NEXT 0X01

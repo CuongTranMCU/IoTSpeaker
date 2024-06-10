@@ -104,14 +104,16 @@ char *convert_model_sensor_to_json(int temperature, int success)
     return json_str;
 }
 
-void mqtt_data_publish_callback(const char *data)
+void mqtt_data_publish_update(char * field_name)
 {
 
     esp_mqtt_client_handle_t client = get_mqtt_client_handle();
     if (client != NULL)
     {
+        char json_string[20]; // Đảm bảo bộ đệm đủ lớn
+        sprintf(json_string, "{\"%s\": true}",field_name); // Sử dụng sprintf để định d
         // Gửi dữ liệu lên broker MQTT với chủ đề là "data"
-        int msg_id = esp_mqtt_client_publish(client, "esp_pub", data, 0, 0, 0);
+        int msg_id = esp_mqtt_client_publish(client, "esp_pub", json_string, 0, 0, 0);
         if (msg_id < 0)
         {
             ESP_LOGE(TAG, "Failed to publish data to MQTT broker");
