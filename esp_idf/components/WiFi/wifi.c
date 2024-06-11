@@ -20,8 +20,9 @@ void wifi_event_handler(void *arg, esp_event_base_t event_base,
             esp_wifi_connect();
             s_retry_num++;
             ESP_LOGI(TAG, "retry to connect to the AP");
-            ssd1306_clear_screen(&dev,false);
-            ssd1306_display_text(&dev, 1, "WiFi Connecting", 15, false);
+        //    ssd1306_clear_screen(&dev,false);
+         //   ssd1306_display_text(&dev, 1, "Lost Connection", 15, false);
+            vTaskDelay(2000/portTICK_PERIOD_MS);
         }
         // else
         // {
@@ -30,6 +31,7 @@ void wifi_event_handler(void *arg, esp_event_base_t event_base,
         ssd1306_clear_screen(&dev,false);
         ssd1306_display_text(&dev, 1, "Lost Connection", 15, false);
         ESP_LOGI(TAG, "connect to the AP fail");
+
     }
 
     // 5. Wi-Fi 'Got IP' Phase
