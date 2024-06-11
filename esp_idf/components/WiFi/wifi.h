@@ -15,8 +15,8 @@
 
 #include "mqtt.h"
 #include "ssd1306.h"
-#define EXAMPLE_ESP_WIFI_SSID "KTMT - SinhVien"
-#define EXAMPLE_ESP_WIFI_PASS "sinhvien"
+#define EXAMPLE_ESP_WIFI_SSID "ChiCuong"
+#define EXAMPLE_ESP_WIFI_PASS "04092003"
 // #define EXAMPLE_ESP_WIFI_SSID "A06.15"
 // #define EXAMPLE_ESP_WIFI_PASS "hoihuecon"
 #define EXAMPLE_ESP_MAXIMUM_RETRY 5

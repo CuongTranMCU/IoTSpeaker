@@ -192,7 +192,7 @@ void mqtt_get_data_callback(char *data, uint16_t length)
 	{
 		printf("\nplay song id");
 		mqtt_data_publish_update("updateSong");
-		mqtt_data_publish_update("updatePlay");
+		// mqtt_data_publish_update("updatePlay");
 		DFPLAYER_PlayTrack(&MP3, songIDRev);
 		char songText[20];
 		sprintf(songText, "Song %d: Playing", songIDRev);
