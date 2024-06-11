@@ -1,7 +1,7 @@
 {
     "version":            "1",
     "project_name":       "IoT_Speaker",
-    "project_version":    "9615e84-dirty",
+    "project_version":    "d8a2ac6-dirty",
     "project_path":       "D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.1.2",
     "build_dir":          "D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build",
@@ -50,7 +50,7 @@
             "dir": "D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/components/MQTT_PUB_SUB",
             "type": "LIBRARY",
             "lib": "__idf_MQTT_PUB_SUB",
-            "reqs": [ "esp_event", "esp_netif", "lwip", "mqtt", "esp_wifi", "json" ],
+            "reqs": [ "esp_event", "esp_netif", "lwip", "mqtt", "esp_wifi", "json", "WiFi" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],

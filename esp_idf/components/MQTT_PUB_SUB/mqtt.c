@@ -41,6 +41,7 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
     case MQTT_EVENT_DISCONNECTED:
         ESP_LOGI(TAG, "MQTT_EVENT_DISCONNECTED");
         MQTT_CONNECTED = 0;
+        wifi_init_sta();
         break;
 
     case MQTT_EVENT_SUBSCRIBED:
@@ -142,6 +143,10 @@ void mqtt_app_start()
     /* The last argument may be used to pass data to the event handler, in this example mqtt_event_handler */
     esp_mqtt_client_register_event(global_client, ESP_EVENT_ANY_ID, mqtt_event_handler, NULL);
     esp_mqtt_client_start(global_client);
+}
+void mqtt_app_start_reconnect()
+{
+        esp_mqtt_client_start(global_client);
 }
 // callback:
 void mqtt_data_pt_set_callback(mqtt_data_pt_t mqtt_func_ptr)

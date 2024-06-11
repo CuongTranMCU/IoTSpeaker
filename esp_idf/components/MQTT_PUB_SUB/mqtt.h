@@ -32,6 +32,7 @@
 #include "esp_log.h"
 #include "mqtt_client.h"
 #include <cJSON.h>
+#include "wifi.h"
 
 #define EXAMPLE_ESP_MQQT_BORKER_URI "mqtt://mqtt.flespi.io"
 #define EXAMPLE_ESP_MQQT_BORKER_PORT 1883
@@ -45,5 +46,5 @@ void mqtt_data_pt_set_callback(mqtt_data_pt_t mqtt_func_ptr);
 char *convert_model_sensor_to_json(int temperature, int humidity);
 
 void mqtt_app_start(void);
-
+void mqtt_app_start_reconnect();
 #endif

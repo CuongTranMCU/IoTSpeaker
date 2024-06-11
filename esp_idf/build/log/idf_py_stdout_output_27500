@@ -1,0 +1,1788 @@
+xee
+clk_drH�당esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entro�ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 22 2024 21:43:34[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26d84h (159108) map[0m
+[0;32mI (162) esp_image: segment 1: paddr=00036dac vaddr=3ffb0000 size=03f74h ( 16244) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=0003ad28 vaddr=40080000 size=052f0h ( 21232) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a125ch (660060) map[0m
+[0;32mI (416) esp_image: segment 4: paddr=000e1284 vaddr=400852f0 size=11d60h ( 73056) load[0m
+[0;32mI (458) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (459) boot: Disabling RNG early entropy source...[0m
+[0;32mI (470) cpu_start: Multicore app[0m
+[0;32mI (470) cpu_start: Pro cpu up.[0m
+[0;32mI (471) cpu_start: Starting app cpu, entry point is 0x400814a8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (488) cpu_start: Pro cpu start user code[0m
+[0;32mI (488) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (488) cpu_start: Application information:[0m
+[0;32mI (493) cpu_start: Project name:     IoT_Speaker[0m
+[0;32mI (498) cpu_start: App version:      d8a2ac6-dirty[0m
+[0;32mI (504) cpu_start: Compile time:     Jun 10 2024 16:24:46[0m
+[0;32mI (510) cpu_start: ELF file SHA256:  81787dc01f9bade3...[0m
+[0;32mI (516) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (521) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (526) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (531) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (536) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (543) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (549) heap_init: At 3FFB8A90 len 00027570 (157 KiB): DRAM[0m
+[0;32mI (555) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (561) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (568) heap_init: At 40097050 len 00008FB0 (35 KiB): IRAM[0m
+[0;32mI (576) spi_flash: detected chip: generic[0m
+[0;32mI (579) spi_flash: flash io: dio[0m
+[0;32mI (584) app_start: Starting scheduler on CPU0[0m
+[0;32mI (588) app_start: Starting scheduler on CPU1[0m
+[0;32mI (588) main_task: Started on CPU0[0m
+[0;32mI (598) main_task: Calling app_main()[0m
+I (658) wifi:wifi driver task: 3ffc0ba8, prio:23, stack:6656, core=0
+I (678) wifi:wifi firmware version: 91b9630
+I (678) wifi:wifi certification version: v7.0
+I (678) wifi:config NVS flash: enabled
+I (678) wifi:config nano formating: disabled
+I (678) wifi:Init data frame dynamic rx buffer num: 32
+I (688) wifi:Init static rx mgmt buffer num: 5
+I (688) wifi:Init management short buffer num: 32
+I (688) wifi:Init dynamic tx buffer num: 32
+I (698) wifi:Init static rx buffer size: 1600
+I (698) wifi:Init static rx buffer num: 10
+I (708) wifi:Init dynamic rx buffer num: 32
+[0;32mI (708) wifi_init: rx ba win: 6[0m
+[0;32mI (708) wifi_init: tcpip mbox: 32[0m
+[0;32mI (718) wifi_init: udp mbox: 6[0m
+[0;32mI (718) wifi_init: tcp mbox: 6[0m
+[0;32mI (728) wifi_init: tcp tx win: 5744[0m
+[0;32mI (728) wifi_init: tcp rx win: 5744[0m
+[0;32mI (728) wifi_init: tcp mss: 1440[0m
+[0;32mI (738) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (738) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (748) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (838) wifi:mode : sta (a4:e5:7c:f7:c2:fc)
+I (838) wifi:enable tsf
+[0;32mI (838) WIFI_EXAMPLE: wifi_init_sta finished.[0m
+[0;32mI (838) SSD1306: Legacy i2c driver is used[0m
+[0;32mI (848) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (858) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (858) wifi:state: init -> auth (b0)
+I (868) wifi:state: auth -> assoc (0)
+I (878) wifi:state: assoc -> run (10)
+[0;32mI (918) SSD1306: OLED configured successfully[0m
+I (948) wifi:connected with Ebisu, aid = 1, channel 11, BW20, bssid = 52:77:05:8c:0d:72
+I (948) wifi:security: WPA2-PSK, phy: bgn, rssi: -23
+I (958) wifi:pm start, type: 1
+
+I (968) wifi:<ba-add>idx:0 (ifx:0, 52:77:05:8c:0d:72), tid:0, ssn:2, winSize:64
+I (978) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (1958) esp_netif_handlers: sta ip: 192.168.43.46, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (1958) WIFI_EXAMPLE: got ip:192.168.43.46[0m
+[0;32mI (2068) MQTT: Other event id:7[0m
+I (2698) wifi:<ba-add>idx:1 (ifx:0, 52:77:05:8c:0d:72), tid:4, ssn:0, winSize:64
+[0;32mI (4158) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (4158) MQTT: sent subscribe successful, msg_id=10477[0m
+[0;32mI (4568) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=10477[0m
+I (12138) wifi:state: run -> init (3c0)
+I (12148) wifi:pm stop, total sleep time: 8894291 us / 11190441 us
+
+I (12148) wifi:<ba-del>idx:0, tid:0
+I (12148) wifi:<ba-del>idx:1, tid:4
+I (12148) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+[0;31mE (12158) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;32mI (12158) WIFI_EXAMPLE: retry to connect to the AP[0m
+I (12168) wifi:[0;31mE (12168) mqtt_client: Poll read error: 119, aborting connection[0m
+new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+[0;32mI (12178) MQTT: MQTT_EVENT_DISCONNECTED[0m
+I (12188) wifi:state: init -> auth (b0)
+[0;32mI (12188) MQTT: Other event id:7[0m
+I (12198) wifi:state: auth -> assoc (0)
+[0;31mE (12198) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (12208) wifi:state: assoc -> run (10)
+[0;31mE (12208) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (12218) mqtt_client: Error transport connect[0m
+[0;32mI (12218) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (12228) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (12228) MQTT: Last errno string (Success)[0m
+[0;32mI (12238) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (12238) MQTT: Other event id:7[0m
+[0;31mE (12248) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (12248) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (12258) mqtt_client: Error transport connect[0m
+[0;32mI (12268) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (12268) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (12268) MQTT: Last errno string (Success)[0m
+[0;32mI (12278) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (12288) MQTT: Other event id:7[0m
+[0;31mE (12288) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (12298) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (12298) mqtt_client: Error transport connect[0m
+[0;32mI (12308) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (12308) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (12318) MQTT: Last errno string (Success)[0m
+[0;32mI (12318) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (12328) MQTT: Other event id:7[0m
+[0;31mE (12328) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (12338) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (12338) mqtt_client: Error transport connect[0m
+[0;32mI (12348) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (12348) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (12358) MQTT: Last errno string (Success)[0m
+[0;32mI (12358) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (12368) MQTT: Other event id:7[0m
+[0;31mE (12368) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (12378) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (12388) mqtt_client: Error transport connect[0m
+[0;32mI (12388) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (12388) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (12398) MQTT: Last errno string (Success)[0m
+[0;32mI (12408) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (12408) MQTT: Other event id:7[0m
+[0;31mE (12418) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (12418) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (12428) mqtt_client: Error transport connect[0m
+[0;32mI (12428) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (12438) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (12438) MQTT: Last errno string (Success)[0m
+[0;32mI (12448) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (12448) MQTT: Other event id:7[0m
+[0;31mE (12458) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (12458) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (12468) mqtt_client: Error transport connect[0m
+[0;32mI (12468) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (12478) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (12478) MQTT: Last errno string (Success)[0m
+[0;32mI (12488) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (12488) MQTT: Other event id:7[0m
+[0;31mE (12498) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (12498) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (12508) mqtt_client: Error transport connect[0m
+[0;32mI (12518) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (12518) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (12528) MQTT: Last errno string (Success)[0m
+[0;32mI (12528) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (12538) MQTT: Other event id:7[0m
+[0;31mE (12538) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (12548) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (12548) mqtt_client: Error transport connect[0m
+[0;32mI (12558) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (12558) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (12568) MQTT: Last errno string (Success)[0m
+[0;32mI (12568) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (12578) MQTT: Other event id:7[0m
+[0;31mE (12578) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (12588) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (12588) mqtt_client: Error transport connect[0m
+[0;32mI (12598) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (12598) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (12608) MQTT: Last errno string (Success)[0m
+[0;32mI (12608) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (12618) MQTT: Other event id:7[0m
+[0;31mE (12618) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (12628) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (12638) mqtt_client: Error transport connect[0m
+[0;32mI (12638) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (12638) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (12648) MQTT: Last errno string (Success)[0m
+[0;32mI (12658) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (12658) MQTT: Other event id:7[0m
+[0;31mE (12668) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (12668) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (12678) mqtt_client: Error transport connect[0m
+[0;32mI (12678) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (12688) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (12688) MQTT: Last errno string (Success)[0m
+[0;32mI (12698) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (12698) MQTT: Other event id:7[0m
+[0;31mE (12708) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (12708) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (12718) mqtt_client: Error transport connect[0m
+[0;32mI (12718) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (12728) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (12728) MQTT: Last errno string (Success)[0m
+[0;32mI (12738) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (12748) MQTT: Other event id:7[0m
+[0;31mE (12748) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (12748) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (12758) mqtt_client: Error transport connect[0m
+[0;32mI (12768) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (12768) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (12778) MQTT: Last errno string (Success)[0m
+[0;32mI (12778) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (12788) MQTT: Other event id:7[0m
+[0;31mE (12788) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (12798) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (12798) mqtt_client: Error transport connect[0m
+[0;32mI (12808) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (12808) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (12818) MQTT: Last errno string (Success)[0m
+[0;32mI (12818) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (12828) MQTT: Other event id:7[0m
+[0;31mE (12828) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (12838) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (12838) mqtt_client: Error transport connect[0m
+[0;32mI (12848) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (12848) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (12858) MQTT: Last errno string (Success)[0m
+[0;32mI (12858) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (12868) MQTT: Other event id:7[0m
+[0;31mE (12868) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (12878) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (12888) mqtt_client: Error transport connect[0m
+[0;32mI (12888) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (12898) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (12898) MQTT: Last errno string (Success)[0m
+[0;32mI (12908) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (12908) MQTT: Other event id:7[0m
+[0;31mE (12918) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (12918) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (12928) mqtt_client: Error transport connect[0m
+[0;32mI (12928) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (12938) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (12938) MQTT: Last errno string (Success)[0m
+[0;32mI (12948) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (12948) MQTT: Other event id:7[0m
+[0;31mE (12958) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (12958) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (12968) mqtt_client: Error transport connect[0m
+[0;32mI (12968) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (12978) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (12978) MQTT: Last errno string (Success)[0m
+[0;32mI (12988) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (12998) MQTT: Other event id:7[0m
+[0;31mE (12998) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (13008) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (13008) mqtt_client: Error transport connect[0m
+[0;32mI (13018) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (13018) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (13028) MQTT: Last errno string (Success)[0m
+[0;32mI (13028) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (13038) MQTT: Other event id:7[0m
+[0;31mE (13038) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (13048) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (13048) mqtt_client: Error transport connect[0m
+[0;32mI (13058) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (13058) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (13068) MQTT: Last errno string (Success)[0m
+[0;32mI (13068) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (13078) mqtt_client: Error create mqtt task[0m
+[0;32mI (14288) WIFI_EXAMPLE: connect to the AP fail[0m
+I (18348) wifi:bcn_timeout,ap_probe_send_start
+W (18438) wifi:m f probe req l=0
+
+W (19378) wifi:m f probe req l=0
+
+W (20348) wifi:m f probe req l=0
+
+I (20848) wifi:ap_probe_send over, resett wifi status to disassoc
+I (20848) wifi:state: run -> init (c800)
+I (20848) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+W (20858) wifi:m f probe req l=0
+
+[0;32mI (20858) WIFI_EXAMPLE: retry to connect to the AP[0m
+W (20978) wifi:m f probe req l=0
+
+W (21098) wifi:m f probe req l=0
+
+W (21218) wifi:m f probe req l=0
+
+W (21338) wifi:m f probe req l=0
+
+W (21458) wifi:m f probe req l=0
+
+W (21578) wifi:m f probe req l=0
+
+W (21698) wifi:m f probe req l=0
+
+W (21828) wifi:m f probe req l=0
+
+W (21948) wifi:m f probe req l=0
+
+W (22068) wifi:m f probe req l=0
+
+[0;32mI (22188) MQTT: Other event id:7[0m
+[0;31mE (22188) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (22188) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (22188) mqtt_client: Error transport connect[0m
+[0;32mI (22198) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (22198) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (22208) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (22218) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (22218) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (22228) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (22238) mqtt_client: Client was not initialized[0m
+[0;32mI (22288) MQTT: Other event id:7[0m
+[0;31mE (22288) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (22288) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (22288) mqtt_client: Error transport connect[0m
+[0;32mI (22298) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (22298) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (22308) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (22318) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (22318) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (22328) MQTT: Other event id:7[0m
+[0;31mE (22328) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (22328) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (22338) mqtt_client: Client was not initialized[0m
+[0;31mE (22348) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (22358) mqtt_client: Error transport connect[0m
+[0;32mI (22368) MQTT: MQTT_EVENT_ERROR[0m
+[0;32mI (22368) MQTT: Other event id:7[0m
+[0;31mE (22368) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (22368) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (22378) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;31mE (22388) transport_base: Failed to open a new connection: 32769[0m
+[0;32mI (22398) MQTT: Last errno string (Host is unreachable)[0m
+[0;31mE (22398) mqtt_client: Error transport connect[0m
+[0;32mI (22408) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (22408) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (22418) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (22418) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (22428) mqtt_client: Client was not initialized[0m
+[0;31mE (22428) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (22448) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (22448) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (22458) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (22458) mqtt_client: Client was not initialized[0m
+[0;32mI (22538) MQTT: Other event id:7[0m
+[0;31mE (22538) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (22538) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (22538) mqtt_client: Error transport connect[0m
+[0;32mI (22548) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (22548) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (22558) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (22568) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (22568) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (22578) MQTT: Other event id:7[0m
+[0;31mE (22578) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (22578) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (22588) mqtt_client: Client was not initialized[0m
+[0;31mE (22598) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (22608) mqtt_client: Error transport connect[0m
+[0;32mI (22608) MQTT: MQTT_EVENT_ERROR[0m
+[0;32mI (22618) MQTT: Other event id:7[0m
+[0;31mE (22618) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (22618) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (22628) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;31mE (22638) transport_base: Failed to open a new connection: 32769[0m
+[0;32mI (22648) MQTT: Last errno string (Host is unreachable)[0m
+[0;31mE (22648) mqtt_client: Error transport connect[0m
+[0;32mI (22658) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (22658) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (22668) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (22668) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (22678) mqtt_client: Client was not initialized[0m
+[0;31mE (22678) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (22698) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (22698) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (22708) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (22708) mqtt_client: Client was not initialized[0m
+[0;32mI (22788) MQTT: Other event id:7[0m
+[0;31mE (22788) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (22788) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (22788) mqtt_client: Error transport connect[0m
+[0;32mI (22798) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (22798) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (22808) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (22818) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (22818) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (22828) MQTT: Other event id:7[0m
+[0;31mE (22828) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (22828) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (22838) mqtt_client: Client was not initialized[0m
+[0;31mE (22848) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (22858) mqtt_client: Error transport connect[0m
+[0;32mI (22858) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (22868) i2c: i2c command link malloc error[0m
+[0;31mE (22868) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (22868) i2c: i2c command link malloc error[0m
+[0;31mE (22878) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;31mE (22888) i2c: i2c command link malloc error[0m
+[0;32mI (22888) MQTT: Last errno string (Host is unreachable)[0m
+[0;31mE (22898) i2c: i2c command link malloc error[0m
+[0;32mI (22898) MQTT: MQTT_EVENT_DISCONNECTED[0m
+E (22908) wifi:[0;31mE (22908) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+fail to alloc timer, type=8[0;31mE (22918) mqtt_client: Client was not initialized[0m
+
+[0;31mE (22908) i2c: i2c command link malloc error[0m
+[0;31mE (22868) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (22938) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (22948) mqtt_client: Error transport connect[0m
+[0;32mI (22948) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (22908) transport_base: Failed to open a new connection: 257[0m
+[0;31mE (22958) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (22968) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (22978) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (22978) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (22988) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (22998) mqtt_client: Client was not initialized[0m
+[0;31mE (22998) i2c: i2c command link malloc error[0m
+[0;31mE (22968) mqtt_client: Error transport connect[0m
+[0;31mE (23008) i2c: i2c command link malloc error[0m
+[0;32mI (23008) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (23018) i2c: i2c command link malloc error[0m
+[0;31mE (23018) MQTT: Last error reported from esp-tls: 0x101[0m
+[0;31mE (23028) i2c: i2c command link malloc error[0m
+[0;31mE (23028) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;31mE (23038) i2c: i2c command link malloc error[0m
+[0;32mI (23038) MQTT: Last errno string (Host is unreachable)[0m
+[0;31mE (23048) i2c: i2c command link malloc error[0m
+[0;32mI (23048) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (23058) i2c: i2c command link malloc error[0m
+[0;31mE (23058) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (23068) i2c: i2c command link malloc error[0m
+[0;31mE (23068) mqtt_client: Client was not initialized[0m
+[0;31mE (23078) i2c: i2c command link malloc error[0m
+[0;31mE (22998) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (23038) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (23108) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (23118) mqtt_client: Error transport connect[0m
+[0;32mI (23118) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (23118) i2c: i2c command link malloc error[0m
+[0;31mE (23128) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (23128) i2c: i2c command link malloc error[0m
+[0;31mE (23138) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;31mE (23138) i2c: i2c command link malloc error[0m
+[0;32mI (23148) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (23148) WIFI_EXAMPLE: connect to the AP fail[0m
+[0;32mI (23158) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (23098) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (23168) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (23178) mqtt_client: Error transport connect[0m
+[0;31mE (23178) mqtt_client: Client was not initialized[0m
+[0;32mI (23188) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (23078) transport_base: Failed to open a new connection: 257[0m
+[0;31mE (23198) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (23198) mqtt_client: Error transport connect[0m
+[0;31mE (23208) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (23208) MQTT: MQTT_EVENT_ERROR[0m
+[0;32mI (23218) MQTT: Last errno string (Host is unreachable)[0m
+[0;31mE (23228) MQTT: Last error reported from esp-tls: 0x101[0m
+[0;32mI (23228) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (23238) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;31mE (23238) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;32mI (23248) MQTT: Last errno string (Host is unreachable)[0m
+[0;31mE (23258) mqtt_client: Client was not initialized[0m
+[0;32mI (23258) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (23268) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (23278) mqtt_client: Client was not initialized[0m
+[0;32mI (27238) MQTT: Other event id:7[0m
+[0;31mE (27238) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (27238) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (27238) mqtt_client: Error transport connect[0m
+[0;32mI (27248) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (27248) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (27258) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (27268) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (27268) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (27278) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (27278) mqtt_client: Client was not initialized[0m
+[0;32mI (27408) MQTT: Other event id:7[0m
+[0;31mE (27408) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (27408) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (27408) mqtt_client: Error transport connect[0m
+[0;32mI (27418) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (27418) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (27428) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (27438) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (27438) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (27448) MQTT: Other event id:7[0m
+[0;31mE (27448) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (27448) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (27458) mqtt_client: Client was not initialized[0m
+[0;31mE (27468) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (27478) mqtt_client: Error transport connect[0m
+[0;32mI (27488) MQTT: MQTT_EVENT_ERROR[0m
+[0;32mI (27488) MQTT: Other event id:7[0m
+[0;31mE (27488) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (27488) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (27498) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;31mE (27508) transport_base: Failed to open a new connection: 32769[0m
+[0;32mI (27518) MQTT: Last errno string (Host is unreachable)[0m
+[0;31mE (27518) mqtt_client: Error transport connect[0m
+[0;32mI (27528) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (27528) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (27538) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (27538) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (27548) mqtt_client: Client was not initialized[0m
+[0;31mE (27548) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (27568) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (27568) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (27578) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (27578) mqtt_client: Client was not initialized[0m
+[0;32mI (27658) MQTT: Other event id:7[0m
+[0;31mE (27658) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (27658) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (27658) mqtt_client: Error transport connect[0m
+[0;32mI (27668) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (27668) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (27678) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (27688) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (27688) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (27698) MQTT: Other event id:7[0m
+[0;31mE (27698) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (27698) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (27708) mqtt_client: Client was not initialized[0m
+[0;31mE (27718) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (27728) mqtt_client: Error transport connect[0m
+[0;32mI (27738) MQTT: MQTT_EVENT_ERROR[0m
+[0;32mI (27738) MQTT: Other event id:7[0m
+[0;31mE (27738) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (27738) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (27748) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;31mE (27758) transport_base: Failed to open a new connection: 32769[0m
+[0;32mI (27768) MQTT: Last errno string (Host is unreachable)[0m
+[0;31mE (27768) mqtt_client: Error transport connect[0m
+[0;32mI (27778) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (27778) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (27788) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (27788) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (27798) mqtt_client: Client was not initialized[0m
+[0;31mE (27798) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (27818) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (27818) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (27828) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (27828) mqtt_client: Client was not initialized[0m
+[0;32mI (27948) MQTT: Other event id:7[0m
+[0;31mE (27948) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (27948) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (27948) mqtt_client: Error transport connect[0m
+[0;32mI (27958) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (27958) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (27968) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (27978) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (27978) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (27988) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (27988) mqtt_client: Client was not initialized[0m
+[0;32mI (32238) MQTT: Other event id:7[0m
+[0;31mE (32238) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (32238) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (32238) mqtt_client: Error transport connect[0m
+[0;32mI (32248) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (32248) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (32258) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (32268) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (32268) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (32278) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (32288) mqtt_client: Client was not initialized[0m
+[0;32mI (32348) MQTT: Other event id:7[0m
+[0;31mE (32348) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (32348) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (32348) mqtt_client: Error transport connect[0m
+[0;32mI (32358) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (32358) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (32368) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (32378) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (32378) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (32388) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (32388) mqtt_client: Client was not initialized[0m
+[0;32mI (32438) MQTT: Other event id:7[0m
+[0;31mE (32438) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (32438) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (32438) mqtt_client: Error transport connect[0m
+[0;32mI (32448) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (32448) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (32458) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (32468) MQTT: Other event id:7[0m
+[0;32mI (32468) MQTT: Last errno string (Host is unreachable)[0m
+[0;31mE (32468) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;32mI (32478) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (32488) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (32488) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (32498) mqtt_client: Error transport connect[0m
+[0;31mE (32498) mqtt_client: Client was not initialized[0m
+[0;32mI (32508) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (32518) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (32518) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (32528) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (32538) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (32538) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (32548) mqtt_client: Client was not initialized[0m
+[0;32mI (32598) MQTT: Other event id:7[0m
+[0;31mE (32598) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (32598) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (32598) mqtt_client: Error transport connect[0m
+[0;32mI (32608) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (32608) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (32618) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (32628) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (32628) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (32638) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (32638) mqtt_client: Client was not initialized[0m
+[0;32mI (32688) MQTT: Other event id:7[0m
+[0;31mE (32688) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (32688) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (32688) mqtt_client: Error transport connect[0m
+[0;32mI (32698) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (32698) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (32708) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (32718) MQTT: Other event id:7[0m
+[0;32mI (32718) MQTT: Last errno string (Host is unreachable)[0m
+[0;31mE (32718) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;32mI (32728) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (32738) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (32738) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (32748) mqtt_client: Error transport connect[0m
+[0;31mE (32748) mqtt_client: Client was not initialized[0m
+[0;32mI (32758) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (32768) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (32768) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (32778) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (32788) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (32788) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (32798) mqtt_client: Client was not initialized[0m
+[0;32mI (32848) MQTT: Other event id:7[0m
+[0;31mE (32848) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (32848) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (32848) mqtt_client: Error transport connect[0m
+[0;32mI (32858) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (32858) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (32868) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (32878) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (32878) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (32888) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (32888) mqtt_client: Client was not initialized[0m
+[0;32mI (32928) MQTT: Other event id:7[0m
+[0;31mE (32928) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (32928) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (32928) mqtt_client: Error transport connect[0m
+[0;32mI (32938) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (32938) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (32948) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (32958) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (32958) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (32968) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (32968) mqtt_client: Client was not initialized[0m
+[0;32mI (32998) MQTT: Other event id:7[0m
+[0;31mE (32998) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (32998) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (32998) mqtt_client: Error transport connect[0m
+[0;32mI (33008) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (33008) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (33018) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (33028) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (33028) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (33038) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (33038) mqtt_client: Client was not initialized[0m
+[0;32mI (33088) MQTT: Other event id:7[0m
+[0;31mE (33088) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (33088) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (33088) mqtt_client: Error transport connect[0m
+[0;32mI (33098) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (33098) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (33108) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (33118) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (33118) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (33128) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (33128) mqtt_client: Client was not initialized[0m
+[0;32mI (33188) MQTT: Other event id:7[0m
+[0;31mE (33188) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (33188) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (33188) mqtt_client: Error transport connect[0m
+[0;32mI (33198) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (33198) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (33208) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (33218) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (33218) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (33228) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (33228) mqtt_client: Client was not initialized[0m
+[0;32mI (33268) MQTT: Other event id:7[0m
+[0;31mE (33268) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (33268) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (33268) mqtt_client: Error transport connect[0m
+[0;32mI (33278) MQTT: Other event id:7[0m
+[0;32mI (33278) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (33278) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (33288) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (33298) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (33298) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;31mE (33308) mqtt_client: Error transport connect[0m
+[0;32mI (33318) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (33318) MQTT: MQTT_EVENT_ERROR[0m
+[0;32mI (33328) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (33328) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (33338) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (33338) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;31mE (33348) mqtt_client: Client was not initialized[0m
+[0;32mI (33358) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (33368) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (33368) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (33378) mqtt_client: Client was not initialized[0m
+[0;32mI (37288) MQTT: Other event id:7[0m
+[0;31mE (37288) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (37288) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (37288) mqtt_client: Error transport connect[0m
+[0;32mI (37298) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (37298) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (37308) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (37318) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (37318) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (37328) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (37328) mqtt_client: Client was not initialized[0m
+[0;32mI (37468) MQTT: Other event id:7[0m
+[0;31mE (37468) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (37468) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (37468) mqtt_client: Error transport connect[0m
+[0;32mI (37478) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (37478) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (37488) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (37498) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (37498) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (37508) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (37508) mqtt_client: Client was not initialized[0m
+[0;32mI (37558) MQTT: Other event id:7[0m
+[0;31mE (37558) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (37558) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (37558) mqtt_client: Error transport connect[0m
+[0;32mI (37568) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (37568) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (37578) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (37588) MQTT: Other event id:7[0m
+[0;32mI (37588) MQTT: Last errno string (Host is unreachable)[0m
+[0;31mE (37588) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;32mI (37598) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (37608) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (37608) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (37618) mqtt_client: Error transport connect[0m
+[0;31mE (37618) mqtt_client: Client was not initialized[0m
+[0;32mI (37628) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (37638) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (37638) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (37648) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (37658) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (37658) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (37668) mqtt_client: Client was not initialized[0m
+[0;32mI (37718) MQTT: Other event id:7[0m
+[0;31mE (37718) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (37718) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (37718) mqtt_client: Error transport connect[0m
+[0;32mI (37728) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (37728) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (37738) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (37748) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (37748) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (37758) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (37758) mqtt_client: Client was not initialized[0m
+[0;32mI (37808) MQTT: Other event id:7[0m
+[0;31mE (37808) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (37808) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (37808) mqtt_client: Error transport connect[0m
+[0;32mI (37818) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (37818) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (37828) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (37838) MQTT: Other event id:7[0m
+[0;32mI (37838) MQTT: Last errno string (Host is unreachable)[0m
+[0;31mE (37838) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;32mI (37848) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (37858) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (37858) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (37868) mqtt_client: Error transport connect[0m
+[0;31mE (37868) mqtt_client: Client was not initialized[0m
+[0;32mI (37878) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (37888) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (37888) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (37898) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (37908) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (37908) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (37918) mqtt_client: Client was not initialized[0m
+[0;32mI (37998) MQTT: Other event id:7[0m
+[0;31mE (37998) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (37998) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (37998) mqtt_client: Error transport connect[0m
+[0;32mI (38008) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (38008) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (38018) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (38028) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (38028) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (38038) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (38038) mqtt_client: Client was not initialized[0m
+[0;32mI (42288) MQTT: Other event id:7[0m
+[0;31mE (42288) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (42288) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (42288) mqtt_client: Error transport connect[0m
+[0;32mI (42298) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (42298) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (42308) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (42318) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (42318) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (42328) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (42338) mqtt_client: Client was not initialized[0m
+[0;32mI (42398) MQTT: Other event id:7[0m
+[0;31mE (42398) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (42398) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (42398) mqtt_client: Error transport connect[0m
+[0;32mI (42408) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (42408) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (42418) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (42428) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (42428) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (42438) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (42438) mqtt_client: Client was not initialized[0m
+[0;32mI (42508) MQTT: Other event id:7[0m
+[0;31mE (42508) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (42508) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (42508) mqtt_client: Error transport connect[0m
+[0;32mI (42518) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (42518) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (42528) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (42538) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (42538) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (42548) MQTT: Other event id:7[0m
+[0;31mE (42548) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (42548) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (42558) mqtt_client: Client was not initialized[0m
+[0;31mE (42568) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (42578) mqtt_client: Error transport connect[0m
+[0;32mI (42588) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (42588) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (42588) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (42598) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (42608) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (42608) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (42618) mqtt_client: Client was not initialized[0m
+[0;32mI (42648) MQTT: Other event id:7[0m
+[0;31mE (42648) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (42648) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (42648) mqtt_client: Error transport connect[0m
+[0;32mI (42658) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (42658) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (42668) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (42678) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (42678) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (42688) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (42688) mqtt_client: Client was not initialized[0m
+[0;32mI (42758) MQTT: Other event id:7[0m
+[0;31mE (42758) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (42758) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (42758) mqtt_client: Error transport connect[0m
+[0;32mI (42768) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (42768) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (42778) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (42788) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (42788) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (42798) MQTT: Other event id:7[0m
+[0;31mE (42798) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (42798) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (42808) mqtt_client: Client was not initialized[0m
+[0;31mE (42818) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (42828) mqtt_client: Error transport connect[0m
+[0;32mI (42838) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (42838) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (42838) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (42848) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (42858) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (42858) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (42868) mqtt_client: Client was not initialized[0m
+[0;32mI (42898) MQTT: Other event id:7[0m
+[0;31mE (42898) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (42898) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (42898) mqtt_client: Error transport connect[0m
+[0;32mI (42908) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (42908) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (42918) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (42928) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (42928) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (42938) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (42938) mqtt_client: Client was not initialized[0m
+[0;32mI (42978) MQTT: Other event id:7[0m
+[0;31mE (42978) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (42978) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (42978) mqtt_client: Error transport connect[0m
+[0;32mI (42988) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (42988) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (42998) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (43008) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (43008) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (43018) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (43018) mqtt_client: Client was not initialized[0m
+[0;32mI (43048) MQTT: Other event id:7[0m
+[0;31mE (43048) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (43048) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (43048) mqtt_client: Error transport connect[0m
+[0;32mI (43058) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (43058) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (43068) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (43078) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (43078) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (43088) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (43088) mqtt_client: Client was not initialized[0m
+[0;32mI (43138) MQTT: Other event id:7[0m
+[0;31mE (43138) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (43138) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (43138) mqtt_client: Error transport connect[0m
+[0;32mI (43148) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (43148) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (43158) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (43168) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (43168) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (43178) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (43178) mqtt_client: Client was not initialized[0m
+[0;32mI (43238) MQTT: Other event id:7[0m
+[0;31mE (43238) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (43238) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (43238) mqtt_client: Error transport connect[0m
+[0;32mI (43248) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (43248) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (43258) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (43268) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (43268) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (43278) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (43278) mqtt_client: Client was not initialized[0m
+[0;32mI (43358) MQTT: Other event id:7[0m
+[0;31mE (43358) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (43358) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (43358) mqtt_client: Error transport connect[0m
+[0;32mI (43368) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (43368) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;32mI (43378) MQTT: Other event id:7[0m
+[0;31mE (43378) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;31mE (43378) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;32mI (43388) MQTT: Last errno string (Host is unreachable)[0m
+[0;31mE (43398) transport_base: Failed to open a new connection: 32769[0m
+[0;32mI (43408) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (43408) mqtt_client: Error transport connect[0m
+[0;31mE (43418) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;32mI (43418) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (43428) mqtt_client: Client was not initialized[0m
+[0;31mE (43428) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (43438) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (43448) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (43458) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (43458) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (43468) mqtt_client: Client was not initialized[0m
+[0;32mI (47338) MQTT: Other event id:7[0m
+[0;31mE (47338) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (47338) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (47338) mqtt_client: Error transport connect[0m
+[0;32mI (47348) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (47348) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (47358) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (47368) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (47368) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (47378) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (47378) mqtt_client: Client was not initialized[0m
+[0;32mI (47518) MQTT: Other event id:7[0m
+[0;31mE (47518) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (47518) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (47518) mqtt_client: Error transport connect[0m
+[0;32mI (47528) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (47528) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (47538) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (47548) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (47548) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (47558) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (47558) mqtt_client: Client was not initialized[0m
+[0;32mI (47628) MQTT: Other event id:7[0m
+[0;31mE (47628) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (47628) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (47628) mqtt_client: Error transport connect[0m
+[0;32mI (47638) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (47638) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (47648) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (47658) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (47658) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (47668) MQTT: Other event id:7[0m
+[0;31mE (47668) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (47668) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (47678) mqtt_client: Client was not initialized[0m
+[0;31mE (47688) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (47698) mqtt_client: Error transport connect[0m
+[0;32mI (47708) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (47708) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (47708) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (47718) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (47728) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (47728) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (47738) mqtt_client: Client was not initialized[0m
+[0;32mI (47768) MQTT: Other event id:7[0m
+[0;31mE (47768) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (47768) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (47768) mqtt_client: Error transport connect[0m
+[0;32mI (47778) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (47778) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (47788) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (47798) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (47798) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (47808) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (47808) mqtt_client: Client was not initialized[0m
+[0;32mI (47878) MQTT: Other event id:7[0m
+[0;31mE (47878) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (47878) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (47878) mqtt_client: Error transport connect[0m
+[0;32mI (47888) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (47888) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (47898) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (47908) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (47908) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (47918) MQTT: Other event id:7[0m
+[0;31mE (47918) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (47918) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (47928) mqtt_client: Client was not initialized[0m
+[0;31mE (47938) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (47948) mqtt_client: Error transport connect[0m
+[0;32mI (47958) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (47958) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (47958) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (47968) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (47978) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (47978) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (47988) mqtt_client: Client was not initialized[0m
+[0;32mI (48048) MQTT: Other event id:7[0m
+[0;31mE (48048) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (48048) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (48048) mqtt_client: Error transport connect[0m
+[0;32mI (48058) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (48058) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (48068) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (48078) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (48078) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (48088) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (48088) mqtt_client: Client was not initialized[0m
+[0;32mI (52338) MQTT: Other event id:7[0m
+[0;31mE (52338) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (52338) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (52338) mqtt_client: Error transport connect[0m
+[0;32mI (52348) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (52348) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (52358) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (52368) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (52368) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (52378) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (52388) mqtt_client: Client was not initialized[0m
+[0;32mI (52448) MQTT: Other event id:7[0m
+[0;31mE (52448) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (52448) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (52448) mqtt_client: Error transport connect[0m
+[0;32mI (52458) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (52458) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (52468) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (52478) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (52478) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (52488) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (52488) mqtt_client: Client was not initialized[0m
+[0;32mI (52568) MQTT: Other event id:7[0m
+[0;31mE (52568) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (52568) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (52568) mqtt_client: Error transport connect[0m
+[0;32mI (52578) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (52578) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (52588) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (52598) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (52598) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (52608) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (52608) mqtt_client: Client was not initialized[0m
+[0;32mI (52618) MQTT: Other event id:7[0m
+[0;31mE (52618) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (52628) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (52638) mqtt_client: Error transport connect[0m
+[0;32mI (52648) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (52648) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (52648) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (52658) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (52668) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (52668) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (52678) mqtt_client: Client was not initialized[0m
+[0;32mI (52698) MQTT: Other event id:7[0m
+[0;31mE (52698) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (52698) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (52708) mqtt_client: Error transport connect[0m
+[0;32mI (52708) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (52708) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (52718) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (52728) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (52728) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (52738) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (52738) mqtt_client: Client was not initialized[0m
+[0;32mI (52818) MQTT: Other event id:7[0m
+[0;31mE (52818) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (52818) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (52818) mqtt_client: Error transport connect[0m
+[0;32mI (52828) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (52828) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (52838) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (52848) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (52848) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (52858) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (52858) mqtt_client: Client was not initialized[0m
+[0;32mI (52868) MQTT: Other event id:7[0m
+[0;31mE (52868) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (52878) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (52888) mqtt_client: Error transport connect[0m
+[0;32mI (52898) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (52898) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (52898) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (52908) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (52918) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (52918) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (52928) mqtt_client: Client was not initialized[0m
+[0;32mI (52948) MQTT: Other event id:7[0m
+[0;31mE (52948) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (52948) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (52958) mqtt_client: Error transport connect[0m
+[0;32mI (52958) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (52958) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (52968) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (52978) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (52978) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (52988) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (52988) mqtt_client: Client was not initialized[0m
+[0;32mI (53028) MQTT: Other event id:7[0m
+[0;31mE (53028) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (53028) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (53028) mqtt_client: Error transport connect[0m
+[0;32mI (53038) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (53038) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (53048) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (53058) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (53058) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (53068) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (53068) mqtt_client: Client was not initialized[0m
+[0;32mI (53098) MQTT: Other event id:7[0m
+[0;31mE (53098) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (53098) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (53098) mqtt_client: Error transport connect[0m
+[0;32mI (53108) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (53108) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (53118) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (53128) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (53128) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (53138) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (53138) mqtt_client: Client was not initialized[0m
+[0;32mI (53188) MQTT: Other event id:7[0m
+[0;31mE (53188) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (53188) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (53188) mqtt_client: Error transport connect[0m
+[0;32mI (53198) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (53198) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (53208) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (53218) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (53218) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (53228) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (53228) mqtt_client: Client was not initialized[0m
+[0;32mI (53288) MQTT: Other event id:7[0m
+[0;31mE (53288) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (53288) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (53288) mqtt_client: Error transport connect[0m
+[0;32mI (53298) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (53298) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (53308) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (53318) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (53318) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (53328) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (53328) mqtt_client: Client was not initialized[0m
+[0;32mI (53438) MQTT: Other event id:7[0m
+[0;31mE (53438) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (53438) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (53438) mqtt_client: Error transport connect[0m
+[0;32mI (53448) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (53448) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (53458) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (53468) MQTT: Other event id:7[0m
+[0;32mI (53468) MQTT: Last errno string (Host is unreachable)[0m
+[0;31mE (53468) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;32mI (53478) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (53488) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (53488) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (53498) mqtt_client: Error transport connect[0m
+[0;31mE (53498) mqtt_client: Client was not initialized[0m
+[0;32mI (53508) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (53518) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (53518) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (53528) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (53538) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (53538) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (53548) mqtt_client: Client was not initialized[0m
+[0;32mI (57388) MQTT: Other event id:7[0m
+[0;31mE (57388) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (57388) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (57388) mqtt_client: Error transport connect[0m
+[0;32mI (57398) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (57398) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (57408) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (57418) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (57418) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (57428) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (57428) mqtt_client: Client was not initialized[0m
+[0;32mI (57568) MQTT: Other event id:7[0m
+[0;31mE (57568) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (57568) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (57568) mqtt_client: Error transport connect[0m
+[0;32mI (57578) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (57578) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (57588) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (57598) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (57598) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (57608) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (57608) mqtt_client: Client was not initialized[0m
+[0;32mI (57688) MQTT: Other event id:7[0m
+[0;31mE (57688) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (57688) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (57688) mqtt_client: Error transport connect[0m
+[0;32mI (57698) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (57698) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (57708) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (57718) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (57718) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (57728) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (57728) mqtt_client: Client was not initialized[0m
+[0;32mI (57738) MQTT: Other event id:7[0m
+[0;31mE (57738) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (57748) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (57758) mqtt_client: Error transport connect[0m
+[0;32mI (57768) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (57768) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (57768) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (57778) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (57788) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (57788) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (57798) mqtt_client: Client was not initialized[0m
+[0;32mI (57818) MQTT: Other event id:7[0m
+[0;31mE (57818) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (57818) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (57828) mqtt_client: Error transport connect[0m
+[0;32mI (57828) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (57828) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (57838) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (57848) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (57848) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (57858) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (57858) mqtt_client: Client was not initialized[0m
+[0;32mI (57938) MQTT: Other event id:7[0m
+[0;31mE (57938) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (57938) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (57938) mqtt_client: Error transport connect[0m
+[0;32mI (57948) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (57948) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (57958) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (57968) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (57968) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (57978) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (57978) mqtt_client: Client was not initialized[0m
+[0;32mI (57988) MQTT: Other event id:7[0m
+[0;31mE (57988) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (57998) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (58008) mqtt_client: Error transport connect[0m
+[0;32mI (58018) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (58018) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (58018) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (58028) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (58038) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (58038) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (58048) mqtt_client: Client was not initialized[0m
+[0;32mI (58098) MQTT: Other event id:7[0m
+[0;31mE (58098) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (58098) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (58098) mqtt_client: Error transport connect[0m
+[0;32mI (58108) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (58108) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (58118) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (58128) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (58128) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (58138) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (58138) mqtt_client: Client was not initialized[0m
+[0;32mI (62388) MQTT: Other event id:7[0m
+[0;31mE (62388) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (62388) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (62388) mqtt_client: Error transport connect[0m
+[0;32mI (62398) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (62398) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (62408) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (62418) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (62418) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (62428) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (62438) mqtt_client: Client was not initialized[0m
+[0;32mI (62498) MQTT: Other event id:7[0m
+[0;31mE (62498) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (62498) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (62498) mqtt_client: Error transport connect[0m
+[0;32mI (62508) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (62508) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (62518) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (62528) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (62528) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (62538) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (62538) mqtt_client: Client was not initialized[0m
+[0;32mI (62618) MQTT: Other event id:7[0m
+[0;31mE (62618) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (62618) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (62618) mqtt_client: Error transport connect[0m
+[0;32mI (62628) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (62628) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (62638) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (62648) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (62648) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (62658) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (62658) mqtt_client: Client was not initialized[0m
+[0;32mI (62678) MQTT: Other event id:7[0m
+[0;31mE (62678) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (62678) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (62688) mqtt_client: Error transport connect[0m
+[0;32mI (62698) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (62698) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (62698) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (62708) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (62718) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (62718) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (62728) mqtt_client: Client was not initialized[0m
+[0;32mI (62748) MQTT: Other event id:7[0m
+[0;31mE (62748) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (62748) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (62758) mqtt_client: Error transport connect[0m
+[0;32mI (62758) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (62758) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (62768) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (62778) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (62778) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (62788) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (62788) mqtt_client: Client was not initialized[0m
+[0;32mI (62868) MQTT: Other event id:7[0m
+[0;31mE (62868) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (62868) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (62868) mqtt_client: Error transport connect[0m
+[0;32mI (62878) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (62878) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (62888) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (62898) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (62898) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (62908) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (62908) mqtt_client: Client was not initialized[0m
+[0;32mI (62928) MQTT: Other event id:7[0m
+[0;31mE (62928) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (62928) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (62938) mqtt_client: Error transport connect[0m
+[0;32mI (62948) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (62948) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (62948) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (62958) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (62968) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (62968) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (62978) mqtt_client: Client was not initialized[0m
+[0;32mI (62998) MQTT: Other event id:7[0m
+[0;31mE (62998) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (62998) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (63008) mqtt_client: Error transport connect[0m
+[0;32mI (63008) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (63008) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (63018) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (63028) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (63028) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (63038) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (63038) mqtt_client: Client was not initialized[0m
+[0;32mI (63078) MQTT: Other event id:7[0m
+[0;31mE (63078) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (63078) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (63078) mqtt_client: Error transport connect[0m
+[0;32mI (63088) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (63088) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (63098) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (63108) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (63108) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (63118) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (63118) mqtt_client: Client was not initialized[0m
+[0;32mI (63148) MQTT: Other event id:7[0m
+[0;31mE (63148) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (63148) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (63148) mqtt_client: Error transport connect[0m
+[0;32mI (63158) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (63158) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (63168) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (63178) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (63178) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (63188) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (63188) mqtt_client: Client was not initialized[0m
+[0;32mI (63238) MQTT: Other event id:7[0m
+[0;31mE (63238) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (63238) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (63238) mqtt_client: Error transport connect[0m
+[0;32mI (63248) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (63248) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (63258) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (63268) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (63268) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (63278) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (63278) mqtt_client: Client was not initialized[0m
+[0;32mI (63338) MQTT: Other event id:7[0m
+[0;31mE (63338) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (63338) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (63338) mqtt_client: Error transport connect[0m
+[0;32mI (63348) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (63348) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (63358) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (63368) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (63368) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (63378) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (63378) mqtt_client: Client was not initialized[0m
+[0;32mI (63508) MQTT: Other event id:7[0m
+[0;31mE (63508) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (63508) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (63508) mqtt_client: Error transport connect[0m
+[0;32mI (63518) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (63518) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (63528) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (63538) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (63538) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (63548) MQTT: Other event id:7[0m
+[0;31mE (63548) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (63548) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (63558) mqtt_client: Client was not initialized[0m
+[0;31mE (63568) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (63578) mqtt_client: Error transport connect[0m
+[0;32mI (63588) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (63588) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (63588) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (63598) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (63608) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (63608) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (63618) mqtt_client: Client was not initialized[0m
+[0;32mI (67438) MQTT: Other event id:7[0m
+[0;31mE (67438) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (67438) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (67438) mqtt_client: Error transport connect[0m
+[0;32mI (67448) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (67448) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (67458) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (67468) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (67468) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (67478) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (67478) mqtt_client: Client was not initialized[0m
+[0;32mI (67618) MQTT: Other event id:7[0m
+[0;31mE (67618) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (67618) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (67618) mqtt_client: Error transport connect[0m
+[0;32mI (67628) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (67628) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (67638) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (67648) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (67648) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (67658) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (67658) mqtt_client: Client was not initialized[0m
+[0;32mI (67738) MQTT: Other event id:7[0m
+[0;31mE (67738) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (67738) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (67738) mqtt_client: Error transport connect[0m
+[0;32mI (67748) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (67748) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (67758) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (67768) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (67768) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (67778) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (67778) mqtt_client: Client was not initialized[0m
+[0;32mI (67798) MQTT: Other event id:7[0m
+[0;31mE (67798) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (67798) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (67808) mqtt_client: Error transport connect[0m
+[0;32mI (67818) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (67818) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (67818) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (67828) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (67838) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (67838) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (67848) mqtt_client: Client was not initialized[0m
+[0;32mI (67868) MQTT: Other event id:7[0m
+[0;31mE (67868) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (67868) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (67878) mqtt_client: Error transport connect[0m
+[0;32mI (67878) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (67878) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (67888) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (67898) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (67898) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (67908) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (67908) mqtt_client: Client was not initialized[0m
+[0;32mI (67988) MQTT: Other event id:7[0m
+[0;31mE (67988) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (67988) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (67988) mqtt_client: Error transport connect[0m
+[0;32mI (67998) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (67998) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (68008) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (68018) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (68018) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (68028) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (68028) mqtt_client: Client was not initialized[0m
+[0;32mI (68048) MQTT: Other event id:7[0m
+[0;31mE (68048) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (68048) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (68058) mqtt_client: Error transport connect[0m
+[0;32mI (68058) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (68068) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (68068) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (68078) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (68088) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (68088) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (68098) mqtt_client: Client was not initialized[0m
+[0;32mI (68148) MQTT: Other event id:7[0m
+[0;31mE (68148) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (68148) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (68148) mqtt_client: Error transport connect[0m
+[0;32mI (68158) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (68158) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (68168) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (68178) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (68178) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (68188) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (68188) mqtt_client: Client was not initialized[0m
+[0;32mI (72438) MQTT: Other event id:7[0m
+[0;31mE (72438) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (72438) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (72438) mqtt_client: Error transport connect[0m
+[0;32mI (72448) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (72448) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (72458) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (72468) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (72468) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (72478) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (72488) mqtt_client: Client was not initialized[0m
+[0;32mI (72548) MQTT: Other event id:7[0m
+[0;31mE (72548) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (72548) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (72548) mqtt_client: Error transport connect[0m
+[0;32mI (72558) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (72558) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (72568) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (72578) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (72578) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (72588) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (72588) mqtt_client: Client was not initialized[0m
+[0;32mI (72668) MQTT: Other event id:7[0m
+[0;31mE (72668) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (72668) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (72668) mqtt_client: Error transport connect[0m
+[0;32mI (72678) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (72678) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (72688) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (72698) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (72698) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (72708) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (72708) mqtt_client: Client was not initialized[0m
+[0;32mI (72728) MQTT: Other event id:7[0m
+[0;31mE (72728) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (72728) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (72738) mqtt_client: Error transport connect[0m
+[0;32mI (72748) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (72748) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (72748) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (72758) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (72768) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (72768) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (72778) mqtt_client: Client was not initialized[0m
+[0;32mI (72798) MQTT: Other event id:7[0m
+[0;31mE (72798) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (72798) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (72808) mqtt_client: Error transport connect[0m
+[0;32mI (72808) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (72808) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (72818) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (72828) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (72828) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (72838) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (72838) mqtt_client: Client was not initialized[0m
+[0;32mI (72918) MQTT: Other event id:7[0m
+[0;31mE (72918) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (72918) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (72918) mqtt_client: Error transport connect[0m
+[0;32mI (72928) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (72928) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (72938) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (72948) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (72948) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (72958) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (72958) mqtt_client: Client was not initialized[0m
+[0;32mI (72978) MQTT: Other event id:7[0m
+[0;31mE (72978) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (72978) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (72988) mqtt_client: Error transport connect[0m
+[0;32mI (72998) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (72998) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (72998) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (73008) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (73018) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (73018) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (73028) mqtt_client: Client was not initialized[0m
+[0;32mI (73048) MQTT: Other event id:7[0m
+[0;31mE (73048) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (73048) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (73058) mqtt_client: Error transport connect[0m
+[0;32mI (73058) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (73058) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (73068) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (73078) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (73078) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (73088) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (73088) mqtt_client: Client was not initialized[0m
+[0;32mI (73128) MQTT: Other event id:7[0m
+[0;31mE (73128) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (73128) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (73128) mqtt_client: Error transport connect[0m
+[0;32mI (73138) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (73138) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (73148) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (73158) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (73158) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (73168) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (73168) mqtt_client: Client was not initialized[0m
+[0;32mI (73198) MQTT: Other event id:7[0m
+[0;31mE (73198) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (73198) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (73198) mqtt_client: Error transport connect[0m
+[0;32mI (73208) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (73208) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (73218) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (73228) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (73228) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (73238) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (73238) mqtt_client: Client was not initialized[0m
+[0;32mI (73288) MQTT: Other event id:7[0m
+[0;31mE (73288) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (73288) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (73288) mqtt_client: Error transport connect[0m
+[0;32mI (73298) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (73298) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (73308) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (73318) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (73318) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (73328) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (73328) mqtt_client: Client was not initialized[0m
+[0;32mI (73388) MQTT: Other event id:7[0m
+[0;31mE (73388) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (73388) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (73388) mqtt_client: Error transport connect[0m
+[0;32mI (73398) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (73398) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (73408) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (73418) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (73418) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (73428) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (73428) mqtt_client: Client was not initialized[0m
+[0;32mI (73568) MQTT: Other event id:7[0m
+[0;31mE (73568) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (73568) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (73568) mqtt_client: Error transport connect[0m
+[0;32mI (73578) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (73578) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (73588) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (73598) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (73598) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (73608) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (73608) mqtt_client: Client was not initialized[0m
+[0;32mI (73618) MQTT: Other event id:7[0m
+[0;31mE (73618) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (73628) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (73638) mqtt_client: Error transport connect[0m
+[0;32mI (73648) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (73648) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (73648) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (73658) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (73668) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (73668) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (73678) mqtt_client: Client was not initialized[0m
+[0;32mI (77488) MQTT: Other event id:7[0m
+[0;31mE (77488) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (77488) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (77488) mqtt_client: Error transport connect[0m
+[0;32mI (77498) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (77498) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (77508) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (77518) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (77518) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (77528) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (77528) mqtt_client: Client was not initialized[0m
+[0;32mI (77668) MQTT: Other event id:7[0m
+[0;31mE (77668) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (77668) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (77668) mqtt_client: Error transport connect[0m
+[0;32mI (77678) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (77678) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (77688) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (77698) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (77698) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (77708) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (77708) mqtt_client: Client was not initialized[0m
+[0;32mI (77788) MQTT: Other event id:7[0m
+[0;31mE (77788) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (77788) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (77788) mqtt_client: Error transport connect[0m
+[0;32mI (77798) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (77798) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (77808) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (77818) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (77818) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (77828) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (77828) mqtt_client: Client was not initialized[0m
+[0;32mI (77848) MQTT: Other event id:7[0m
+[0;31mE (77848) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (77848) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (77858) mqtt_client: Error transport connect[0m
+[0;32mI (77868) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (77868) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (77868) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (77878) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (77888) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (77888) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (77898) mqtt_client: Client was not initialized[0m
+[0;32mI (77918) MQTT: Other event id:7[0m
+[0;31mE (77918) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (77918) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (77928) mqtt_client: Error transport connect[0m
+[0;32mI (77928) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (77928) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (77938) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (77948) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (77948) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (77958) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (77958) mqtt_client: Client was not initialized[0m
+[0;32mI (78038) MQTT: Other event id:7[0m
+[0;31mE (78038) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (78038) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (78038) mqtt_client: Error transport connect[0m
+[0;32mI (78048) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (78048) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (78058) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (78068) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (78068) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (78078) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (78078) mqtt_client: Client was not initialized[0m
+[0;32mI (78098) MQTT: Other event id:7[0m
+[0;31mE (78098) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (78098) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (78108) mqtt_client: Error transport connect[0m
+[0;32mI (78118) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (78118) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (78118) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (78128) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (78138) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (78138) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (78148) mqtt_client: Client was not initialized[0m
+[0;32mI (78198) MQTT: Other event id:7[0m
+[0;31mE (78198) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (78198) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (78198) mqtt_client: Error transport connect[0m
+[0;32mI (78208) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (78208) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (78218) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (78228) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (78228) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (78238) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (78238) mqtt_client: Client was not initialized[0m

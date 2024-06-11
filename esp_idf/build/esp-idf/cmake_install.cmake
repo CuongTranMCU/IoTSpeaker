@@ -414,21 +414,21 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/MQTT_PUB_SUB/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
   include("D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/SSD1306/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/DFPlayer/cmake_install.cmake")
+  include("D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/WiFi/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/WiFi/cmake_install.cmake")
+  include("D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/MQTT_PUB_SUB/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/DFPlayer/cmake_install.cmake")
 endif()
 

@@ -30,7 +30,7 @@
 8219	8550	7391031558094509	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/ledc_periph.c.obj	e8c24fd6ac39501
 267	828	7391031481227855	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/oid.c.obj	714fa4facf444d34
 216	993	7391031482648204	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/md.c.obj	5516a8ff215b4601
-127	741	7396994422773944	esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj	7fea12ae4ce88684
+57	301	7397146866627218	esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj	83186283155901c5
 25719	26376	7391031736920371	esp-idf/driver/CMakeFiles/__idf_driver.dir/gpio/gpio.c.obj	b3701249a8373863
 6210	7006	7391031542851555	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/cpu_start.c.obj	ec29674d9c732565
 1588	2076	7378938319332665	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir	3ccbb0ce919331d5
@@ -43,7 +43,7 @@
 7090	7466	7391031547350158	esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/cache_hal_esp32.c.obj	99ae3d1264b8c624
 3543	4020	7391031512924984	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random_esp32.c.obj	c22a06af63963cbe
 3556	3982	7391031512594887	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_partitions.c.obj	b59a97979b6476f2
-65	109	7397084695727193	esp-idf/DFPlayer/CMakeFiles/__idf_DFPlayer.dir/DFPlayer.c.obj	526eb5ed081390a8
+285	2037	7397864891049308	esp-idf/DFPlayer/CMakeFiles/__idf_DFPlayer.dir/DFPlayer.c.obj	526eb5ed081390a8
 3385	3857	7391031511294550	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_efuse.c.obj	b81542e74b640cb0
 10594	11783	7391031590571676	esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err_to_name.c.obj	4450d67a1ecb2ca2
 20374	21097	7391031683782456	esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_mac_esp.c.obj	8b05bba4cfd28930
@@ -123,7 +123,7 @@
 2663	2933	7378938328084604	bootloader-prefix/src/bootloader-stamp/bootloader-patch	42108f3b9acae8f8
 9280	9813	7391031571197413	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/rtc_time.c.obj	df8acfb83f2141e2
 10910	12009	7391031593202262	esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_page.cpp.obj	b832a1822cb12b03
-43	210	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
+164	546	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
 4093	4501	7391031517665999	esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/cache_esp32.c.obj	9c89f569cd8eebb1
 2854	3385	7391031506313484	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_server.c.obj	db446a6383319299
 14667	15368	7391031626679777	esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/ipv6cp.c.obj	cad010b0476ff65d
@@ -245,7 +245,7 @@
 7017	7405	7391031546742468	esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.obj	be168e07c7e4da85
 6968	7323	7391031546342414	esp-idf/hal/CMakeFiles/__idf_hal.dir/wdt_hal_iram.c.obj	1ef51198e4d5b238
 12996	13708	7391031609906033	esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/stats.c.obj	cc40789d17932171
-12133	12222	0	esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
+33542	33770	0	esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
 6728	7356	7391031546212317	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr.c.obj	ad51a47add809e77
 12478	13277	7391031605685072	esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/apps/sntp/sntp.c.obj	419e50c7de26acea
 7150	7608	7391031549162579	esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.obj	ff188a3a3e709358
@@ -429,7 +429,7 @@
 8490	8830	7391031561295240	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32/twai_periph.c.obj	620e1eddbc8bcb55
 15378	16215	7391031634901559	esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/freertos/sys_arch.c.obj	41c2bdf1179a9262
 7313	7734	7391031550292767	esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal_common.c.obj	afc9c8a26edb4419
-11807	12133	7397076743360260	.bin_timestamp	266d241226798d1c
+32827	33541	7397865206577405	.bin_timestamp	266d241226798d1c
 2528	3245	7391031505343306	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.obj	dd5faaff4b7dc3f4
 8684	9139	7391031564375882	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mac_addr.c.obj	bba9ba6176dbedc
 30142	30753	7391031780530113	esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ffunicode.c.obj	e08968bf0e260535
@@ -453,7 +453,7 @@
 7191	7717	7391031550102728	esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32/clk_tree_hal.c.obj	b84eb8fe946e8fa2
 7507	7852	7391031551493058	esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal_iram.c.obj	f19e16df2e3c9b55
 7323	7690	7391031549782691	esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal_iram.c.obj	31603b7b6280560f
-43	210	7378938652765356	bootloader/bootloader.elf	9035450419e72458
+164	546	7378938652765356	bootloader/bootloader.elf	9035450419e72458
 7536	7865	7391031551703087	esp-idf/hal/CMakeFiles/__idf_hal.dir/sdm_hal.c.obj	7f90b180aa00d765
 11323	12403	7391031596943104	esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_types.cpp.obj	f846fc156de04129
 7574	7917	7391031552293270	esp-idf/hal/CMakeFiles/__idf_hal.dir/mcpwm_hal.c.obj	a0c087036a281a0d
@@ -539,10 +539,10 @@
 13241	13952	7391031612496561	esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/tcp_in.c.obj	ec4c58aca6f899c3
 9735	10214	7391031575048286	esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/croutine.c.obj	2e39027ffcd938c4
 9744	10290	7391031575928498	esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/event_groups.c.obj	21c5a1c9b8b0b708
-32159	32241	7391031795763487	esp-idf/MQTT_PUB_SUB/libMQTT_PUB_SUB.a	40ced0a9790d20fe
+1866	2013	7397864891318363	esp-idf/MQTT_PUB_SUB/libMQTT_PUB_SUB.a	40ced0a9790d20fe
 9993	10340	7391031576188554	esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/xtensa_init.c.obj	a55c2e64e985b710
 9813	10366	7391031576638612	esp-idf/freertos/CMakeFiles/__idf_freertos.dir/port_common.c.obj	7a100bf26b80c180
-742	855	7396994424238434	esp-idf/esp_app_format/libesp_app_format.a	cc4f26474fe478ce
+302	366	7397146867377033	esp-idf/esp_app_format/libesp_app_format.a	cc4f26474fe478ce
 30284	30937	7391031782410523	esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/port/freertos/ffsystem.c.obj	23b001560664ba2
 9935	10436	7391031577268772	esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-openocd.c.obj	ad27d2c92c461c1c
 11827	12467	7391031597543265	esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs_semihost.c.obj	183e405da7622f83
@@ -587,7 +587,7 @@
 11991	12625	7391031599273644	esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs_console.c.obj	47dc106ef601cc66
 11036	12088	7391031593872445	esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_item_hash_list.cpp.obj	87938c309d9ed9f8
 27022	27714	7391031750293348	esp-idf/driver/CMakeFiles/__idf_driver.dir/spi/sdspi/sdspi_transaction.c.obj	ff1c65dc348a65b9
-32254	32337	7391031796734343	esp-idf/WiFi/libWiFi.a	43b405a967ca2698
+2014	2146	7397864892628627	esp-idf/WiFi/libWiFi.a	43b405a967ca2698
 10870	12286	7391031595792879	esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_cxx_api.cpp.obj	c8f8ed8736a46f0f
 49586	50504	7378938802580878	CMakeFiles/bootloader-complete	d5004fca5e81c2a3
 31275	31772	7391031790152274	esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/proto-c/wifi_scan.pb-c.c.obj	bdbbaacc04f5298e
@@ -658,7 +658,7 @@
 15272	15981	7391031632481033	esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/pppos.c.obj	8fbe82f5c41e4253
 61207	61670	7378938915574437	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/mbedtls/x509_crt_bundle	158815e29a93de6d
 15025	15735	7391031629950445	esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/upap.c.obj	b0a243dca697f72a
-43	210	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
+164	546	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
 22001	22073	7391031694100139	esp-idf/esp_gdbstub/libesp_gdbstub.a	f0776f3e29a598c7
 14982	15758	7391031630370545	esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/pppol2tp.c.obj	b648fadab197c64d
 19540	20160	7391031674640496	esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_netif.c.obj	c61500b82bcc9ea8
@@ -720,18 +720,18 @@
 18220	18870	7391031661787532	esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/wpabuf.c.obj	2bc8804492613c38
 26606	27340	7391031746152437	esp-idf/driver/CMakeFiles/__idf_driver.dir/sdio_slave/sdio_slave.c.obj	ec2949e93747a86
 18299	19021	7391031662947799	esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_process.c.obj	f0527dfba04d3556
-166	231	7397084696969966	esp-idf/DFPlayer/libDFPlayer.a	a1f92428c7d7dad5
+2037	2164	7397864892827094	esp-idf/DFPlayer/libDFPlayer.a	a1f92428c7d7dad5
 18248	18922	7391031662317658	esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_parse.c.obj	95d109cfbd43d6f8
 18627	19011	7391031663207894	esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_wpa2_api_port.c.obj	dd1916c66354b96c
 29149	29476	7391031767967313	esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/proto-c/esp_local_ctrl.pb-c.c.obj	4810ecee667cad2d
 18230	18945	7391031662067582	esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_build.c.obj	c18c6d82e75af397
 23989	24067	7391031714029172	esp-idf/log/liblog.a	b67abf105cd67959
-43	210	7378938652765356	bootloader/bootloader.bin	9035450419e72458
-43	210	7378938652765356	bootloader/bootloader.map	9035450419e72458
+164	546	7378938652765356	bootloader/bootloader.bin	9035450419e72458
+164	546	7378938652765356	bootloader/bootloader.map	9035450419e72458
 19416	19981	7391031672739967	esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/mesh_event.c.obj	3dbd34ff8d7239c1
-43	210	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-43	210	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
-43	210	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
+164	546	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
+164	546	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
+164	546	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
 18640	19211	7391031665188303	esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_scan.c.obj	b137f359afa7aa1c
 18513	19185	7391031664868216	esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/common/scan.c.obj	81cba76bf135972b
 24257	24363	7391031716996230	esp-idf/esp_system/libesp_system.a	c3ada0b80b09ca2e
@@ -763,7 +763,7 @@
 20161	20733	7391031680421705	esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth.c.obj	abf5a8c94f3cb279
 60	93	7397084695572995	esp-idf/SSD1306/CMakeFiles/__idf_SSD1306.dir/ssd1306.c.obj	dc5d3727c704b406
 19559	20013	7391031673210072	esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_default_ap.c.obj	e85c83299092fbc8
-1029	1095	7397076632982460	esp-idf/main/libmain.a	19016e97f94fca11
+2579	2707	7397864898247318	esp-idf/main/libmain.a	19016e97f94fca11
 19971	20374	7391031676900885	esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_cali.c.obj	7db5c13fad5670c4
 19746	20567	7391031678641280	esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/smartconfig_ack.c.obj	70630dc6fafeed0e
 31529	32090	7391031794093131	esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir/console_cmd.c.obj	a866a3f4ecb0c9c8
@@ -931,319 +931,206 @@
 31421	32005	7391031793232892	esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir/wifi_connect.c.obj	ceb1bfd7b07daf59
 31852	32010	7391031793412999	esp-idf/mqtt/libmqtt.a	bc31cded676e1077
 32090	32188	7391031795213358	esp-idf/protocol_examples_common/libprotocol_examples_common.a	5e1f47c4dc262e26
-31539	32158	7391031794783250	esp-idf/MQTT_PUB_SUB/CMakeFiles/__idf_MQTT_PUB_SUB.dir/mqtt.c.obj	d02954f64bb617aa
-31727	32254	7391031795773464	esp-idf/WiFi/CMakeFiles/__idf_WiFi.dir/wifi.c.obj	65b08fc1113f1a74
-50	101	7397084695592999	esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj	a30e9a47499ff65f
-1095	7710	7397076697548578	esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
-1095	7710	7397076697548578	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
+275	1865	7397864889296317	esp-idf/MQTT_PUB_SUB/CMakeFiles/__idf_MQTT_PUB_SUB.dir/mqtt.c.obj	d02954f64bb617aa
+211	2055	7397868197167220	esp-idf/WiFi/CMakeFiles/__idf_WiFi.dir/wifi.c.obj	de0c81c83a4f3844
+176	2503	7397868201735531	esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj	a30e9a47499ff65f
+2707	22254	7397865093078286	esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
+2707	22254	7397865093078286	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
 42283	42350	7391031896827903	CMakeFiles/IoT_Speaker.elf.dir/project_elf_src_esp32.c.obj	e807e01fb0b9ec2c
-7710	11806	7397076739566121	IoT_Speaker.elf	3dbbeadf10a17fd7
-11807	12133	7397076743360260	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/.bin_timestamp	266d241226798d1c
-12133	12222	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
-12223	35054	0	CMakeFiles/flash	2f24ee61cca4358
-12223	35054	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/CMakeFiles/flash	2f24ee61cca4358
-4	8141	7397089826630832	build.ninja	bdfea21edb3fea91
+22254	32827	7397865198588588	IoT_Speaker.elf	db38cf1cf5c492eb
+32827	33541	7397865206577405	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/.bin_timestamp	266d241226798d1c
+33542	33770	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
+33771	56919	0	CMakeFiles/flash	2f24ee61cca4358
+33771	56919	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/CMakeFiles/flash	2f24ee61cca4358
+4	10508	7397868609296680	build.ninja	bdfea21edb3fea91
 56	92	7397084695556814	esp-idf/SSD1306/CMakeFiles/__idf_SSD1306.dir/ssd1306_i2c_new.c.obj	b197a465c4f66704
-5	9091	7397089826630832	build.ninja	bdfea21edb3fea91
-44	225	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-44	225	7378938652765356	bootloader/bootloader.elf	9035450419e72458
-44	225	7378938652765356	bootloader/bootloader.bin	9035450419e72458
-44	225	7378938652765356	bootloader/bootloader.map	9035450419e72458
-44	225	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-44	225	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
-44	225	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
-44	225	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
-45	195	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-45	195	7378938652765356	bootloader/bootloader.elf	9035450419e72458
-45	195	7378938652765356	bootloader/bootloader.bin	9035450419e72458
-45	195	7378938652765356	bootloader/bootloader.map	9035450419e72458
-45	195	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-45	195	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
-45	195	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
-45	195	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
-56	744	7397090474858338	esp-idf/WiFi/CMakeFiles/__idf_WiFi.dir/wifi.c.obj	de0c81c83a4f3844
-744	821	7397090475946715	esp-idf/WiFi/libWiFi.a	43b405a967ca2698
-50	908	7397090476586859	esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj	a30e9a47499ff65f
-908	972	7397090477471225	esp-idf/main/libmain.a	19016e97f94fca11
-972	7394	7397090541278213	esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
-972	7394	7397090541278213	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
-7394	11040	7397090577651045	IoT_Speaker.elf	db38cf1cf5c492eb
-11041	11305	7397090580778544	.bin_timestamp	266d241226798d1c
-11041	11305	7397090580778544	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/.bin_timestamp	266d241226798d1c
-11305	11396	0	esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
-11305	11396	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
-11397	34353	0	CMakeFiles/flash	2f24ee61cca4358
-11397	34353	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/CMakeFiles/flash	2f24ee61cca4358
-43	195	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-43	195	7378938652765356	bootloader/bootloader.elf	9035450419e72458
-43	195	7378938652765356	bootloader/bootloader.bin	9035450419e72458
-43	195	7378938652765356	bootloader/bootloader.map	9035450419e72458
-43	195	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-43	195	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
-43	195	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
-43	195	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
-49	658	7397092050669506	esp-idf/DFPlayer/CMakeFiles/__idf_DFPlayer.dir/DFPlayer.c.obj	526eb5ed081390a8
-658	726	7397092051515916	esp-idf/DFPlayer/libDFPlayer.a	a1f92428c7d7dad5
-726	6839	7397092112260107	esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
-726	6839	7397092112260107	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
-6840	10448	7397092148374710	IoT_Speaker.elf	db38cf1cf5c492eb
-10448	10721	7397092151449841	.bin_timestamp	266d241226798d1c
-10448	10721	7397092151449841	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/.bin_timestamp	266d241226798d1c
-10721	10869	0	esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
-10721	10869	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
-10870	33267	0	CMakeFiles/flash	2f24ee61cca4358
-10870	33267	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/CMakeFiles/flash	2f24ee61cca4358
-46	202	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-46	202	7378938652765356	bootloader/bootloader.elf	9035450419e72458
-46	202	7378938652765356	bootloader/bootloader.bin	9035450419e72458
-46	202	7378938652765356	bootloader/bootloader.map	9035450419e72458
-46	202	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-46	202	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
-46	202	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
-46	202	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
-64	692	7397098183098195	esp-idf/WiFi/CMakeFiles/__idf_WiFi.dir/wifi.c.obj	de0c81c83a4f3844
-57	700	7397098183188121	esp-idf/DFPlayer/CMakeFiles/__idf_DFPlayer.dir/DFPlayer.c.obj	526eb5ed081390a8
-693	766	7397098184065964	esp-idf/WiFi/libWiFi.a	43b405a967ca2698
-700	769	7397098184080015	esp-idf/DFPlayer/libDFPlayer.a	a1f92428c7d7dad5
-52	926	7397098185442952	esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj	a30e9a47499ff65f
-926	990	7397098186304346	esp-idf/main/libmain.a	19016e97f94fca11
-990	7161	7397098247633034	esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
-990	7161	7397098247633034	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
-7161	10680	7397098282804259	IoT_Speaker.elf	db38cf1cf5c492eb
-10680	10947	7397098285874169	.bin_timestamp	266d241226798d1c
-10680	10947	7397098285874169	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/.bin_timestamp	266d241226798d1c
-10947	11072	0	esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
-10947	11072	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
-11073	33354	0	CMakeFiles/flash	2f24ee61cca4358
-11073	33354	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/CMakeFiles/flash	2f24ee61cca4358
-44	193	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-44	193	7378938652765356	bootloader/bootloader.elf	9035450419e72458
-44	193	7378938652765356	bootloader/bootloader.bin	9035450419e72458
-44	193	7378938652765356	bootloader/bootloader.map	9035450419e72458
-44	193	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-44	193	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
-44	193	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
-44	193	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
-50	473	7397099772087744	esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj	a30e9a47499ff65f
-55	648	7397099773774571	esp-idf/WiFi/CMakeFiles/__idf_WiFi.dir/wifi.c.obj	de0c81c83a4f3844
-648	714	7397099774627281	esp-idf/WiFi/libWiFi.a	43b405a967ca2698
-715	780	7397099775287964	esp-idf/main/libmain.a	19016e97f94fca11
-780	6812	7397099835211837	esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
-780	6812	7397099835211837	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
-6812	10229	7397099869330680	IoT_Speaker.elf	db38cf1cf5c492eb
-10230	10494	7397099872414114	.bin_timestamp	266d241226798d1c
-10230	10494	7397099872414114	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/.bin_timestamp	266d241226798d1c
-10494	10583	0	esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
-10494	10583	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
-10583	33080	0	CMakeFiles/flash	2f24ee61cca4358
-10583	33080	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/CMakeFiles/flash	2f24ee61cca4358
-43	266	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-43	266	7378938652765356	bootloader/bootloader.elf	9035450419e72458
-43	266	7378938652765356	bootloader/bootloader.bin	9035450419e72458
-43	266	7378938652765356	bootloader/bootloader.map	9035450419e72458
-43	266	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-43	266	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
-43	266	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
-43	266	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
-49	600	7397101567697350	esp-idf/WiFi/CMakeFiles/__idf_WiFi.dir/wifi.c.obj	de0c81c83a4f3844
-601	671	7397101568621280	esp-idf/WiFi/libWiFi.a	43b405a967ca2698
-672	6788	7397101629316085	esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
-672	6788	7397101629316085	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
-6788	10211	7397101663566367	IoT_Speaker.elf	db38cf1cf5c492eb
-10212	10500	7397101666901899	.bin_timestamp	266d241226798d1c
-10212	10500	7397101666901899	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/.bin_timestamp	266d241226798d1c
-10500	10587	0	esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
-10500	10587	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
-10588	32994	0	CMakeFiles/flash	2f24ee61cca4358
-10588	32994	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/CMakeFiles/flash	2f24ee61cca4358
-58	116	7397110312941682	esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj	a30e9a47499ff65f
-52	219	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-52	219	7378938652765356	bootloader/bootloader.elf	9035450419e72458
-52	219	7378938652765356	bootloader/bootloader.bin	9035450419e72458
-52	219	7378938652765356	bootloader/bootloader.map	9035450419e72458
-52	219	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-52	219	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
-52	219	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
-52	219	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
-69	729	7397110318917548	esp-idf/WiFi/CMakeFiles/__idf_WiFi.dir/wifi.c.obj	de0c81c83a4f3844
-729	804	7397110319847704	esp-idf/WiFi/libWiFi.a	43b405a967ca2698
-44	194	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-44	194	7378938652765356	bootloader/bootloader.elf	9035450419e72458
-44	194	7378938652765356	bootloader/bootloader.bin	9035450419e72458
-44	194	7378938652765356	bootloader/bootloader.map	9035450419e72458
-44	194	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-44	194	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
-44	194	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
-44	194	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
-65	318	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-65	318	7378938652765356	bootloader/bootloader.elf	9035450419e72458
-65	318	7378938652765356	bootloader/bootloader.bin	9035450419e72458
-65	318	7378938652765356	bootloader/bootloader.map	9035450419e72458
-65	318	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-65	318	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
-65	318	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
-65	318	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
-43	193	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-43	193	7378938652765356	bootloader/bootloader.elf	9035450419e72458
-43	193	7378938652765356	bootloader/bootloader.bin	9035450419e72458
-43	193	7378938652765356	bootloader/bootloader.map	9035450419e72458
-43	193	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-43	193	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
-43	193	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
-43	193	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
-45	194	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-45	194	7378938652765356	bootloader/bootloader.elf	9035450419e72458
-45	194	7378938652765356	bootloader/bootloader.bin	9035450419e72458
-45	194	7378938652765356	bootloader/bootloader.map	9035450419e72458
-45	194	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-45	194	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
-45	194	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
-45	194	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
-44	228	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-44	228	7378938652765356	bootloader/bootloader.elf	9035450419e72458
-44	228	7378938652765356	bootloader/bootloader.bin	9035450419e72458
-44	228	7378938652765356	bootloader/bootloader.map	9035450419e72458
-44	228	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-44	228	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
-44	228	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
-44	228	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
-56	703	7397114236899219	esp-idf/DFPlayer/CMakeFiles/__idf_DFPlayer.dir/DFPlayer.c.obj	526eb5ed081390a8
-703	775	7397114237895575	esp-idf/DFPlayer/libDFPlayer.a	a1f92428c7d7dad5
-50	902	7397114238979377	esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj	a30e9a47499ff65f
-902	967	7397114239839932	esp-idf/main/libmain.a	19016e97f94fca11
-968	7530	7397114304940964	esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
-968	7530	7397114304940964	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
-7530	11191	7397114341488532	IoT_Speaker.elf	db38cf1cf5c492eb
-11192	11460	7397114344743563	.bin_timestamp	266d241226798d1c
-11192	11460	7397114344743563	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/.bin_timestamp	266d241226798d1c
-11460	11563	0	esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
-11460	11563	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
-56	152	0	esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
-56	152	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
-49	209	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-49	209	7378938652765356	bootloader/bootloader.elf	9035450419e72458
-49	209	7378938652765356	bootloader/bootloader.bin	9035450419e72458
-49	209	7378938652765356	bootloader/bootloader.map	9035450419e72458
-49	209	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-49	209	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
-49	209	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
-49	209	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
-53	142	0	esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
-53	142	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
-46	206	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-46	206	7378938652765356	bootloader/bootloader.elf	9035450419e72458
-46	206	7378938652765356	bootloader/bootloader.bin	9035450419e72458
-46	206	7378938652765356	bootloader/bootloader.map	9035450419e72458
-46	206	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-46	206	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
-46	206	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
-46	206	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
-164	231	7397116862459858	esp-idf/DFPlayer/CMakeFiles/__idf_DFPlayer.dir/DFPlayer.c.obj	526eb5ed081390a8
-231	316	7397116863266271	esp-idf/DFPlayer/libDFPlayer.a	a1f92428c7d7dad5
-158	401	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-158	401	7378938652765356	bootloader/bootloader.elf	9035450419e72458
-158	401	7378938652765356	bootloader/bootloader.bin	9035450419e72458
-158	401	7378938652765356	bootloader/bootloader.map	9035450419e72458
-158	401	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-158	401	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
-158	401	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
-158	401	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
-316	7376	7397116933413972	esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
-316	7376	7397116933413972	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
-7376	11428	7397116973978455	IoT_Speaker.elf	db38cf1cf5c492eb
-11428	11760	7397116977768923	.bin_timestamp	266d241226798d1c
-11428	11760	7397116977768923	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/.bin_timestamp	266d241226798d1c
-11760	11855	0	esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
-11760	11855	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
-11856	34483	0	CMakeFiles/flash	2f24ee61cca4358
-11856	34483	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/CMakeFiles/flash	2f24ee61cca4358
-104	290	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-104	290	7378938652765356	bootloader/bootloader.elf	9035450419e72458
-104	290	7378938652765356	bootloader/bootloader.bin	9035450419e72458
-104	290	7378938652765356	bootloader/bootloader.map	9035450419e72458
-104	290	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-104	290	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
-104	290	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
-104	290	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
-112	926	7397121310817280	esp-idf/DFPlayer/CMakeFiles/__idf_DFPlayer.dir/DFPlayer.c.obj	526eb5ed081390a8
-926	998	7397121311777148	esp-idf/DFPlayer/libDFPlayer.a	a1f92428c7d7dad5
-998	7472	7397121376145520	esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
-998	7472	7397121376145520	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
-7472	11189	7397121413299016	IoT_Speaker.elf	db38cf1cf5c492eb
-11189	11520	7397121416988180	.bin_timestamp	266d241226798d1c
-11189	11520	7397121416988180	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/.bin_timestamp	266d241226798d1c
-11520	11609	0	esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
-11520	11609	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
-11609	34076	0	CMakeFiles/flash	2f24ee61cca4358
-11609	34076	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/CMakeFiles/flash	2f24ee61cca4358
-122	344	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-122	344	7378938652765356	bootloader/bootloader.elf	9035450419e72458
-122	344	7378938652765356	bootloader/bootloader.bin	9035450419e72458
-122	344	7378938652765356	bootloader/bootloader.map	9035450419e72458
-122	344	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-122	344	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
-122	344	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
-122	344	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
-128	854	7397124808061416	esp-idf/DFPlayer/CMakeFiles/__idf_DFPlayer.dir/DFPlayer.c.obj	526eb5ed081390a8
-134	860	7397124807986190	esp-idf/WiFi/CMakeFiles/__idf_WiFi.dir/wifi.c.obj	de0c81c83a4f3844
-854	932	7397124809035545	esp-idf/DFPlayer/libDFPlayer.a	a1f92428c7d7dad5
-860	934	7397124809060197	esp-idf/WiFi/libWiFi.a	43b405a967ca2698
-934	7389	7397124873213152	esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
-934	7389	7397124873213152	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
-7389	11404	7397124913401650	IoT_Speaker.elf	db38cf1cf5c492eb
-11404	11712	7397124916805654	.bin_timestamp	266d241226798d1c
-11404	11712	7397124916805654	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/.bin_timestamp	266d241226798d1c
-11712	11819	0	esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
-11712	11819	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
-11820	34142	0	CMakeFiles/flash	2f24ee61cca4358
-11820	34142	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/CMakeFiles/flash	2f24ee61cca4358
-111	286	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-111	286	7378938652765356	bootloader/bootloader.elf	9035450419e72458
-111	286	7378938652765356	bootloader/bootloader.bin	9035450419e72458
-111	286	7378938652765356	bootloader/bootloader.map	9035450419e72458
-111	286	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-111	286	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
-111	286	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
-111	286	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
-125	934	7397136578656182	esp-idf/DFPlayer/CMakeFiles/__idf_DFPlayer.dir/DFPlayer.c.obj	526eb5ed081390a8
-934	1010	7397136579686409	esp-idf/DFPlayer/libDFPlayer.a	a1f92428c7d7dad5
-55	95	7397136895736984	esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj	a30e9a47499ff65f
-48	202	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-48	202	7378938652765356	bootloader/bootloader.elf	9035450419e72458
-48	202	7378938652765356	bootloader/bootloader.bin	9035450419e72458
-48	202	7378938652765356	bootloader/bootloader.map	9035450419e72458
-48	202	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-48	202	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
-48	202	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
-48	202	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
-60	648	7397136901074220	esp-idf/DFPlayer/CMakeFiles/__idf_DFPlayer.dir/DFPlayer.c.obj	526eb5ed081390a8
-648	715	7397136901954475	esp-idf/DFPlayer/libDFPlayer.a	a1f92428c7d7dad5
-715	778	7397136902587833	esp-idf/main/libmain.a	19016e97f94fca11
-778	7190	7397136966306130	esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
-778	7190	7397136966306130	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
-7190	10769	7397137002110663	IoT_Speaker.elf	db38cf1cf5c492eb
-10770	11039	7397137005149574	.bin_timestamp	266d241226798d1c
-10770	11039	7397137005149574	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/.bin_timestamp	266d241226798d1c
-11039	11134	0	esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
-11039	11134	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
-11135	33915	0	CMakeFiles/flash	2f24ee61cca4358
-11135	33915	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/CMakeFiles/flash	2f24ee61cca4358
-54	215	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-54	215	7378938652765356	bootloader/bootloader.elf	9035450419e72458
-54	215	7378938652765356	bootloader/bootloader.bin	9035450419e72458
-54	215	7378938652765356	bootloader/bootloader.map	9035450419e72458
-54	215	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
-54	215	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
-54	215	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
-54	215	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
-63	665	7397144839291715	esp-idf/DFPlayer/CMakeFiles/__idf_DFPlayer.dir/DFPlayer.c.obj	526eb5ed081390a8
-666	735	7397144840172675	esp-idf/DFPlayer/libDFPlayer.a	a1f92428c7d7dad5
-736	6837	7397144900752079	esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
-736	6837	7397144900752079	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
-6837	10308	7397144935588984	IoT_Speaker.elf	db38cf1cf5c492eb
-10308	10575	7397144938569669	.bin_timestamp	266d241226798d1c
-10308	10575	7397144938569669	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/.bin_timestamp	266d241226798d1c
-10575	10659	0	esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
-10575	10659	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
-10660	32983	0	CMakeFiles/flash	2f24ee61cca4358
-10660	32983	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/CMakeFiles/flash	2f24ee61cca4358
+12	23218	7397868609296680	build.ninja	bdfea21edb3fea91
+120	450	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
+120	450	7378938652765356	bootloader/bootloader.elf	9035450419e72458
+120	450	7378938652765356	bootloader/bootloader.bin	9035450419e72458
+120	450	7378938652765356	bootloader/bootloader.map	9035450419e72458
+120	450	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
+120	450	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
+120	450	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
+120	450	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
+131	1285	7397868623918503	esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj	8946ae01fe76e299
+141	1818	7397868629148860	esp-idf/MQTT_PUB_SUB/CMakeFiles/__idf_MQTT_PUB_SUB.dir/mqtt.c.obj	b716081bbbb50bb
+151	1863	7397868629505274	esp-idf/DFPlayer/CMakeFiles/__idf_DFPlayer.dir/DFPlayer.c.obj	2939369b23f19c52
+1818	1957	7397868630957796	esp-idf/MQTT_PUB_SUB/libMQTT_PUB_SUB.a	40ced0a9790d20fe
+1958	2071	7397868632110348	esp-idf/WiFi/libWiFi.a	43b405a967ca2698
+2072	2186	7397868633251398	esp-idf/DFPlayer/libDFPlayer.a	a1f92428c7d7dad5
+2186	2303	7397868634424405	esp-idf/main/libmain.a	19016e97f94fca11
+2303	20826	7397868818920494	esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
+2303	20826	7397868818920494	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
+20826	20994	7397868821209525	CMakeFiles/IoT_Speaker.elf.dir/project_elf_src_esp32.c.obj	692d67ed51ed4032
+20995	31021	7397868920801168	IoT_Speaker.elf	2ade6df24a8bc60e
+31021	31694	7397868928312885	.bin_timestamp	266d241226798d1c
+31021	31694	7397868928312885	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/.bin_timestamp	266d241226798d1c
+31695	31921	0	esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
+31695	31921	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
+31922	54854	0	CMakeFiles/flash	2f24ee61cca4358
+31922	54854	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/CMakeFiles/flash	2f24ee61cca4358
+139	538	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
+139	538	7378938652765356	bootloader/bootloader.elf	9035450419e72458
+139	538	7378938652765356	bootloader/bootloader.bin	9035450419e72458
+139	538	7378938652765356	bootloader/bootloader.map	9035450419e72458
+139	538	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
+139	538	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
+139	538	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
+139	538	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
+187	1079	7397871430736306	esp-idf/DFPlayer/CMakeFiles/__idf_DFPlayer.dir/DFPlayer.c.obj	2939369b23f19c52
+178	1082	7397871430736306	esp-idf/MQTT_PUB_SUB/CMakeFiles/__idf_MQTT_PUB_SUB.dir/mqtt.c.obj	b716081bbbb50bb
+1083	1217	7397871432386673	esp-idf/MQTT_PUB_SUB/libMQTT_PUB_SUB.a	40ced0a9790d20fe
+153	1337	7397871433317503	esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj	8946ae01fe76e299
+164	1804	7397871437822550	esp-idf/WiFi/CMakeFiles/__idf_WiFi.dir/wifi.c.obj	de0c81c83a4f3844
+1804	1926	7397871439483768	esp-idf/WiFi/libWiFi.a	43b405a967ca2698
+1926	2046	7397871440682065	esp-idf/DFPlayer/libDFPlayer.a	a1f92428c7d7dad5
+2046	2169	7397871441912630	esp-idf/main/libmain.a	19016e97f94fca11
+2169	21505	7397871634391269	esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
+2169	21505	7397871634391269	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
+21505	32048	7397871739987636	IoT_Speaker.elf	2ade6df24a8bc60e
+32049	32707	7397871747281472	.bin_timestamp	266d241226798d1c
+32049	32707	7397871747281472	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/.bin_timestamp	266d241226798d1c
+32707	32901	0	esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
+32707	32901	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
+32903	56043	0	CMakeFiles/flash	2f24ee61cca4358
+32903	56043	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/CMakeFiles/flash	2f24ee61cca4358
+130	474	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
+130	474	7378938652765356	bootloader/bootloader.elf	9035450419e72458
+130	474	7378938652765356	bootloader/bootloader.bin	9035450419e72458
+130	474	7378938652765356	bootloader/bootloader.map	9035450419e72458
+130	474	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
+130	474	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
+130	474	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
+130	474	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
+142	2068	7397874238934962	esp-idf/WiFi/CMakeFiles/__idf_WiFi.dir/wifi.c.obj	de0c81c83a4f3844
+2068	2205	7397874240916455	esp-idf/WiFi/libWiFi.a	43b405a967ca2698
+2205	21090	7397874429135780	esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
+2205	21090	7397874429135780	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
+21091	30847	7397874526614445	IoT_Speaker.elf	2ade6df24a8bc60e
+30848	31513	7397874533975659	.bin_timestamp	266d241226798d1c
+30848	31513	7397874533975659	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/.bin_timestamp	266d241226798d1c
+31513	31709	0	esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
+31513	31709	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
+31711	54564	0	CMakeFiles/flash	2f24ee61cca4358
+31711	54564	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/CMakeFiles/flash	2f24ee61cca4358
+115	501	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
+115	501	7378938652765356	bootloader/bootloader.elf	9035450419e72458
+115	501	7378938652765356	bootloader/bootloader.bin	9035450419e72458
+115	501	7378938652765356	bootloader/bootloader.map	9035450419e72458
+115	501	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
+115	501	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
+115	501	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
+115	501	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
+189	1060	7397876889337707	esp-idf/MQTT_PUB_SUB/CMakeFiles/__idf_MQTT_PUB_SUB.dir/mqtt.c.obj	b716081bbbb50bb
+199	1099	7397876889687822	esp-idf/DFPlayer/CMakeFiles/__idf_DFPlayer.dir/DFPlayer.c.obj	2939369b23f19c52
+1061	1174	7397876890698049	esp-idf/MQTT_PUB_SUB/libMQTT_PUB_SUB.a	40ced0a9790d20fe
+127	1254	7397876891338151	esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj	8946ae01fe76e299
+137	1529	7397876893808908	esp-idf/WiFi/CMakeFiles/__idf_WiFi.dir/wifi.c.obj	de0c81c83a4f3844
+1529	1644	7397876895409161	esp-idf/WiFi/libWiFi.a	43b405a967ca2698
+1645	1763	7397876896591345	esp-idf/DFPlayer/libDFPlayer.a	a1f92428c7d7dad5
+1764	1887	7397876897831625	esp-idf/main/libmain.a	19016e97f94fca11
+1888	21028	7397877088603798	esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
+1888	21028	7397877088603798	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
+21028	30746	7397877185289179	IoT_Speaker.elf	2ade6df24a8bc60e
+30747	31435	7397877193268973	.bin_timestamp	266d241226798d1c
+30747	31435	7397877193268973	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/.bin_timestamp	266d241226798d1c
+31436	31635	0	esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
+31436	31635	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
+31637	54685	0	CMakeFiles/flash	2f24ee61cca4358
+31637	54685	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/CMakeFiles/flash	2f24ee61cca4358
+119	471	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
+119	471	7378938652765356	bootloader/bootloader.elf	9035450419e72458
+119	471	7378938652765356	bootloader/bootloader.bin	9035450419e72458
+119	471	7378938652765356	bootloader/bootloader.map	9035450419e72458
+119	471	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
+119	471	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
+119	471	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
+119	471	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
+133	1608	7397878421846519	esp-idf/WiFi/CMakeFiles/__idf_WiFi.dir/wifi.c.obj	de0c81c83a4f3844
+1609	1734	7397878423907494	esp-idf/WiFi/libWiFi.a	43b405a967ca2698
+1734	19734	7397878603304626	esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
+1734	19734	7397878603304626	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
+19735	29490	7397878700624943	IoT_Speaker.elf	2ade6df24a8bc60e
+29491	30151	7397878708063370	.bin_timestamp	266d241226798d1c
+29491	30151	7397878708063370	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/.bin_timestamp	266d241226798d1c
+30151	30382	0	esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
+30151	30382	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
+30384	53250	0	CMakeFiles/flash	2f24ee61cca4358
+30384	53250	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/CMakeFiles/flash	2f24ee61cca4358
+128	375	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
+128	375	7378938652765356	bootloader/bootloader.elf	9035450419e72458
+128	375	7378938652765356	bootloader/bootloader.bin	9035450419e72458
+128	375	7378938652765356	bootloader/bootloader.map	9035450419e72458
+128	375	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
+128	375	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
+128	375	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
+128	375	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
+134	1173	7397891635414799	esp-idf/MQTT_PUB_SUB/CMakeFiles/__idf_MQTT_PUB_SUB.dir/mqtt.c.obj	b716081bbbb50bb
+1174	1255	7397891636665657	esp-idf/MQTT_PUB_SUB/libMQTT_PUB_SUB.a	40ced0a9790d20fe
+1255	8360	7397891707295723	esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
+1255	8360	7397891707295723	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
+8360	12453	7397891748139825	IoT_Speaker.elf	2ade6df24a8bc60e
+12454	12750	7397891751587106	.bin_timestamp	266d241226798d1c
+12454	12750	7397891751587106	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/.bin_timestamp	266d241226798d1c
+12750	12851	0	esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
+12750	12851	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
+12851	35206	0	CMakeFiles/flash	2f24ee61cca4358
+12851	35206	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/CMakeFiles/flash	2f24ee61cca4358
+55	104	7397892929445567	esp-idf/MQTT_PUB_SUB/CMakeFiles/__idf_MQTT_PUB_SUB.dir/mqtt.c.obj	b716081bbbb50bb
+105	174	7397892930155731	esp-idf/MQTT_PUB_SUB/libMQTT_PUB_SUB.a	40ced0a9790d20fe
+48	224	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
+48	224	7378938652765356	bootloader/bootloader.elf	9035450419e72458
+48	224	7378938652765356	bootloader/bootloader.bin	9035450419e72458
+48	224	7378938652765356	bootloader/bootloader.map	9035450419e72458
+48	224	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
+48	224	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
+48	224	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
+48	224	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
+174	6677	7397892994631503	esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
+174	6677	7397892994631503	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
+6677	11658	7397893044531068	IoT_Speaker.elf	2ade6df24a8bc60e
+11659	12443	7397893052754550	.bin_timestamp	266d241226798d1c
+11659	12443	7397893052754550	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/.bin_timestamp	266d241226798d1c
+12443	12772	0	esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
+12443	12772	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
+12774	35901	0	CMakeFiles/flash	2f24ee61cca4358
+12774	35901	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/CMakeFiles/flash	2f24ee61cca4358
+57	108	7397894142529808	esp-idf/WiFi/CMakeFiles/__idf_WiFi.dir/wifi.c.obj	de0c81c83a4f3844
+108	182	7397894143268718	esp-idf/WiFi/libWiFi.a	43b405a967ca2698
+50	231	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
+50	231	7378938652765356	bootloader/bootloader.elf	9035450419e72458
+50	231	7378938652765356	bootloader/bootloader.bin	9035450419e72458
+50	231	7378938652765356	bootloader/bootloader.map	9035450419e72458
+50	231	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
+50	231	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
+50	231	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
+50	231	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
+182	6668	7397894207670724	esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
+182	6668	7397894207670724	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
+6668	12343	7397894264406435	IoT_Speaker.elf	2ade6df24a8bc60e
+12343	12650	7397894267941142	.bin_timestamp	266d241226798d1c
+12343	12650	7397894267941142	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/.bin_timestamp	266d241226798d1c
+12650	12754	0	esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
+12650	12754	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
+12754	37726	0	CMakeFiles/flash	2f24ee61cca4358
+12754	37726	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/CMakeFiles/flash	2f24ee61cca4358
+242	578	7378938652765356	bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
+242	578	7378938652765356	bootloader/bootloader.elf	9035450419e72458
+242	578	7378938652765356	bootloader/bootloader.bin	9035450419e72458
+242	578	7378938652765356	bootloader/bootloader.map	9035450419e72458
+242	578	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	9035450419e72458
+242	578	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.elf	9035450419e72458
+242	578	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin	9035450419e72458
+242	578	7378938652765356	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.map	9035450419e72458
+252	1454	7397926001612594	esp-idf/DFPlayer/CMakeFiles/__idf_DFPlayer.dir/DFPlayer.c.obj	2939369b23f19c52
+1455	1574	7397926003222236	esp-idf/DFPlayer/libDFPlayer.a	a1f92428c7d7dad5
+1574	8267	7397926069768345	esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
+1574	8267	7397926069768345	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esp_system/ld/sections.ld	85111e0429ec3c05
+8267	12830	7397926115228579	IoT_Speaker.elf	2ade6df24a8bc60e
+12830	13158	7397926119040368	.bin_timestamp	266d241226798d1c
+12830	13158	7397926119040368	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/.bin_timestamp	266d241226798d1c
+13159	13285	0	esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
+13159	13285	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/esp-idf/esptool_py/CMakeFiles/app_check_size	f86e4c0b48589b73
+13286	35743	0	CMakeFiles/flash	2f24ee61cca4358
+13286	35743	0	D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/CMakeFiles/flash	2f24ee61cca4358

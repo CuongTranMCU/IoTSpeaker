@@ -1,0 +1,109 @@
+[1/16] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "D:\NAM3\KI 2\DESIGN_WIRELESS_EMBEDDED_SYSTEM\PRACTICE\IOT_SPEAKER\IoT_Speaker\esp_idf\build\bootloader\esp-idf\esptool_py" && D:\ESP3-IDF\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
+[2/14] Building C object esp-idf/DFPlayer/CMakeFiles/__idf_DFPlayer.dir/DFPlayer.c.obj
+D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/components/DFPlayer/DFPlayer.c: In function 'DFPLAYER_Init':
+D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/components/DFPlayer/DFPlayer.c:79:23: warning: assignment to 'uart_port_t' {aka 'int'} from 'uart_port_t *' {aka 'int *'} makes integer from pointer without a cast [-Wint-conversion]
+   79 |         MP3->DFP_UART = UART;
+      |                       ^
+[3/14] Building C object esp-idf/MQTT_PUB_SUB/CMakeFiles/__idf_MQTT_PUB_SUB.dir/mqtt.c.obj
+[4/14] Linking C static library esp-idf\MQTT_PUB_SUB\libMQTT_PUB_SUB.a
+[5/14] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/components/DFPlayer/DFPlayer.h:18,
+                 from D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/main/main.c:4:
+D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/main/main.c: In function 'app_main':
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/uart/include/driver/uart.h:27:32: warning: passing argument 2 of 'DFPLAYER_Init' makes pointer from integer without a cast [-Wint-conversion]
+   27 | #define UART_NUM_2             (2) /*!< UART port 2 */
+      |                                ^~~
+      |                                |
+      |                                int
+D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/main/main.c:76:24: note: in expansion of macro 'UART_NUM_2'
+   76 |     DFPLAYER_Init(&MP3,UART_NUM_2);
+      |                        ^~~~~~~~~~
+D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/components/DFPlayer/DFPlayer.h:51:53: note: expected 'uart_port_t *' {aka 'int *'} but argument is of type 'int'
+   51 | void DFPLAYER_Init(DFPLAYER_Name* MP3, uart_port_t* UART);
+      |                                        ~~~~~~~~~~~~~^~~~
+[6/14] Building C object esp-idf/WiFi/CMakeFiles/__idf_WiFi.dir/wifi.c.obj
+[7/14] Linking C static library esp-idf\WiFi\libWiFi.a
+[8/14] Linking C static library esp-idf\DFPlayer\libDFPlayer.a
+[9/14] Linking C static library esp-idf\main\libmain.a
+[10/14] Generating ld/sections.ld
+[11/14] Linking CXX executable IoT_Speaker.elf
+[12/14] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 27 ELF sections
+Successfully created esp32 image.
+Generated D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/IoT_Speaker.bin
+[13/14] cmd.exe /C "cd /D "D:\NAM3\KI 2\DESIGN_WIRELESS_EMBEDDED_SYSTEM\PRACTICE\IOT_SPEAKER\IoT_Speaker\esp_idf\build\esp-idf\esptool_py" && D:\ESP3-IDF\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/partition_table/partition-table.bin" "D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build/IoT_Speaker.bin""
+IoT_Speaker.bin binary size 0xe3040 bytes. Smallest app partition is 0x100000 bytes. 0x1cfc0 bytes (11%) free.
+[13/14] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.1.2\components\esptool_py && D:\ESP3-IDF\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.1.2 -D SERIAL_TOOL=D:/ESP3-IDF/Espressif/python_env/idf5.1_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=D:/NAM3/KI 2/DESIGN_WIRELESS_EMBEDDED_SYSTEM/PRACTICE/IOT_SPEAKER/IoT_Speaker/esp_idf/build" -P C:/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM5 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 IoT_Speaker.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM5
+Connecting.....
+Chip is ESP32-D0WD (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: a4:e5:7c:f7:c2:fc
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000f3fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26640 bytes to 16691...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000768a... (100 %)
+Wrote 26640 bytes (16691 compressed) at 0x00001000 in 0.9 seconds (effective 230.0 kbit/s)...
+Hash of data verified.
+Compressed 929856 bytes to 597131...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001c95d... (5 %)
+Writing at 0x00023f14... (8 %)
+Writing at 0x00029308... (10 %)
+Writing at 0x000347ca... (13 %)
+Writing at 0x0003dcec... (16 %)
+Writing at 0x000437c9... (18 %)
+Writing at 0x0004912b... (21 %)
+Writing at 0x0004edcf... (24 %)
+Writing at 0x00054add... (27 %)
+Writing at 0x0005a462... (29 %)
+Writing at 0x0005fe2d... (32 %)
+Writing at 0x000658f3... (35 %)
+Writing at 0x0006bd6d... (37 %)
+Writing at 0x00071819... (40 %)
+Writing at 0x000770c2... (43 %)
+Writing at 0x0007c4d3... (45 %)
+Writing at 0x0008189f... (48 %)
+Writing at 0x00086d97... (51 %)
+Writing at 0x0008c09e... (54 %)
+Writing at 0x00091706... (56 %)
+Writing at 0x00096f64... (59 %)
+Writing at 0x0009cd93... (62 %)
+Writing at 0x000a2493... (64 %)
+Writing at 0x000a7b12... (67 %)
+Writing at 0x000ad35d... (70 %)
+Writing at 0x000b2cc9... (72 %)
+Writing at 0x000b82bb... (75 %)
+Writing at 0x000bddae... (78 %)
+Writing at 0x000c3746... (81 %)
+Writing at 0x000c8f2b... (83 %)
+Writing at 0x000d183a... (86 %)
+Writing at 0x000da00f... (89 %)
+Writing at 0x000dfad5... (91 %)
+Writing at 0x000e584f... (94 %)
+Writing at 0x000eb513... (97 %)
+Writing at 0x000f081a... (100 %)
+Wrote 929856 bytes (597131 compressed) at 0x00010000 in 14.8 seconds (effective 501.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 234.3 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

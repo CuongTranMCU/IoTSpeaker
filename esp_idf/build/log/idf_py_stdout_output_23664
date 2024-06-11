@@ -1,0 +1,2995 @@
+T_FLASH_BOOTHS���      : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) bo�ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 22 2024 21:43:34[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26d94h (159124) map[0m
+[0;32mI (162) esp_image: segment 1: paddr=00036dbc vaddr=3ffb0000 size=03f74h ( 16244) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=0003ad38 vaddr=40080000 size=052e0h ( 21216) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a1278h (660088) map[0m
+[0;32mI (416) esp_image: segment 4: paddr=000e12a0 vaddr=400852e0 size=11d70h ( 73072) load[0m
+[0;32mI (459) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (459) boot: Disabling RNG early entropy source...[0m
+[0;32mI (470) cpu_start: Multicore app[0m
+[0;32mI (471) cpu_start: Pro cpu up.[0m
+[0;32mI (471) cpu_start: Starting app cpu, entry point is 0x400814a8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (488) cpu_start: Pro cpu start user code[0m
+[0;32mI (488) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (489) cpu_start: Application information:[0m
+[0;32mI (493) cpu_start: Project name:     IoT_Speaker[0m
+[0;32mI (498) cpu_start: App version:      d8a2ac6-dirty[0m
+[0;32mI (504) cpu_start: Compile time:     Jun 10 2024 16:24:46[0m
+[0;32mI (510) cpu_start: ELF file SHA256:  cdae9f95c93cdd51...[0m
+[0;32mI (516) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (521) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (526) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (531) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (536) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (543) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (549) heap_init: At 3FFB8A90 len 00027570 (157 KiB): DRAM[0m
+[0;32mI (555) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (562) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (568) heap_init: At 40097050 len 00008FB0 (35 KiB): IRAM[0m
+[0;32mI (576) spi_flash: detected chip: generic[0m
+[0;32mI (579) spi_flash: flash io: dio[0m
+[0;32mI (584) app_start: Starting scheduler on CPU0[0m
+[0;32mI (588) app_start: Starting scheduler on CPU1[0m
+[0;32mI (588) main_task: Started on CPU0[0m
+[0;32mI (598) main_task: Calling app_main()[0m
+I (658) wifi:wifi driver task: 3ffc0ba8, prio:23, stack:6656, core=0
+I (678) wifi:wifi firmware version: 91b9630
+I (678) wifi:wifi certification version: v7.0
+I (678) wifi:config NVS flash: enabled
+I (678) wifi:config nano formating: disabled
+I (678) wifi:Init data frame dynamic rx buffer num: 32
+I (688) wifi:Init static rx mgmt buffer num: 5
+I (688) wifi:Init management short buffer num: 32
+I (688) wifi:Init dynamic tx buffer num: 32
+I (698) wifi:Init static rx buffer size: 1600
+I (698) wifi:Init static rx buffer num: 10
+I (708) wifi:Init dynamic rx buffer num: 32
+[0;32mI (708) wifi_init: rx ba win: 6[0m
+[0;32mI (708) wifi_init: tcpip mbox: 32[0m
+[0;32mI (718) wifi_init: udp mbox: 6[0m
+[0;32mI (718) wifi_init: tcp mbox: 6[0m
+[0;32mI (718) wifi_init: tcp tx win: 5744[0m
+[0;32mI (728) wifi_init: tcp rx win: 5744[0m
+[0;32mI (728) wifi_init: tcp mss: 1440[0m
+[0;32mI (738) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (738) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (748) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (838) wifi:mode : sta (a4:e5:7c:f7:c2:fc)
+I (838) wifi:enable tsf
+[0;32mI (838) WIFI_EXAMPLE: wifi_init_sta finished.[0m
+[0;32mI (838) SSD1306: Legacy i2c driver is used[0m
+[0;32mI (848) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (858) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (858) wifi:state: init -> auth (b0)
+I (868) wifi:state: auth -> assoc (0)
+I (878) wifi:state: assoc -> run (10)
+[0;32mI (898) SSD1306: OLED configured successfully[0m
+I (938) wifi:connected with Ebisu, aid = 1, channel 11, BW20, bssid = 52:77:05:8c:0d:72
+I (938) wifi:security: WPA2-PSK, phy: bgn, rssi: -65
+I (948) wifi:pm start, type: 1
+
+I (958) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (978) wifi:<ba-add>idx:0 (ifx:0, 52:77:05:8c:0d:72), tid:0, ssn:2, winSize:64
+[0;32mI (1948) esp_netif_handlers: sta ip: 192.168.43.46, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (1948) WIFI_EXAMPLE: got ip:192.168.43.46[0m
+[0;32mI (2058) MQTT: Other event id:7[0m
+I (2908) wifi:<ba-add>idx:1 (ifx:0, 52:77:05:8c:0d:72), tid:4, ssn:0, winSize:64
+[0;32mI (4338) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (4348) MQTT: sent subscribe successful, msg_id=28959[0m
+[0;32mI (4948) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=28959[0m
+[0;32mI (9478) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":false,"songID":0,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: -1
+volume: -1
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 4
+stop: 0
+[0;32mI (13758) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":2,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 0
+
+play song id[0;32mI (13778) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (14778) ESP32: Send data[0m
+7E FF 06 03 00 00 02 FE F6 EF 
+[0;32mI (95468) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":2,"stop":true,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 1
+
+ Stop[0;32mI (95478) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (96488) ESP32: Send data[0m
+7E FF 06 16 00 00 00 FE E5 EF 
+[0;32mI (97928) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":false,"songID":0,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 1
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 4
+stop: 0
+[0;32mI (122728) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":3,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: -1
+volume: -1
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+stop: 0
+
+Play song id and set volume[0;32mI (122748) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (123748) ESP32: Send data[0m
+7E FF 06 06 00 00 0C FE E9 EF 
+[0;32mI (125748) ESP32: Send data[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+[0;32mI (210148) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":3,"stop":true,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+stop: 1
+
+ Stop[0;32mI (210168) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (211168) ESP32: Send data[0m
+7E FF 06 16 00 00 00 FE E5 EF 
+[0;32mI (212428) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":false,"songID":0,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+stop: 1
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 4
+stop: 0
+[0;32mI (216088) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":4,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: -1
+volume: -1
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 4
+stop: 0
+
+Play song id and set volume[0;32mI (216108) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (217108) ESP32: Send data[0m
+7E FF 06 06 00 00 0C FE E9 EF 
+[0;32mI (219108) ESP32: Send data[0m
+7E FF 06 03 00 00 04 FE F4 EF 
+[0;32mI (220148) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":false,"songID":0,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 4
+stop: 0
+[0;32mI (237588) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":3,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+stop: 0
+
+play song id[0;32mI (237608) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (238618) ESP32: Send data[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+[0;32mI (263598) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":false,"songID":0,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 4
+stop: 0
+[0;32mI (296778) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":6,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 6
+volume: 4
+stop: 0
+
+play song id[0;32mI (296798) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (297798) ESP32: Send data[0m
+7E FF 06 03 00 00 06 FE F2 EF 
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 22 2024 21:43:34[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26d94h (159124) map[0m
+[0;32mI (162) esp_image: segment 1: paddr=00036dbc vaddr=3ffb0000 size=03f74h ( 16244) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=0003ad38 vaddr=40080000 size=052e0h ( 21216) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a1278h (660088) map[0m
+[0;32mI (416) esp_image: segment 4: paddr=000e12a0 vaddr=400852e0 size=11d70h ( 73072) load[0m
+[0;32mI (459) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (459) boot: Disabling RNG early entropy source...[0m
+[0;32mI (470) cpu_start: Multicore app[0m
+[0;32mI (471) cpu_start: Pro cpu up.[0m
+[0;32mI (471) cpu_start: Starting app cpu, entry point is 0x400814a8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (488) cpu_start: Pro cpu start user code[0m
+[0;32mI (488) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (489) cpu_start: Application information:[0m
+[0;32mI (493) cpu_start: Project name:     IoT_Speaker[0m
+[0;32mI (498) cpu_start: App version:      d8a2ac6-dirty[0m
+[0;32mI (504) cpu_start: Compile time:     Jun 10 2024 16:24:46[0m
+[0;32mI (510) cpu_start: ELF file SHA256:  cdae9f95c93cdd51...[0m
+[0;32mI (516) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (521) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (526) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (531) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (536) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (543) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (549) heap_init: At 3FFB8A90 len 00027570 (157 KiB): DRAM[0m
+[0;32mI (555) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (562) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (568) heap_init: At 40097050 len 00008FB0 (35 KiB): IRAM[0m
+[0;32mI (576) spi_flash: detected chip: generic[0m
+[0;32mI (579) spi_flash: flash io: dio[0m
+[0;32mI (584) app_start: Starting scheduler on CPU0[0m
+[0;32mI (588) app_start: Starting scheduler on CPU1[0m
+[0;32mI (588) main_task: Started on CPU0[0m
+[0;32mI (598) main_task: Calling app_main()[0m
+I (658) wifi:wifi driver task: 3ffc0ba8, prio:23, stack:6656, core=0
+I (678) wifi:wifi firmware version: 91b9630
+I (678) wifi:wifi certification version: v7.0
+I (678) wifi:config NVS flash: enabled
+I (678) wifi:config nano formating: disabled
+I (678) wifi:Init data frame dynamic rx buffer num: 32
+I (688) wifi:Init static rx mgmt buffer num: 5
+I (688) wifi:Init management short buffer num: 32
+I (688) wifi:Init dynamic tx buffer num: 32
+I (698) wifi:Init static rx buffer size: 1600
+I (698) wifi:Init static rx buffer num: 10
+I (708) wifi:Init dynamic rx buffer num: 32
+[0;32mI (708) wifi_init: rx ba win: 6[0m
+[0;32mI (708) wifi_init: tcpip mbox: 32[0m
+[0;32mI (718) wifi_init: udp mbox: 6[0m
+[0;32mI (718) wifi_init: tcp mbox: 6[0m
+[0;32mI (718) wifi_init: tcp tx win: 5744[0m
+[0;32mI (728) wifi_init: tcp rx win: 5744[0m
+[0;32mI (728) wifi_init: tcp mss: 1440[0m
+[0;32mI (738) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (738) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (748) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (838) wifi:mode : sta (a4:e5:7c:f7:c2:fc)
+I (838) wifi:enable tsf
+[0;32mI (838) WIFI_EXAMPLE: wifi_init_sta finished.[0m
+[0;32mI (848) SSD1306: Legacy i2c driver is used[0m
+[0;32mI (848) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (858) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (858) wifi:state: init -> auth (b0)
+I (868) wifi:state: auth -> assoc (0)
+I (878) wifi:state: assoc -> run (10)
+[0;32mI (918) SSD1306: OLED configured successfully[0m
+I (948) wifi:connected with Ebisu, aid = 1, channel 11, BW20, bssid = 52:77:05:8c:0d:72
+I (948) wifi:security: WPA2-PSK, phy: bgn, rssi: -45
+I (948) wifi:pm start, type: 1
+
+I (968) wifi:<ba-add>idx:0 (ifx:0, 52:77:05:8c:0d:72), tid:0, ssn:2, winSize:64
+I (1018) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (1958) esp_netif_handlers: sta ip: 192.168.43.46, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (1958) WIFI_EXAMPLE: got ip:192.168.43.46[0m
+[0;32mI (2068) MQTT: Other event id:7[0m
+I (2358) wifi:<ba-add>idx:1 (ifx:0, 52:77:05:8c:0d:72), tid:4, ssn:0, winSize:64
+[0;31mE (12598) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (12598) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (12598) mqtt_client: Error transport connect[0m
+[0;32mI (12598) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (12608) MQTT: Last error reported from esp-tls: 0x8006[0m
+[0;32mI (12608) MQTT: Last errno string (Success)[0m
+[0;32mI (12618) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (27618) MQTT: Other event id:7[0m
+[0;32mI (28568) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (28568) MQTT: sent subscribe successful, msg_id=25841[0m
+[0;32mI (28988) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=25841[0m
+[0;32mI (34508) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":5,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: -1
+volume: -1
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 5
+volume: 4
+stop: 0
+
+Play song id and set volume[0;32mI (34528) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (35528) ESP32: Send data[0m
+7E FF 06 06 00 00 0C FE E9 EF 
+[0;32mI (37528) ESP32: Send data[0m
+7E FF 06 03 00 00 05 FE F3 EF 
+[0;32mI (47818) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":5,"stop":true,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 5
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 5
+volume: 4
+stop: 1
+
+ Stop[0;32mI (47838) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (48838) ESP32: Send data[0m
+7E FF 06 16 00 00 00 FE E5 EF 
+[0;32mI (50278) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":false,"songID":0,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 5
+volume: 4
+stop: 1
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 4
+stop: 0
+[0;32mI (52748) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":1,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: -1
+volume: -1
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 1
+volume: 4
+stop: 0
+
+Play song id and set volume[0;32mI (52758) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (53768) ESP32: Send data[0m
+7E FF 06 06 00 00 0C FE E9 EF 
+[0;32mI (55768) ESP32: Send data[0m
+7E FF 06 03 00 00 01 FE F7 EF 
+[0;32mI (61948) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":2,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 1
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 0
+
+play song id[0;32mI (61968) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (62968) ESP32: Send data[0m
+7E FF 06 03 00 00 02 FE F6 EF 
+[0;32mI (69528) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":1,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 1
+volume: 4
+stop: 0
+
+play song id[0;32mI (69548) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (70548) ESP32: Send data[0m
+7E FF 06 03 00 00 01 FE F7 EF 
+[0;32mI (74338) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":false,"songID":1,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 1
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 1
+volume: 4
+stop: 0
+
+Pause[0;32mI (74358) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (75358) ESP32: Send data[0m
+7E FF 06 0E 00 00 00 FE ED EF 
+[0;32mI (77518) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":1,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 1
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 1
+volume: 4
+stop: 0
+
+Resume[0;32mI (77528) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (78538) ESP32: Send data[0m
+7E FF 06 0D 00 00 00 FE EE EF 
+[0;32mI (82018) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":2,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 1
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 0
+
+play song id[0;32mI (82038) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (83038) ESP32: Send data[0m
+7E FF 06 03 00 00 02 FE F6 EF 
+[0;32mI (93698) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":3,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+stop: 0
+
+play song id[0;32mI (93708) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (94718) ESP32: Send data[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+[0;32mI (99018) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":3,"stop":true,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+stop: 1
+
+ Stop[0;32mI (99038) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (100038) ESP32: Send data[0m
+7E FF 06 16 00 00 00 FE E5 EF 
+[0;32mI (101268) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":false,"songID":0,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+stop: 1
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 4
+stop: 0
+[0;32mI (102708) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":7,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: -1
+volume: -1
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 7
+volume: 4
+stop: 0
+
+Play song id and set volume[0;32mI (102718) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (103728) ESP32: Send data[0m
+7E FF 06 06 00 00 0C FE E9 EF 
+[0;32mI (105728) ESP32: Send data[0m
+7E FF 06 03 00 00 07 FE F1 EF 
+[0;32mI (113148) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":8,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 7
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 8
+volume: 4
+stop: 0
+
+play song id[0;32mI (113168) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (114168) ESP32: Send data[0m
+7E FF 06 03 00 00 08 FE F0 EF 
+[0;32mI (115208) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":9,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 8
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 9
+volume: 4
+stop: 0
+
+play song id[0;32mI (115228) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (116228) ESP32: Send data[0m
+7E FF 06 03 00 00 09 FE EF EF 
+[0;32mI (117268) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":10,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 9
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 10
+volume: 4
+stop: 0
+
+play song id[0;32mI (117288) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (118288) ESP32: Send data[0m
+7E FF 06 03 00 00 0A FE EE EF 
+[0;32mI (119328) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":1,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 10
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 1
+volume: 4
+stop: 0
+
+play song id[0;32mI (119348) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (120348) ESP32: Send data[0m
+7E FF 06 03 00 00 01 FE F7 EF 
+[0;32mI (121388) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":2,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 1
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 0
+
+play song id[0;32mI (121408) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (122408) ESP32: Send data[0m
+7E FF 06 03 00 00 02 FE F6 EF 
+[0;32mI (123448) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":3,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+stop: 0
+
+play song id[0;32mI (123468) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (124468) ESP32: Send data[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+[0;32mI (125508) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":4,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 4
+stop: 0
+
+play song id[0;32mI (125528) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (126528) ESP32: Send data[0m
+7E FF 06 03 00 00 04 FE F4 EF 
+[0;32mI (127568) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":5,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 5
+volume: 4
+stop: 0
+
+play song id[0;32mI (127588) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (128588) ESP32: Send data[0m
+7E FF 06 03 00 00 05 FE F3 EF 
+[0;32mI (327498) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (327498) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (327498) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (327498) RX_TASK: Read 10 bytes: '3D'[0m
+[0;32mI (327498) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (327508) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (327508) RX_TASK: Read 10 bytes: '05'[0m
+[0;32mI (327518) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (327518) RX_TASK: Read 10 bytes: 'B9'[0m
+[0;32mI (327528) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (349898) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":2,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 5
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 0
+
+play song id[0;32mI (349908) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (350918) ESP32: Send data[0m
+7E FF 06 03 00 00 02 FE F6 EF 
+I (488958) wifi:state: run -> init (3c0)
+I (488958) wifi:pm stop, total sleep time: 439441582 us / 488007593 us
+
+I (488958) wifi:<ba-del>idx:0, tid:0
+I (488958) wifi:<ba-del>idx:1, tid:4
+I (488968) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+[0;32mI (488978) WIFI_EXAMPLE: retry to connect to the AP[0m
+[0;31mE (488978) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+I (488978) wifi:[0;31mE (488988) mqtt_client: Poll read error: 119, aborting connection[0m
+new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+[0;32mI (488998) MQTT: MQTT_EVENT_DISCONNECTED[0m
+I (488998) wifi:state: init -> auth (b0)
+I (489008) wifi:state: auth -> assoc (0)
+I (489018) wifi:state: assoc -> run (10)
+I (489058) wifi:connected with Ebisu, aid = 1, channel 11, BW20, bssid = 52:77:05:8c:0d:72
+I (489058) wifi:security: WPA2-PSK, phy: bgn, rssi: -46
+I (489068) wifi:pm start, type: 1
+
+[0;32mI (489218) WIFI_EXAMPLE: connect to the AP fail[0m
+I (489298) wifi:<ba-add>idx:0 (ifx:0, 52:77:05:8c:0d:72), tid:0, ssn:2, winSize:64
+I (489358) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (490228) esp_netif_handlers: sta ip: 192.168.43.46, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (490228) WIFI_EXAMPLE: got ip:192.168.43.46[0m
+[0;32mI (490338) MQTT: Other event id:7[0m
+[0;31mE (490358) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (490358) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (490358) mqtt_client: Error transport connect[0m
+[0;32mI (490368) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (490368) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;32mI (490378) MQTT: Last errno string (Success)[0m
+[0;32mI (490378) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (499008) MQTT: Other event id:7[0m
+I (499498) wifi:<ba-add>idx:1 (ifx:0, 52:77:05:8c:0d:72), tid:7, ssn:0, winSize:64
+[0;32mI (500388) MQTT: Other event id:7[0m
+[0;32mI (500938) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (500938) MQTT: sent subscribe successful, msg_id=15764[0m
+[0;31mE (501338) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (501348) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (501348) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (501348) MQTT: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (501358) MQTT: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (501368) MQTT: Last errno string (Socket is not connected)[0m
+[0;31mE (501368) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (501388) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (502368) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (502368) MQTT: sent subscribe successful, msg_id=44580[0m
+[0;32mI (502978) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=44580[0m
+I (512598) wifi:state: run -> init (3c0)
+I (512598) wifi:pm stop, total sleep time: 19470100 us / 23532775 us
+
+I (512608) wifi:<ba-del>idx:0, tid:0
+I (512608) wifi:<ba-del>idx:1, tid:7
+I (512608) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+[0;31mE (512618) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 55[0m
+[0;32mI (512618) WIFI_EXAMPLE: retry to connect to the AP[0m
+I (512628) wifi:[0;31mE (512628) mqtt_client: Poll read error: 119, aborting connection[0m
+new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+[0;32mI (512638) MQTT: MQTT_EVENT_DISCONNECTED[0m
+I (512648) wifi:state: init -> auth (b0)
+I (512658) wifi:state: auth -> assoc (0)
+I (512658) wifi:state: assoc -> run (10)
+[0;32mI (512848) WIFI_EXAMPLE: connect to the AP fail[0m
+[0;32mI (516388) MQTT: Other event id:7[0m
+[0;31mE (516388) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (516388) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (516388) mqtt_client: Error transport connect[0m
+[0;32mI (516398) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (516398) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (516408) MQTT: Last errno string (Success)[0m
+[0;32mI (516408) MQTT: MQTT_EVENT_DISCONNECTED[0m
+I (518908) wifi:bcn_timeout,ap_probe_send_start
+I (521408) wifi:ap_probe_send over, resett wifi status to disassoc
+I (521408) wifi:state: run -> init (c800)
+I (521408) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+[0;32mI (521418) WIFI_EXAMPLE: retry to connect to the AP[0m
+[0;32mI (521628) WIFI_EXAMPLE: connect to the AP fail[0m
+[0;32mI (522648) MQTT: Other event id:7[0m
+[0;31mE (522648) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (522648) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (522648) mqtt_client: Error transport connect[0m
+[0;32mI (522658) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (522658) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (522668) MQTT: Last errno string (Success)[0m
+[0;32mI (522668) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (523828) WIFI_EXAMPLE: retry to connect to the AP[0m
+[0;32mI (524038) WIFI_EXAMPLE: connect to the AP fail[0m
+[0;32mI (526238) WIFI_EXAMPLE: retry to connect to the AP[0m
+[0;32mI (526418) MQTT: Other event id:7[0m
+[0;31mE (526428) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (526428) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (526428) mqtt_client: Error transport connect[0m
+[0;32mI (526438) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (526438) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (526448) MQTT: Last errno string (Success)[0m
+[0;32mI (526448) WIFI_EXAMPLE: connect to the AP fail[0m
+[0;32mI (526448) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (528658) WIFI_EXAMPLE: retry to connect to the AP[0m
+[0;32mI (528858) WIFI_EXAMPLE: connect to the AP fail[0m
+[0;32mI (531168) WIFI_EXAMPLE: connect to the AP fail[0m
+[0;32mI (532678) MQTT: Other event id:7[0m
+[0;31mE (532678) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (532678) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (532678) mqtt_client: Error transport connect[0m
+[0;32mI (532688) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (532688) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (532698) MQTT: Last errno string (Success)[0m
+[0;32mI (532698) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (536458) MQTT: Other event id:7[0m
+[0;31mE (536458) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (536458) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (536458) mqtt_client: Error transport connect[0m
+[0;32mI (536468) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (536468) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (536478) MQTT: Last errno string (Success)[0m
+[0;32mI (536478) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (542708) MQTT: Other event id:7[0m
+[0;31mE (542708) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (542708) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (542708) mqtt_client: Error transport connect[0m
+[0;32mI (542718) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (542718) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (542728) MQTT: Last errno string (Success)[0m
+[0;32mI (542728) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (546488) MQTT: Other event id:7[0m
+[0;31mE (546488) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (546488) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (546488) mqtt_client: Error transport connect[0m
+[0;32mI (546498) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (546498) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (546508) MQTT: Last errno string (Success)[0m
+[0;32mI (546508) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (552738) MQTT: Other event id:7[0m
+[0;31mE (552738) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (552738) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (552738) mqtt_client: Error transport connect[0m
+[0;32mI (552748) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (552748) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (552758) MQTT: Last errno string (Success)[0m
+[0;32mI (552758) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (556518) MQTT: Other event id:7[0m
+[0;31mE (556518) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (556518) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (556518) mqtt_client: Error transport connect[0m
+[0;32mI (556528) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (556528) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (556538) MQTT: Last errno string (Success)[0m
+[0;32mI (556538) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (562768) MQTT: Other event id:7[0m
+[0;31mE (562768) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (562768) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (562768) mqtt_client: Error transport connect[0m
+[0;32mI (562778) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (562778) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (562788) MQTT: Last errno string (Success)[0m
+[0;32mI (562788) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (566548) MQTT: Other event id:7[0m
+[0;31mE (566548) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (566548) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (566548) mqtt_client: Error transport connect[0m
+[0;32mI (566558) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (566558) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (566568) MQTT: Last errno string (Success)[0m
+[0;32mI (566568) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (572798) MQTT: Other event id:7[0m
+[0;31mE (572798) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (572798) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (572798) mqtt_client: Error transport connect[0m
+[0;32mI (572808) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (572808) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (572818) MQTT: Last errno string (Success)[0m
+[0;32mI (572818) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (576578) MQTT: Other event id:7[0m
+[0;31mE (576578) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (576578) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (576578) mqtt_client: Error transport connect[0m
+[0;32mI (576588) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (576588) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (576598) MQTT: Last errno string (Success)[0m
+[0;32mI (576598) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (582828) MQTT: Other event id:7[0m
+[0;31mE (582828) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (582828) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (582828) mqtt_client: Error transport connect[0m
+[0;32mI (582838) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (582838) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (582848) MQTT: Last errno string (Success)[0m
+[0;32mI (582848) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (586608) MQTT: Other event id:7[0m
+[0;31mE (586608) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (586608) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (586608) mqtt_client: Error transport connect[0m
+[0;32mI (586618) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (586618) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (586628) MQTT: Last errno string (Success)[0m
+[0;32mI (586628) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (592858) MQTT: Other event id:7[0m
+[0;31mE (592858) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (592858) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (592858) mqtt_client: Error transport connect[0m
+[0;32mI (592868) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (592868) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (592878) MQTT: Last errno string (Success)[0m
+[0;32mI (592878) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (596638) MQTT: Other event id:7[0m
+[0;31mE (596638) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (596638) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (596638) mqtt_client: Error transport connect[0m
+[0;32mI (596648) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (596648) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (596658) MQTT: Last errno string (Success)[0m
+[0;32mI (596658) MQTT: MQTT_EVENT_DISCONNECTED[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 22 2024 21:43:34[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26d94h (159124) map[0m
+[0;32mI (162) esp_image: segment 1: paddr=00036dbc vaddr=3ffb0000 size=03f74h ( 16244) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=0003ad38 vaddr=40080000 size=052e0h ( 21216) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a1278h (660088) map[0m
+[0;32mI (416) esp_image: segment 4: paddr=000e12a0 vaddr=400852e0 size=11d70h ( 73072) load[0m
+[0;32mI (458) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (458) boot: Disabling RNG early entropy source...[0m
+[0;32mI (470) cpu_start: Multicore app[0m
+[0;32mI (470) cpu_start: Pro cpu up.[0m
+[0;32mI (470) cpu_start: Starting app cpu, entry point is 0x400814a8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (488) cpu_start: Pro cpu start user code[0m
+[0;32mI (488) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (488) cpu_start: Application information:[0m
+[0;32mI (493) cpu_start: Project name:     IoT_Speaker[0m
+[0;32mI (498) cpu_start: App version:      d8a2ac6-dirty[0m
+[0;32mI (504) cpu_start: Compile time:     Jun 10 2024 16:24:46[0m
+[0;32mI (510) cpu_start: ELF file SHA256:  cdae9f95c93cdd51...[0m
+[0;32mI (516) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (521) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (526) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (531) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (536) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (543) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (549) heap_init: At 3FFB8A90 len 00027570 (157 KiB): DRAM[0m
+[0;32mI (555) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (561) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (568) heap_init: At 40097050 len 00008FB0 (35 KiB): IRAM[0m
+[0;32mI (576) spi_flash: detected chip: generic[0m
+[0;32mI (579) spi_flash: flash io: dio[0m
+[0;32mI (584) app_start: Starting scheduler on CPU0[0m
+[0;32mI (588) app_start: Starting scheduler on CPU1[0m
+[0;32mI (588) main_task: Started on CPU0[0m
+[0;32mI (598) main_task: Calling app_main()[0m
+I (658) wifi:wifi driver task: 3ffc0ba8, prio:23, stack:6656, core=0
+I (678) wifi:wifi firmware version: 91b9630
+I (678) wifi:wifi certification version: v7.0
+I (678) wifi:config NVS flash: enabled
+I (678) wifi:config nano formating: disabled
+I (678) wifi:Init data frame dynamic rx buffer num: 32
+I (688) wifi:Init static rx mgmt buffer num: 5
+I (688) wifi:Init management short buffer num: 32
+I (688) wifi:Init dynamic tx buffer num: 32
+I (698) wifi:Init static rx buffer size: 1600
+I (698) wifi:Init static rx buffer num: 10
+I (708) wifi:Init dynamic rx buffer num: 32
+[0;32mI (708) wifi_init: rx ba win: 6[0m
+[0;32mI (708) wifi_init: tcpip mbox: 32[0m
+[0;32mI (718) wifi_init: udp mbox: 6[0m
+[0;32mI (718) wifi_init: tcp mbox: 6[0m
+[0;32mI (718) wifi_init: tcp tx win: 5744[0m
+[0;32mI (728) wifi_init: tcp rx win: 5744[0m
+[0;32mI (728) wifi_init: tcp mss: 1440[0m
+[0;32mI (738) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (738) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (748) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (838) wifi:mode : sta (a4:e5:7c:f7:c2:fc)
+I (838) wifi:enable tsf
+[0;32mI (838) WIFI_EXAMPLE: wifi_init_sta finished.[0m
+[0;32mI (838) SSD1306: Legacy i2c driver is used[0m
+[0;32mI (848) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (908) SSD1306: OLED configured successfully[0m
+I (978) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (978) wifi:state: init -> auth (b0)
+I (978) wifi:state: auth -> assoc (0)
+I (988) wifi:state: assoc -> run (10)
+I (1038) wifi:connected with Ebisu, aid = 1, channel 1, BW20, bssid = 52:77:05:8c:0d:72
+I (1038) wifi:security: WPA2-PSK, phy: bgn, rssi: -50
+I (1048) wifi:pm start, type: 1
+
+I (1068) wifi:<ba-add>idx:0 (ifx:0, 52:77:05:8c:0d:72), tid:0, ssn:2, winSize:64
+I (1078) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (2058) esp_netif_handlers: sta ip: 192.168.43.46, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (2058) WIFI_EXAMPLE: got ip:192.168.43.46[0m
+[0;32mI (2168) MQTT: Other event id:7[0m
+I (2838) wifi:<ba-add>idx:1 (ifx:0, 52:77:05:8c:0d:72), tid:4, ssn:0, winSize:64
+[0;32mI (4258) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (4258) MQTT: sent subscribe successful, msg_id=52426[0m
+[0;32mI (4648) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=52426[0m
+I (24118) wifi:state: run -> init (3c0)
+I (24118) wifi:pm stop, total sleep time: 20215928 us / 23067428 us
+
+I (24118) wifi:<ba-del>idx:0, tid:0
+I (24118) wifi:<ba-del>idx:1, tid:4
+I (24128) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;31mE (24138) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (24138) mqtt_client: Poll read error: 119, aborting connection[0m
+I (24148) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (24148) MQTT: MQTT_EVENT_DISCONNECTED[0m
+I (24158) wifi:state: init -> auth (b0)
+[0;32mI (24138) WIFI_EXAMPLE: retry to connect to the AP[0m
+I (24168) wifi:state: auth -> assoc (0)
+I (24178) wifi:state: assoc -> run (10)
+[0;32mI (24378) WIFI_EXAMPLE: connect to the AP fail[0m
+I (30318) wifi:bcn_timeout,ap_probe_send_start
+I (32828) wifi:ap_probe_send over, resett wifi status to disassoc
+I (32828) wifi:state: run -> init (c800)
+I (32828) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (32828) WIFI_EXAMPLE: retry to connect to the AP[0m
+[0;32mI (33038) WIFI_EXAMPLE: connect to the AP fail[0m
+[0;32mI (34158) MQTT: Other event id:7[0m
+[0;31mE (34158) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (34158) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (34158) mqtt_client: Error transport connect[0m
+[0;32mI (34168) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (34168) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (34178) MQTT: Last errno string (Success)[0m
+[0;32mI (34178) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (35248) WIFI_EXAMPLE: retry to connect to the AP[0m
+[0;32mI (35448) WIFI_EXAMPLE: connect to the AP fail[0m
+I (36508) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (36508) wifi:state: init -> auth (b0)
+I (36518) wifi:state: auth -> assoc (0)
+I (36518) wifi:state: assoc -> run (10)
+I (36558) wifi:connected with Ebisu, aid = 1, channel 11, BW20, bssid = 52:77:05:8c:0d:72
+I (36558) wifi:security: WPA2-PSK, phy: bgn, rssi: -54
+I (36638) wifi:pm start, type: 1
+
+I (36638) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (36648) wifi:<ba-add>idx:0 (ifx:0, 52:77:05:8c:0d:72), tid:0, ssn:2, winSize:64
+[0;32mI (37638) esp_netif_handlers: sta ip: 192.168.43.46, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (37638) WIFI_EXAMPLE: got ip:192.168.43.46[0m
+[0;32mI (37748) MQTT: Other event id:7[0m
+I (38148) wifi:<ba-add>idx:1 (ifx:0, 52:77:05:8c:0d:72), tid:4, ssn:0, winSize:64
+[0;32mI (39468) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (39468) MQTT: sent subscribe successful, msg_id=27857[0m
+[0;32mI (39908) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=27857[0m
+[0;32mI (44188) MQTT: Other event id:7[0m
+[0;31mE (44998) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (44998) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (45008) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (45008) MQTT: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (45018) MQTT: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (45028) MQTT: Last errno string (Socket is not connected)[0m
+[0;31mE (45028) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (45038) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (46028) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (46028) MQTT: sent subscribe successful, msg_id=9380[0m
+[0;32mI (46428) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=9380[0m
+[0;32mI (50018) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":3,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: -1
+volume: -1
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+stop: 0
+
+Play song id and set volume[0;33mW (50038) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;31mE (50038) MQTT: Failed to publish data to MQTT broker[0m
+[0;32mI (51048) ESP32: Send data[0m
+7E FF 06 06 00 00 0C FE E9 EF 
+[0;32mI (53048) ESP32: Send data[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+[0;32mI (55048) MQTT: Other event id:7[0m
+[0;31mE (56158) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (56158) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (56168) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (56168) MQTT: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (56178) MQTT: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (56178) MQTT: Last errno string (Socket is not connected)[0m
+[0;31mE (56188) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (56198) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (57198) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (57198) MQTT: sent subscribe successful, msg_id=50317[0m
+[0;32mI (57598) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=50317[0m
+[0;32mI (63128) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":false,"songID":0,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 4
+stop: 0
+[0;32mI (71198) MQTT: Other event id:7[0m
+[0;31mE (72138) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (72138) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (72148) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (72148) MQTT: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (72158) MQTT: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (72158) MQTT: Last errno string (Socket is not connected)[0m
+[0;31mE (72168) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (72178) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (73158) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (73168) MQTT: sent subscribe successful, msg_id=33465[0m
+[0;32mI (73578) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=33465[0m
+[0;32mI (84118) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":2,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 0
+
+play song id[0;33mW (84128) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;31mE (84138) MQTT: Failed to publish data to MQTT broker[0m
+[0;32mI (85148) ESP32: Send data[0m
+7E FF 06 03 00 00 02 FE F6 EF 
+[0;32mI (87178) MQTT: Other event id:7[0m
+[0;31mE (88028) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (88028) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (88028) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (88038) MQTT: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (88038) MQTT: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (88048) MQTT: Last errno string (Socket is not connected)[0m
+[0;31mE (88058) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (88068) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (89028) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (89028) MQTT: sent subscribe successful, msg_id=60409[0m
+[0;32mI (89458) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=60409[0m
+[0;32mI (103068) MQTT: Other event id:7[0m
+[0;31mE (103998) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (103998) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (103998) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (104008) MQTT: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (104008) MQTT: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (104018) MQTT: Last errno string (Socket is not connected)[0m
+[0;31mE (104028) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (104038) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105008) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (105018) MQTT: sent subscribe successful, msg_id=38407[0m
+[0;32mI (105728) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=38407[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 22 2024 21:43:34[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26d94h (159124) map[0m
+[0;32mI (162) esp_image: segment 1: paddr=00036dbc vaddr=3ffb0000 size=03f74h ( 16244) load[0m
+[0;32mI (168) esp_image: segment 2: paddr=0003ad38 vaddr=40080000 size=052e0h ( 21216) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a1278h (660088) map[0m
+[0;32mI (416) esp_image: segment 4: paddr=000e12a0 vaddr=400852e0 size=11d70h ( 73072) load[0m
+[0;32mI (458) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (458) boot: Disabling RNG early entropy source...[0m
+[0;32mI (470) cpu_start: Multicore app[0m
+[0;32mI (470) cpu_start: Pro cpu up.[0m
+[0;32mI (470) cpu_start: Starting app cpu, entry point is 0x400814a8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (488) cpu_start: Pro cpu start user code[0m
+[0;32mI (488) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (488) cpu_start: Application information:[0m
+[0;32mI (493) cpu_start: Project name:     IoT_Speaker[0m
+[0;32mI (498) cpu_start: App version:      d8a2ac6-dirty[0m
+[0;32mI (504) cpu_start: Compile time:     Jun 10 2024 16:24:46[0m
+[0;32mI (510) cpu_start: ELF file SHA256:  cdae9f95c93cdd51...[0m
+[0;32mI (516) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (521) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (526) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (531) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (536) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (543) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (549) heap_init: At 3FFB8A90 len 00027570 (157 KiB): DRAM[0m
+[0;32mI (555) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (561) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (568) heap_init: At 40097050 len 00008FB0 (35 KiB): IRAM[0m
+[0;32mI (575) spi_flash: detected chip: generic[0m
+[0;32mI (579) spi_flash: flash io: dio[0m
+[0;32mI (583) app_start: Starting scheduler on CPU0[0m
+[0;32mI (588) app_start: Starting scheduler on CPU1[0m
+[0;32mI (588) main_task: Started on CPU0[0m
+[0;32mI (598) main_task: Calling app_main()[0m
+I (658) wifi:wifi driver task: 3ffc0ba8, prio:23, stack:6656, core=0
+I (678) wifi:wifi firmware version: 91b9630
+I (678) wifi:wifi certification version: v7.0
+I (678) wifi:config NVS flash: enabled
+I (678) wifi:config nano formating: disabled
+I (678) wifi:Init data frame dynamic rx buffer num: 32
+I (688) wifi:Init static rx mgmt buffer num: 5
+I (688) wifi:Init management short buffer num: 32
+I (688) wifi:Init dynamic tx buffer num: 32
+I (698) wifi:Init static rx buffer size: 1600
+I (698) wifi:Init static rx buffer num: 10
+I (708) wifi:Init dynamic rx buffer num: 32
+[0;32mI (708) wifi_init: rx ba win: 6[0m
+[0;32mI (708) wifi_init: tcpip mbox: 32[0m
+[0;32mI (718) wifi_init: udp mbox: 6[0m
+[0;32mI (718) wifi_init: tcp mbox: 6[0m
+[0;32mI (718) wifi_init: tcp tx win: 5744[0m
+[0;32mI (728) wifi_init: tcp rx win: 5744[0m
+[0;32mI (728) wifi_init: tcp mss: 1440[0m
+[0;32mI (738) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (738) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (748) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (838) wifi:mode : sta (a4:e5:7c:f7:c2:fc)
+I (838) wifi:enable tsf
+[0;32mI (838) WIFI_EXAMPLE: wifi_init_sta finished.[0m
+[0;32mI (838) SSD1306: Legacy i2c driver is used[0m
+[0;32mI (848) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (908) SSD1306: OLED configured successfully[0m
+I (938) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (938) wifi:state: init -> auth (b0)
+I (938) wifi:state: auth -> assoc (0)
+I (948) wifi:state: assoc -> run (10)
+I (1018) wifi:connected with Ebisu, aid = 1, channel 11, BW20, bssid = 52:77:05:8c:0d:72
+I (1018) wifi:security: WPA2-PSK, phy: bgn, rssi: -47
+I (1028) wifi:pm start, type: 1
+
+I (1028) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (1038) wifi:<ba-add>idx:0 (ifx:0, 52:77:05:8c:0d:72), tid:0, ssn:2, winSize:64
+[0;32mI (2028) esp_netif_handlers: sta ip: 192.168.43.46, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (2028) WIFI_EXAMPLE: got ip:192.168.43.46[0m
+[0;32mI (2138) MQTT: Other event id:7[0m
+I (2658) wifi:<ba-add>idx:1 (ifx:0, 52:77:05:8c:0d:72), tid:4, ssn:0, winSize:64
+[0;32mI (4108) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (4108) MQTT: sent subscribe successful, msg_id=57105[0m
+[0;32mI (4528) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=57105[0m
+[0;32mI (16608) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":2,"stop":true,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: -1
+volume: -1
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 1
+
+Play song id and set volume[0;32mI (16628) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (17638) ESP32: Send data[0m
+7E FF 06 06 00 00 0C FE E9 EF 
+[0;32mI (19638) ESP32: Send data[0m
+7E FF 06 03 00 00 02 FE F6 EF 
+
+ Stop[0;32mI (20678) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (21678) ESP32: Send data[0m
+7E FF 06 16 00 00 00 FE E5 EF 
+[0;32mI (22858) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":false,"songID":0,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 1
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 4
+stop: 0
+[0;32mI (28478) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":2,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: -1
+volume: -1
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 0
+
+Play song id and set volume[0;32mI (28498) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (29508) ESP32: Send data[0m
+7E FF 06 06 00 00 0C FE E9 EF 
+[0;32mI (31508) ESP32: Send data[0m
+7E FF 06 03 00 00 02 FE F6 EF 
+[0;32mI (34838) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":3,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+stop: 0
+
+play song id[0;32mI (34848) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (35858) ESP32: Send data[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+[0;32mI (59618) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":4,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 4
+stop: 0
+
+play song id[0;32mI (59628) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (60638) ESP32: Send data[0m
+7E FF 06 03 00 00 04 FE F4 EF 
+I (61658) wifi:state: run -> init (3c0)
+I (61658) wifi:pm stop, total sleep time: 52975124 us / 60633474 us
+
+I (61658) wifi:<ba-del>idx:0, tid:0
+I (61658) wifi:<ba-del>idx:1, tid:4
+I (61668) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+[0;32mI (61678) WIFI_EXAMPLE: retry to connect to the AP[0m
+I (61688) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (61688) wifi:state: init -> auth (b0)
+[0;31mE (61688) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+I (61688) wifi:[0;31mE (61698) mqtt_client: Poll read error: 119, aborting connection[0m
+state: auth -> assoc (0)
+[0;32mI (61708) MQTT: MQTT_EVENT_DISCONNECTED[0m
+I (61718) wifi:state: assoc -> run (10)
+[0;32mI (61898) WIFI_EXAMPLE: connect to the AP fail[0m
+I (68058) wifi:bcn_timeout,ap_probe_send_start
+I (70558) wifi:ap_probe_send over, resett wifi status to disassoc
+I (70558) wifi:state: run -> init (c800)
+I (70568) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+[0;32mI (70568) WIFI_EXAMPLE: retry to connect to the AP[0m
+[0;32mI (70778) WIFI_EXAMPLE: connect to the AP fail[0m
+[0;32mI (72978) WIFI_EXAMPLE: retry to connect to the AP[0m
+[0;32mI (73188) WIFI_EXAMPLE: connect to the AP fail[0m
+[0;32mI (75398) WIFI_EXAMPLE: retry to connect to the AP[0m
+[0;32mI (75598) WIFI_EXAMPLE: connect to the AP fail[0m
+[0;32mI (76708) MQTT: Other event id:7[0m
+[0;31mE (76708) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (76708) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (76708) mqtt_client: Error transport connect[0m
+[0;32mI (76718) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (76718) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (76728) MQTT: Last errno string (Success)[0m
+[0;32mI (76728) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (77808) WIFI_EXAMPLE: retry to connect to the AP[0m
+[0;32mI (78008) WIFI_EXAMPLE: connect to the AP fail[0m
+[0;32mI (80318) WIFI_EXAMPLE: connect to the AP fail[0m
+[0;32mI (86738) MQTT: Other event id:7[0m
+[0;31mE (86738) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (86738) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (86738) mqtt_client: Error transport connect[0m
+[0;32mI (86748) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (86748) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (86758) MQTT: Last errno string (Success)[0m
+[0;32mI (86758) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (96768) MQTT: Other event id:7[0m
+[0;31mE (96768) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (96768) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (96768) mqtt_client: Error transport connect[0m
+[0;32mI (96778) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (96778) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (96788) MQTT: Last errno string (Success)[0m
+[0;32mI (96788) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (106798) MQTT: Other event id:7[0m
+[0;31mE (106798) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (106798) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (106798) mqtt_client: Error transport connect[0m
+[0;32mI (106808) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (106808) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (106818) MQTT: Last errno string (Success)[0m
+[0;32mI (106818) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (116828) MQTT: Other event id:7[0m
+[0;31mE (116828) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (116828) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (116828) mqtt_client: Error transport connect[0m
+[0;32mI (116838) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (116838) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (116848) MQTT: Last errno string (Success)[0m
+[0;32mI (116848) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (126858) MQTT: Other event id:7[0m
+[0;31mE (126858) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (126858) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (126858) mqtt_client: Error transport connect[0m
+[0;32mI (126868) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (126868) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (126878) MQTT: Last errno string (Success)[0m
+[0;32mI (126878) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (136888) MQTT: Other event id:7[0m
+[0;31mE (136888) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (136888) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (136888) mqtt_client: Error transport connect[0m
+[0;32mI (136898) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (136898) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (136908) MQTT: Last errno string (Success)[0m
+[0;32mI (136908) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (146918) MQTT: Other event id:7[0m
+[0;31mE (146918) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (146918) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (146918) mqtt_client: Error transport connect[0m
+[0;32mI (146928) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (146928) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (146938) MQTT: Last errno string (Success)[0m
+[0;32mI (146938) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (156948) MQTT: Other event id:7[0m
+[0;31mE (156948) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (156948) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (156948) mqtt_client: Error transport connect[0m
+[0;32mI (156958) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (156958) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (156968) MQTT: Last errno string (Success)[0m
+[0;32mI (156968) MQTT: MQTT_EVENT_DISCONNECTED[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 22 2024 21:43:34[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26d94h (159124) map[0m
+[0;32mI (162) esp_image: segment 1: paddr=00036dbc vaddr=3ffb0000 size=03f74h ( 16244) load[0m
+[0;32mI (168) esp_image: segment 2: paddr=0003ad38 vaddr=40080000 size=052e0h ( 21216) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a1278h (660088) map[0m
+[0;32mI (416) esp_image: segment 4: paddr=000e12a0 vaddr=400852e0 size=11d70h ( 73072) load[0m
+[0;32mI (458) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (458) boot: Disabling RNG early entropy source...[0m
+[0;32mI (470) cpu_start: Multicore app[0m
+[0;32mI (470) cpu_start: Pro cpu up.[0m
+[0;32mI (470) cpu_start: Starting app cpu, entry point is 0x400814a8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (488) cpu_start: Pro cpu start user code[0m
+[0;32mI (488) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (488) cpu_start: Application information:[0m
+[0;32mI (493) cpu_start: Project name:     IoT_Speaker[0m
+[0;32mI (498) cpu_start: App version:      d8a2ac6-dirty[0m
+[0;32mI (504) cpu_start: Compile time:     Jun 10 2024 16:24:46[0m
+[0;32mI (510) cpu_start: ELF file SHA256:  cdae9f95c93cdd51...[0m
+[0;32mI (516) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (521) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (526) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (531) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (536) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (543) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (549) heap_init: At 3FFB8A90 len 00027570 (157 KiB): DRAM[0m
+[0;32mI (555) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (561) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (568) heap_init: At 40097050 len 00008FB0 (35 KiB): IRAM[0m
+[0;32mI (575) spi_flash: detected chip: generic[0m
+[0;32mI (579) spi_flash: flash io: dio[0m
+[0;32mI (583) app_start: Starting scheduler on CPU0[0m
+[0;32mI (588) app_start: Starting scheduler on CPU1[0m
+[0;32mI (588) main_task: Started on CPU0[0m
+[0;32mI (598) main_task: Calling app_main()[0m
+I (658) wifi:wifi driver task: 3ffc0ba8, prio:23, stack:6656, core=0
+I (678) wifi:wifi firmware version: 91b9630
+I (678) wifi:wifi certification version: v7.0
+I (678) wifi:config NVS flash: enabled
+I (678) wifi:config nano formating: disabled
+I (678) wifi:Init data frame dynamic rx buffer num: 32
+I (688) wifi:Init static rx mgmt buffer num: 5
+I (688) wifi:Init management short buffer num: 32
+I (688) wifi:Init dynamic tx buffer num: 32
+I (698) wifi:Init static rx buffer size: 1600
+I (698) wifi:Init static rx buffer num: 10
+I (708) wifi:Init dynamic rx buffer num: 32
+[0;32mI (708) wifi_init: rx ba win: 6[0m
+[0;32mI (708) wifi_init: tcpip mbox: 32[0m
+[0;32mI (718) wifi_init: udp mbox: 6[0m
+[0;32mI (718) wifi_init: tcp mbox: 6[0m
+[0;32mI (718) wifi_init: tcp tx win: 5744[0m
+[0;32mI (728) wifi_init: tcp rx win: 5744[0m
+[0;32mI (728) wifi_init: tcp mss: 1440[0m
+[0;32mI (738) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (738) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (748) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (838) wifi:mode : sta (a4:e5:7c:f7:c2:fc)
+I (838) wifi:enable tsf
+[0;32mI (838) WIFI_EXAMPLE: wifi_init_sta finished.[0m
+[0;32mI (848) SSD1306: Legacy i2c driver is used[0m
+[0;32mI (848) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (858) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (858) wifi:state: init -> auth (b0)
+I (868) wifi:state: auth -> assoc (0)
+I (878) wifi:state: assoc -> run (10)
+[0;32mI (918) SSD1306: OLED configured successfully[0m
+I (958) wifi:connected with Ebisu, aid = 1, channel 11, BW20, bssid = 52:77:05:8c:0d:72
+I (958) wifi:security: WPA2-PSK, phy: bgn, rssi: -48
+I (958) wifi:pm start, type: 1
+
+I (958) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (978) wifi:<ba-add>idx:0 (ifx:0, 52:77:05:8c:0d:72), tid:0, ssn:2, winSize:64
+[0;32mI (1968) esp_netif_handlers: sta ip: 192.168.43.46, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (1968) WIFI_EXAMPLE: got ip:192.168.43.46[0m
+[0;32mI (2078) MQTT: Other event id:7[0m
+I (2598) wifi:<ba-add>idx:1 (ifx:0, 52:77:05:8c:0d:72), tid:4, ssn:0, winSize:64
+[0;32mI (4038) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (4038) MQTT: sent subscribe successful, msg_id=62616[0m
+[0;32mI (4448) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=62616[0m
+[0;32mI (59538) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":2,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: -1
+volume: -1
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 0
+
+Play song id and set volume[0;32mI (59558) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (60558) ESP32: Send data[0m
+7E FF 06 06 00 00 0C FE E9 EF 
+[0;32mI (62558) ESP32: Send data[0m
+7E FF 06 03 00 00 02 FE F6 EF 
+[0;32mI (71408) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":2,"stop":true,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 1
+
+ Stop[0;32mI (71428) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (72428) ESP32: Send data[0m
+7E FF 06 16 00 00 00 FE E5 EF 
+[0;32mI (73868) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":false,"songID":0,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 1
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 4
+stop: 0
+[0;32mI (74898) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":6,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: -1
+volume: -1
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 6
+volume: 4
+stop: 0
+
+Play song id and set volume[0;32mI (74908) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (75918) ESP32: Send data[0m
+7E FF 06 06 00 00 0C FE E9 EF 
+[0;32mI (77918) ESP32: Send data[0m
+7E FF 06 03 00 00 06 FE F2 EF 
+[0;32mI (97218) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":6,"stop":true,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 6
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 6
+volume: 4
+stop: 1
+
+ Stop[0;32mI (97238) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (98238) ESP32: Send data[0m
+7E FF 06 16 00 00 00 FE E5 EF 
+[0;32mI (99268) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":false,"songID":0,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 6
+volume: 4
+stop: 1
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 4
+stop: 0
+[0;32mI (100288) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":7,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: -1
+volume: -1
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 7
+volume: 4
+stop: 0
+
+Play song id and set volume[0;32mI (100308) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (101308) ESP32: Send data[0m
+7E FF 06 06 00 00 0C FE E9 EF 
+[0;32mI (103308) ESP32: Send data[0m
+7E FF 06 03 00 00 07 FE F1 EF 
+[0;32mI (157628) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":8,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 7
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 8
+volume: 4
+stop: 0
+
+play song id[0;32mI (157648) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (158648) ESP32: Send data[0m
+7E FF 06 03 00 00 08 FE F0 EF 
+[0;32mI (159688) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":9,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 8
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 9
+volume: 4
+stop: 0
+
+play song id[0;32mI (159708) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (160708) ESP32: Send data[0m
+I (160708) wifi:state: run -> init (3c0)
+I (160708) wifi:pm stop, total sleep time: 144204693 us / 159744856 us
+
+I (160708) wifi:<ba-del>idx:0, tid:0
+I (160708) wifi:<ba-del>idx:1, tid:4
+I (160718) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+[0;32mI (160728) WIFI_EXAMPLE: retry to connect to the AP[0m
+I (160728) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (160728) wifi:state: init -> auth (b0)
+I (160738) wifi:state: auth -> assoc (0)
+I (160748) wifi:state: assoc -> run (10)
+[0;32mI (160938) WIFI_EXAMPLE: connect to the AP fail[0m
+7E FF 06 03 00 00 09 FE EF EF 
+[0;31mE (161748) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (161748) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (161748) MQTT: MQTT_EVENT_DISCONNECTED[0m
+I (167008) wifi:bcn_timeout,ap_probe_send_start
+I (169508) wifi:ap_probe_send over, resett wifi status to disassoc
+I (169508) wifi:state: run -> init (c800)
+I (169508) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+[0;32mI (169518) WIFI_EXAMPLE: retry to connect to the AP[0m
+[0;32mI (169728) WIFI_EXAMPLE: connect to the AP fail[0m
+[0;32mI (171758) MQTT: Other event id:7[0m
+[0;32mI (171928) WIFI_EXAMPLE: retry to connect to the AP[0m
+[0;32mI (172138) WIFI_EXAMPLE: connect to the AP fail[0m
+[0;32mI (174338) WIFI_EXAMPLE: retry to connect to the AP[0m
+[0;32mI (174548) WIFI_EXAMPLE: connect to the AP fail[0m
+[0;32mI (176748) WIFI_EXAMPLE: retry to connect to the AP[0m
+[0;32mI (176958) WIFI_EXAMPLE: connect to the AP fail[0m
+[0;31mE (178758) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (178758) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (178758) mqtt_client: Error transport connect[0m
+[0;32mI (178768) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (178768) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (178778) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (178778) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (178788) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (179268) WIFI_EXAMPLE: connect to the AP fail[0m
+[0;32mI (188798) MQTT: Other event id:7[0m
+[0;31mE (195798) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (195798) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (195798) mqtt_client: Error transport connect[0m
+[0;32mI (195808) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (195808) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (195818) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (195818) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (195828) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (210828) MQTT: Other event id:7[0m
+[0;31mE (217828) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (217828) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (217828) mqtt_client: Error transport connect[0m
+[0;32mI (217838) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (217838) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (217848) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (217848) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (217858) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (232858) MQTT: Other event id:7[0m
+[0;31mE (239858) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (239858) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (239858) mqtt_client: Error transport connect[0m
+[0;32mI (239868) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (239868) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (239878) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (239878) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (239888) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (254888) MQTT: Other event id:7[0m
+[0;31mE (261888) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (261888) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (261888) mqtt_client: Error transport connect[0m
+[0;32mI (261898) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (261898) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (261908) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (261908) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (261918) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (276918) MQTT: Other event id:7[0m
+[0;31mE (283918) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (283918) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (283918) mqtt_client: Error transport connect[0m
+[0;32mI (283928) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (283928) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (283938) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (283938) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (283948) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (298948) MQTT: Other event id:7[0m
+[0;31mE (305948) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (305948) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (305948) mqtt_client: Error transport connect[0m
+[0;32mI (305958) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (305958) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (305968) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (305968) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (305978) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (320978) MQTT: Other event id:7[0m
+[0;31mE (327978) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (327978) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (327978) mqtt_client: Error transport connect[0m
+[0;32mI (327988) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (327988) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (327998) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (327998) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (328008) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (343008) MQTT: Other event id:7[0m
+[0;31mE (350008) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (350008) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (350008) mqtt_client: Error transport connect[0m
+[0;32mI (350018) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (350018) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (350028) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (350028) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (350038) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (365038) MQTT: Other event id:7[0m
+[0;31mE (372038) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (372038) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (372038) mqtt_client: Error transport connect[0m
+[0;32mI (372048) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (372048) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (372058) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (372058) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (372068) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (387068) MQTT: Other event id:7[0m
+[0;31mE (394068) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (394068) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (394068) mqtt_client: Error transport connect[0m
+[0;32mI (394078) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (394078) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (394088) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (394088) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (394098) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (409098) MQTT: Other event id:7[0m
+[0;31mE (416098) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (416098) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (416098) mqtt_client: Error transport connect[0m
+[0;32mI (416108) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (416108) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (416118) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (416118) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (416128) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (431128) MQTT: Other event id:7[0m
+[0;31mE (438128) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (438128) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (438128) mqtt_client: Error transport connect[0m
+[0;32mI (438138) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (438138) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (438148) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (438148) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (438158) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (453158) MQTT: Other event id:7[0m
+[0;31mE (460158) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (460158) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (460158) mqtt_client: Error transport connect[0m
+[0;32mI (460168) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (460168) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (460178) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (460178) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (460188) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (475188) MQTT: Other event id:7[0m
+[0;31mE (482188) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (482188) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (482188) mqtt_client: Error transport connect[0m
+[0;32mI (482198) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (482198) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (482208) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (482208) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (482218) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (497218) MQTT: Other event id:7[0m
+[0;31mE (504218) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (504218) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (504218) mqtt_client: Error transport connect[0m
+[0;32mI (504228) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (504228) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (504238) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (504238) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (504248) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (526248) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (526248) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (526248) mqtt_client: Error transport connect[0m
+[0;32mI (526258) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (526258) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (526268) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (526268) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (526278) MQTT: MQTT_EVENT_DISCONNECTED[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 22 2024 21:43:34[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26d94h (159124) map[0m
+[0;32mI (162) esp_image: segment 1: paddr=00036dbc vaddr=3ffb0000 size=03f74h ( 16244) load[0m
+[0;32mI (168) esp_image: segment 2: paddr=0003ad38 vaddr=40080000 size=052e0h ( 21216) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a1278h (660088) map[0m
+[0;32mI (416) esp_image: segment 4: paddr=000e12a0 vaddr=400852e0 size=11d70h ( 73072) load[0m
+[0;32mI (458) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (458) boot: Disabling RNG early entropy source...[0m
+[0;32mI (470) cpu_start: Multicore app[0m
+[0;32mI (470) cpu_start: Pro cpu up.[0m
+[0;32mI (470) cpu_start: Starting app cpu, entry point is 0x400814a8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (488) cpu_start: Pro cpu start user code[0m
+[0;32mI (488) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (488) cpu_start: Application information:[0m
+[0;32mI (493) cpu_start: Project name:     IoT_Speaker[0m
+[0;32mI (498) cpu_start: App version:      d8a2ac6-dirty[0m
+[0;32mI (504) cpu_start: Compile time:     Jun 10 2024 16:24:46[0m
+[0;32mI (510) cpu_start: ELF file SHA256:  cdae9f95c93cdd51...[0m
+[0;32mI (516) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (521) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (526) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (531) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (536) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (543) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (549) heap_init: At 3FFB8A90 len 00027570 (157 KiB): DRAM[0m
+[0;32mI (555) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (561) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (568) heap_init: At 40097050 len 00008FB0 (35 KiB): IRAM[0m
+[0;32mI (575) spi_flash: detected chip: generic[0m
+[0;32mI (579) spi_flash: flash io: dio[0m
+[0;32mI (583) app_start: Starting scheduler on CPU0[0m
+[0;32mI (588) app_start: Starting scheduler on CPU1[0m
+[0;32mI (588) main_task: Started on CPU0[0m
+[0;32mI (598) main_task: Calling app_main()[0m
+I (658) wifi:wifi driver task: 3ffc0ba8, prio:23, stack:6656, core=0
+I (678) wifi:wifi firmware version: 91b9630
+I (678) wifi:wifi certification version: v7.0
+I (678) wifi:config NVS flash: enabled
+I (678) wifi:config nano formating: disabled
+I (678) wifi:Init data frame dynamic rx buffer num: 32
+I (688) wifi:Init static rx mgmt buffer num: 5
+I (688) wifi:Init management short buffer num: 32
+I (688) wifi:Init dynamic tx buffer num: 32
+I (698) wifi:Init static rx buffer size: 1600
+I (698) wifi:Init static rx buffer num: 10
+I (708) wifi:Init dynamic rx buffer num: 32
+[0;32mI (708) wifi_init: rx ba win: 6[0m
+[0;32mI (708) wifi_init: tcpip mbox: 32[0m
+[0;32mI (718) wifi_init: udp mbox: 6[0m
+[0;32mI (718) wifi_init: tcp mbox: 6[0m
+[0;32mI (718) wifi_init: tcp tx win: 5744[0m
+[0;32mI (728) wifi_init: tcp rx win: 5744[0m
+[0;32mI (728) wifi_init: tcp mss: 1440[0m
+[0;32mI (738) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (738) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (748) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (838) wifi:mode : sta (a4:e5:7c:f7:c2:fc)
+I (838) wifi:enable tsf
+[0;32mI (838) WIFI_EXAMPLE: wifi_init_sta finished.[0m
+[0;32mI (838) SSD1306: Legacy i2c driver is used[0m
+[0;32mI (848) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (848) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (858) wifi:state: init -> auth (b0)
+I (868) wifi:state: auth -> assoc (0)
+I (868) wifi:state: assoc -> run (10)
+[0;32mI (918) SSD1306: OLED configured successfully[0m
+I (968) wifi:connected with Ebisu, aid = 1, channel 11, BW20, bssid = 52:77:05:8c:0d:72
+I (968) wifi:security: WPA2-PSK, phy: bgn, rssi: -35
+I (978) wifi:pm start, type: 1
+
+I (1008) wifi:<ba-add>idx:0 (ifx:0, 52:77:05:8c:0d:72), tid:0, ssn:2, winSize:64
+I (1058) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (1138) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (1138) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (1138) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (1138) RX_TASK: Read 10 bytes: '3D'[0m
+[0;32mI (1148) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (1148) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (1158) RX_TASK: Read 10 bytes: '09'[0m
+[0;32mI (1158) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (1158) RX_TASK: Read 10 bytes: 'B5'[0m
+[0;32mI (1168) RX_TASK: Read 10 bytes: 'EF'[0m
+[0;32mI (1978) esp_netif_handlers: sta ip: 192.168.43.46, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (1978) WIFI_EXAMPLE: got ip:192.168.43.46[0m
+[0;32mI (2088) MQTT: Other event id:7[0m
+I (2908) wifi:<ba-add>idx:1 (ifx:0, 52:77:05:8c:0d:72), tid:4, ssn:0, winSize:64
+[0;32mI (3308) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (3318) MQTT: sent subscribe successful, msg_id=49507[0m
+[0;32mI (3668) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=49507[0m
+[0;32mI (27278) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":false,"songID":0,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: -1
+volume: -1
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 4
+stop: 0
+[0;32mI (35258) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":4,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 4
+stop: 0
+
+play song id[0;32mI (35278) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (36278) ESP32: Send data[0m
+7E FF 06 03 00 00 04 FE F4 EF 
+[0;32mI (77038) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":false,"songID":0,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 4
+stop: 0
+[0;32mI (89118) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":2,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 0
+
+play song id[0;32mI (89138) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (90138) ESP32: Send data[0m
+7E FF 06 03 00 00 02 FE F6 EF 
+[0;32mI (95878) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":2,"stop":true,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 1
+
+ Stop[0;32mI (95898) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (96898) ESP32: Send data[0m
+7E FF 06 16 00 00 00 FE E5 EF 
+[0;32mI (98548) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":false,"songID":0,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 1
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 4
+stop: 0
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 22 2024 21:43:34[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26d94h (159124) map[0m
+[0;32mI (162) esp_image: segment 1: paddr=00036dbc vaddr=3ffb0000 size=03f74h ( 16244) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=0003ad38 vaddr=40080000 size=052e0h ( 21216) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a1278h (660088) map[0m
+[0;32mI (416) esp_image: segment 4: paddr=000e12a0 vaddr=400852e0 size=11d70h ( 73072) load[0m
+[0;32mI (459) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (459) boot: Disabling RNG early entropy source...[0m
+[0;32mI (470) cpu_start: Multicore app[0m
+[0;32mI (470) cpu_start: Pro cpu up.[0m
+[0;32mI (471) cpu_start: Starting app cpu, entry point is 0x400814a8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (488) cpu_start: Pro cpu start user code[0m
+[0;32mI (488) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (489) cpu_start: Application information:[0m
+[0;32mI (493) cpu_start: Project name:     IoT_Speaker[0m
+[0;32mI (498) cpu_start: App version:      d8a2ac6-dirty[0m
+[0;32mI (504) cpu_start: Compile time:     Jun 10 2024 16:24:46[0m
+[0;32mI (510) cpu_start: ELF file SHA256:  cdae9f95c93cdd51...[0m
+[0;32mI (516) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (521) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (526) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (531) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (536) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (543) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (549) heap_init: At 3FFB8A90 len 00027570 (157 KiB): DRAM[0m
+[0;32mI (555) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (561) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (568) heap_init: At 40097050 len 00008FB0 (35 KiB): IRAM[0m
+[0;32mI (576) spi_flash: detected chip: generic[0m
+[0;32mI (579) spi_flash: flash io: dio[0m
+[0;32mI (584) app_start: Starting scheduler on CPU0[0m
+[0;32mI (588) app_start: Starting scheduler on CPU1[0m
+[0;32mI (588) main_task: Started on CPU0[0m
+[0;32mI (598) main_task: Calling app_main()[0m
+I (658) wifi:wifi driver task: 3ffc0ba8, prio:23, stack:6656, core=0
+I (678) wifi:wifi firmware version: 91b9630
+I (678) wifi:wifi certification version: v7.0
+I (678) wifi:config NVS flash: enabled
+I (678) wifi:config nano formating: disabled
+I (678) wifi:Init data frame dynamic rx buffer num: 32
+I (688) wifi:Init static rx mgmt buffer num: 5
+I (688) wifi:Init management short buffer num: 32
+I (688) wifi:Init dynamic tx buffer num: 32
+I (698) wifi:Init static rx buffer size: 1600
+I (698) wifi:Init static rx buffer num: 10
+I (708) wifi:Init dynamic rx buffer num: 32
+[0;32mI (708) wifi_init: rx ba win: 6[0m
+[0;32mI (708) wifi_init: tcpip mbox: 32[0m
+[0;32mI (718) wifi_init: udp mbox: 6[0m
+[0;32mI (718) wifi_init: tcp mbox: 6[0m
+[0;32mI (718) wifi_init: tcp tx win: 5744[0m
+[0;32mI (728) wifi_init: tcp rx win: 5744[0m
+[0;32mI (728) wifi_init: tcp mss: 1440[0m
+[0;32mI (738) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (738) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (748) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (838) wifi:mode : sta (a4:e5:7c:f7:c2:fc)
+I (838) wifi:enable tsf
+[0;32mI (848) WIFI_EXAMPLE: wifi_init_sta finished.[0m
+[0;32mI (848) SSD1306: Legacy i2c driver is used[0m
+[0;32mI (848) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (858) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (858) wifi:state: init -> auth (b0)
+I (868) wifi:state: auth -> assoc (0)
+I (878) wifi:state: assoc -> run (10)
+[0;32mI (918) SSD1306: OLED configured successfully[0m
+I (938) wifi:connected with Ebisu, aid = 1, channel 11, BW20, bssid = 52:77:05:8c:0d:72
+I (938) wifi:security: WPA2-PSK, phy: bgn, rssi: -34
+I (948) wifi:pm start, type: 1
+
+I (958) wifi:<ba-add>idx:0 (ifx:0, 52:77:05:8c:0d:72), tid:0, ssn:2, winSize:64
+I (1038) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (1948) esp_netif_handlers: sta ip: 192.168.43.46, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (1948) WIFI_EXAMPLE: got ip:192.168.43.46[0m
+[0;32mI (2058) MQTT: Other event id:7[0m
+I (2468) wifi:<ba-add>idx:1 (ifx:0, 52:77:05:8c:0d:72), tid:4, ssn:0, winSize:64
+[0;32mI (3908) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (3908) MQTT: sent subscribe successful, msg_id=13477[0m
+[0;32mI (4318) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=13477[0m
+[0;32mI (57868) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":2,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: -1
+volume: -1
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 0
+
+Play song id and set volume[0;32mI (57888) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (58898) ESP32: Send data[0m
+7E FF 06 06 00 00 0C FE E9 EF 
+[0;32mI (60898) ESP32: Send data[0m
+7E FF 06 03 00 00 02 FE F6 EF 
+[0;32mI (67808) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":2,"stop":true,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 1
+
+ Stop[0;32mI (67818) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (68828) ESP32: Send data[0m
+7E FF 06 16 00 00 00 FE E5 EF 
+[0;32mI (70058) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":false,"songID":0,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 1
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 4
+stop: 0
+[0;32mI (114498) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":1,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: -1
+volume: -1
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 1
+volume: 4
+stop: 0
+
+Play song id and set volume[0;32mI (114518) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (115518) ESP32: Send data[0m
+7E FF 06 06 00 00 0C FE E9 EF 
+[0;32mI (117518) ESP32: Send data[0m
+7E FF 06 03 00 00 01 FE F7 EF 
+[0;32mI (119208) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":1,"stop":true,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 1
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 1
+volume: 4
+stop: 1
+
+ Stop[0;32mI (119228) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (120228) ESP32: Send data[0m
+7E FF 06 16 00 00 00 FE E5 EF 
+[0;32mI (121458) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":false,"songID":0,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 1
+volume: 4
+stop: 1
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 4
+stop: 0
+[0;32mI (214028) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":3,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: -1
+volume: -1
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+stop: 0
+
+Play song id and set volume[0;32mI (214048) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (215048) ESP32: Send data[0m
+7E FF 06 06 00 00 0C FE E9 EF 
+[0;32mI (217048) ESP32: Send data[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+[0;32mI (218328) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":3,"stop":true,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+stop: 1
+
+ Stop[0;32mI (218348) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (219348) ESP32: Send data[0m
+7E FF 06 16 00 00 00 FE E5 EF 
+[0;32mI (220578) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":false,"songID":0,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+stop: 1
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 4
+stop: 0
+[0;32mI (313768) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":3,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: -1
+volume: -1
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+stop: 0
+
+Play song id and set volume[0;32mI (313778) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (314788) ESP32: Send data[0m
+7E FF 06 06 00 00 0C FE E9 EF 
+[0;32mI (316788) ESP32: Send data[0m
+7E FF 06 03 00 00 03 FE F5 EF 
+[0;32mI (322978) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":3,"stop":true,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+stop: 1
+
+ Stop[0;32mI (322998) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (323998) ESP32: Send data[0m
+7E FF 06 16 00 00 00 FE E5 EF 
+[0;32mI (325228) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":false,"songID":0,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 3
+volume: 4
+stop: 1
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 4
+stop: 0
+[0;32mI (328718) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":2,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: -1
+volume: -1
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 0
+
+Play song id and set volume[0;32mI (328728) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (329738) ESP32: Send data[0m
+7E FF 06 06 00 00 0C FE E9 EF 
+[0;32mI (331738) ESP32: Send data[0m
+7E FF 06 03 00 00 02 FE F6 EF 
+[0;32mI (333838) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":2,"stop":true,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 1
+
+ Stop[0;32mI (333858) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (334858) ESP32: Send data[0m
+7E FF 06 16 00 00 00 FE E5 EF 
+[0;32mI (335888) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":false,"songID":0,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 2
+volume: 4
+stop: 1
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 4
+stop: 0
+[0;32mI (337318) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":5,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: -1
+volume: -1
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 5
+volume: 4
+stop: 0
+
+Play song id and set volume[0;32mI (337338) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (338338) ESP32: Send data[0m
+7E FF 06 06 00 00 0C FE E9 EF 
+[0;32mI (340338) ESP32: Send data[0m
+7E FF 06 03 00 00 05 FE F3 EF 
+[0;32mI (341378) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":5,"stop":true,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 5
+volume: 4
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 5
+volume: 4
+stop: 1
+
+ Stop[0;32mI (341398) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (342398) ESP32: Send data[0m
+7E FF 06 16 00 00 00 FE E5 EF 
+[0;32mI (343458) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":false,"songID":0,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 1
+songID: 5
+volume: 4
+stop: 1
+RECEIVED VALUE
+finished: 0
+play: 0
+songID: 0
+volume: 4
+stop: 0
+[0;32mI (345298) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp_sub
+DATA={"finished":false,"loop":false,"play":true,"songID":4,"stop":false,"volume":4}
+CURRENT VALUE
+finished: 0
+play: 0
+songID: -1
+volume: -1
+stop: 0
+RECEIVED VALUE
+finished: 0
+play: 1
+songID: 4
+volume: 4
+stop: 0
+
+Play song id and set volume[0;32mI (345318) MQTT: Published data to MQTT broker, msg_id=0[0m
+[0;32mI (346328) ESP32: Send data[0m
+7E FF 06 06 00 00 0C FE E9 EF 
+[0;32mI (348328) ESP32: Send data[0m
+7E FF 06 03 00 00 04 FE F4 EF 
+I (351648) wifi:state: run -> init (3c0)
+I (351648) wifi:pm stop, total sleep time: 319649412 us / 350702071 us
+
+I (351648) wifi:<ba-del>idx:0, tid:0
+I (351648) wifi:<ba-del>idx:1, tid:4
+I (351658) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+[0;31mE (351658) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (351668) mqtt_client: Poll read error: 119, aborting connection[0m
+I (351668) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+[0;32mI (351678) MQTT: MQTT_EVENT_DISCONNECTED[0m
+I (351688) wifi:state: init -> auth (b0)
+[0;32mI (351668) WIFI_EXAMPLE: retry to connect to the AP[0m
+I (351708) wifi:state: auth -> assoc (0)
+I (351708) wifi:state: assoc -> run (10)
+[0;32mI (351908) WIFI_EXAMPLE: connect to the AP fail[0m
+I (357848) wifi:bcn_timeout,ap_probe_send_start
+I (360348) wifi:ap_probe_send over, resett wifi status to disassoc
+I (360348) wifi:state: run -> init (c800)
+I (360358) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+[0;32mI (360358) WIFI_EXAMPLE: retry to connect to the AP[0m
+[0;32mI (360568) WIFI_EXAMPLE: connect to the AP fail[0m
+[0;32mI (361688) MQTT: Other event id:7[0m
+[0;32mI (362768) WIFI_EXAMPLE: retry to connect to the AP[0m
+[0;32mI (362978) WIFI_EXAMPLE: connect to the AP fail[0m
+[0;32mI (365188) WIFI_EXAMPLE: retry to connect to the AP[0m
+[0;32mI (365388) WIFI_EXAMPLE: connect to the AP fail[0m
+[0;32mI (367598) WIFI_EXAMPLE: retry to connect to the AP[0m
+[0;32mI (367808) WIFI_EXAMPLE: connect to the AP fail[0m
+[0;31mE (368688) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (368688) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (368688) mqtt_client: Error transport connect[0m
+[0;32mI (368698) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (368698) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (368708) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (368708) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (368718) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (370108) WIFI_EXAMPLE: connect to the AP fail[0m
+[0;32mI (378728) MQTT: Other event id:7[0m
+[0;31mE (385728) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (385728) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (385728) mqtt_client: Error transport connect[0m
+[0;32mI (385738) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (385738) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (385748) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (385748) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (385758) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (400758) MQTT: Other event id:7[0m
+[0;31mE (407758) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (407758) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (407758) mqtt_client: Error transport connect[0m
+[0;32mI (407768) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (407768) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (407778) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (407778) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (407788) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (422788) MQTT: Other event id:7[0m
+[0;31mE (429788) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (429788) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (429788) mqtt_client: Error transport connect[0m
+[0;32mI (429798) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (429798) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (429808) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (429808) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (429818) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (444818) MQTT: Other event id:7[0m
+[0;31mE (451818) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (451818) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (451818) mqtt_client: Error transport connect[0m
+[0;32mI (451828) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (451828) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (451838) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (451838) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (451848) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (466848) MQTT: Other event id:7[0m
+[0;31mE (473848) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (473848) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (473848) mqtt_client: Error transport connect[0m
+[0;32mI (473858) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (473858) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (473868) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (473868) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (473878) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (488878) MQTT: Other event id:7[0m
+[0;31mE (495878) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (495878) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (495878) mqtt_client: Error transport connect[0m
+[0;32mI (495888) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (495888) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (495898) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (495898) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (495908) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (510908) MQTT: Other event id:7[0m
+[0;31mE (517908) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (517908) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (517908) mqtt_client: Error transport connect[0m
+[0;32mI (517918) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (517918) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (517928) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (517928) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (517938) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (532938) MQTT: Other event id:7[0m
+[0;31mE (539938) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (539938) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (539938) mqtt_client: Error transport connect[0m
+[0;32mI (539948) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (539948) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (539958) MQTT: Last error captured as transport's socket errno: 0x77[0m
+[0;32mI (539958) MQTT: Last errno string (Connection already in progress)[0m
+[0;32mI (539968) MQTT: MQTT_EVENT_DISCONNECTED[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 22 2024 21:43:34[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26d94h (159124) map[0m
+[0;32mI (162) esp_image: segment 1: paddr=00036dbc vaddr=3ffb0000 size=03f74h ( 16244) load[0m
+[0;32mI (168) esp_image: segment 2: paddr=0003ad38 vaddr=40080000 size=052e0h ( 21216) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a1278h (660088) map[0m
+[0;32mI (416) esp_image: segment 4: paddr=000e12a0 vaddr=400852e0 size=11d70h ( 73072) load[0m
+[0;32mI (458) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (458) boot: Disabling RNG early entropy source...[0m
+[0;32mI (470) cpu_start: Multicore app[0m
+[0;32mI (470) cpu_start: Pro cpu up.[0m
+[0;32mI (470) cpu_start: Starting app cpu, entry point is 0x400814a8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (488) cpu_start: Pro cpu start user code[0m
+[0;32mI (488) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (488) cpu_start: Application information:[0m
+[0;32mI (493) cpu_start: Project name:     IoT_Speaker[0m
+[0;32mI (498) cpu_start: App version:      d8a2ac6-dirty[0m
+[0;32mI (504) cpu_start: Compile time:     Jun 10 2024 16:24:46[0m
+[0;32mI (510) cpu_start: ELF file SHA256:  cdae9f95c93cdd51...[0m
+[0;32mI (516) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (521) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (526) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (531) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (536) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (543) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (549) heap_init: At 3FFB8A90 len 00027570 (157 KiB): DRAM[0m
+[0;32mI (555) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (561) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (568) heap_init: At 40097050 len 00008FB0 (35 KiB): IRAM[0m
+[0;32mI (575) spi_flash: detected chip: generic[0m
+[0;32mI (579) spi_flash: flash io: dio[0m
+[0;32mI (583) app_start: Starting scheduler on CPU0[0m
+[0;32mI (588) app_start: Starting scheduler on CPU1[0m
+[0;32mI (588) main_task: Started on CPU0[0m
+[0;32mI (598) main_task: Calling app_main()[0m
+I (658) wifi:wifi driver task: 3ffc0ba8, prio:23, stack:6656, core=0
+I (678) wifi:wifi firmware version: 91b9630
+I (678) wifi:wifi certification version: v7.0
+I (678) wifi:config NVS flash: enabled
+I (678) wifi:config nano formating: disabled
+I (678) wifi:Init data frame dynamic rx buffer num: 32
+I (688) wifi:Init static rx mgmt buffer num: 5
+I (688) wifi:Init management short buffer num: 32
+I (688) wifi:Init dynamic tx buffer num: 32
+I (698) wifi:Init static rx buffer size: 1600
+I (698) wifi:Init static rx buffer num: 10
+I (708) wifi:Init dynamic rx buffer num: 32
+[0;32mI (708) wifi_init: rx ba win: 6[0m
+[0;32mI (708) wifi_init: tcpip mbox: 32[0m
+[0;32mI (718) wifi_init: udp mbox: 6[0m
+[0;32mI (718) wifi_init: tcp mbox: 6[0m
+[0;32mI (718) wifi_init: tcp tx win: 5744[0m
+[0;32mI (728) wifi_init: tcp rx win: 5744[0m
+[0;32mI (728) wifi_init: tcp mss: 1440[0m
+[0;32mI (738) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (738) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (748) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (838) wifi:mode : sta (a4:e5:7c:f7:c2:fc)
+I (838) wifi:enable tsf
+[0;32mI (848) WIFI_EXAMPLE: wifi_init_sta finished.[0m
+[0;32mI (848) SSD1306: Legacy i2c driver is used[0m
+[0;32mI (848) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (858) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (858) wifi:state: init -> auth (b0)
+I (868) wifi:state: auth -> assoc (0)
+I (878) wifi:state: assoc -> run (10)
+[0;32mI (918) SSD1306: OLED configured successfully[0m
+I (958) wifi:connected with Ebisu, aid = 1, channel 11, BW20, bssid = 52:77:05:8c:0d:72
+I (958) wifi:security: WPA2-PSK, phy: bgn, rssi: -46
+I (968) wifi:pm start, type: 1
+
+I (1158) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (1158) wifi:<ba-add>idx:0 (ifx:0, 52:77:05:8c:0d:72), tid:0, ssn:2, winSize:64
+[0;32mI (1968) esp_netif_handlers: sta ip: 192.168.43.46, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (1968) WIFI_EXAMPLE: got ip:192.168.43.46[0m
+[0;32mI (2078) MQTT: Other event id:7[0m
+I (3508) wifi:<ba-add>idx:1 (ifx:0, 52:77:05:8c:0d:72), tid:4, ssn:0, winSize:64
+[0;32mI (4228) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (4238) MQTT: sent subscribe successful, msg_id=58126[0m
+[0;32mI (5148) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=58126[0m
+[0;32mI (139868) RX_TASK: Read 10 bytes: '7E'[0m
+[0;32mI (139868) RX_TASK: Read 10 bytes: 'FF'[0m
+[0;32mI (139868) RX_TASK: Read 10 bytes: '06'[0m
+[0;32mI (139868) RX_TASK: Read 10 bytes: '3D'[0m
+[0;32mI (139878) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (139878) RX_TASK: Read 10 bytes: '00'[0m
+[0;32mI (139888) RX_TASK: Read 10 bytes: '04'[0m
+[0;32mI (139888) RX_TASK: Read 10 bytes: 'FE'[0m
+[0;32mI (139898) RX_TASK: Read 10 bytes: 'BA'[0m
+[0;32mI (139898) RX_TASK: Read 10 bytes: 'EF'[0m
