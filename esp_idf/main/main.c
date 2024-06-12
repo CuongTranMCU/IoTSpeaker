@@ -11,7 +11,7 @@
 static const int RX_BUF_SIZE = 1024;
 uint32_t MQTT_CONNECTED = 0;
 DFPLAYER_Name MP3;
-DFPLAYER_Control DFControl; 
+DFPLAYER_Control DFControl;
 SSD1306_t dev;
 int page = 0;
 void init_uart(DFPLAYER_Name *MP3)
@@ -31,10 +31,10 @@ void init_uart(DFPLAYER_Name *MP3)
 }
 void initOLED()
 {
-	i2c_master_init(&dev,CONFIG_SDA_GPIO,CONFIG_SCL_GPIO,CONFIG_RESET_GPIO);
-	ssd1306_init(&dev,128,64);
-	ssd1306_clear_screen(&dev,false);
-	ssd1306_contrast(&dev,0xff);
+    i2c_master_init(&dev, CONFIG_SDA_GPIO, CONFIG_SCL_GPIO, CONFIG_RESET_GPIO);
+    ssd1306_init(&dev, 128, 64);
+    ssd1306_clear_screen(&dev, false);
+    ssd1306_contrast(&dev, 0xff);
 }
 static void rx_task(void *arg)
 {
@@ -58,30 +58,30 @@ static void rx_task(void *arg)
             ESP_LOGI(RX_TASK_TAG, "Read %d bytes: '%02X'", rxBytes, data[8]);
             ESP_LOGI(RX_TASK_TAG, "Read %d bytes: '%02X'", rxBytes, data[9]);
         }
-        
     }
     free(data);
 }
 
 void app_main(void)
 {
+
     esp_err_t ret = nvs_flash_init();
-    if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
-      ESP_ERROR_CHECK(nvs_flash_erase());
-      ret = nvs_flash_init();
+    if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND)
+    {
+        ESP_ERROR_CHECK(nvs_flash_erase());
+        ret = nvs_flash_init();
     }
     ESP_ERROR_CHECK(ret);
     wifi_init_sta();
     mqtt_data_pt_set_callback(mqtt_get_data_callback);
-    DFPLAYER_Init(&MP3,UART_NUM_2);
-    initOLED();
+    DFPLAYER_Init(&MP3, UART_NUM_2);
+    // initOLED();
     init_uart(&MP3);
-    vTaskDelay(20/portTICK_PERIOD_MS);
-    xTaskCreate(rx_task, "rx_task", 1024*2, NULL, configMAX_PRIORITIES-1, NULL);
-    vTaskDelay(20/portTICK_PERIOD_MS);
+    vTaskDelay(20 / portTICK_PERIOD_MS);
+    xTaskCreate(rx_task, "rx_task", 1024 * 2, NULL, configMAX_PRIORITIES - 1, NULL);
+    vTaskDelay(20 / portTICK_PERIOD_MS);
     while (true)
     {
-        vTaskDelay(20/portTICK_PERIOD_MS);
+        vTaskDelay(20 / portTICK_PERIOD_MS);
     }
-    
 }
