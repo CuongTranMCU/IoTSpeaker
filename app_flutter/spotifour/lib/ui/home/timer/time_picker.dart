@@ -38,8 +38,12 @@ class _CustomTimePickerState extends State<CustomTimePicker> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text("Pick Your Time! ${hour.toString().padLeft(2, '0')}:${minute.toString().padLeft(2, "0")}:${second.toString().padLeft(2, "0")}",
-              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+          Text("Chọn thời gian: ${hour.toString().padLeft(2, '0')}:${minute.toString().padLeft(2, "0")}:${second.toString().padLeft(2, "0")}",
+              style: const TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 18,
+                color: Colors.white,
+              )),
           const SizedBox(height: 20),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),

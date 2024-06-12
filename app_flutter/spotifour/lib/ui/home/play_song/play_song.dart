@@ -1,10 +1,8 @@
 import 'dart:async';
 import 'dart:math';
 
-import 'package:audio_video_progress_bar/audio_video_progress_bar.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
-import 'package:just_audio/just_audio.dart';
 import 'package:spotifour/models/control_signal.dart';
 import 'package:spotifour/ui/home/play_song/lost_wifi.dart';
 import 'package:spotifour/ui/home/timer/time_controller.dart';
@@ -14,7 +12,6 @@ import '../../../cloud_functions/realtime_db.dart';
 import '../../../models/song.dart';
 import '../timer/time_navigator.dart';
 import 'progress_bar_controller.dart';
-import 'audio_player_manager.dart';
 
 class PlaySong extends StatelessWidget {
   final Song playingSong;
@@ -142,13 +139,6 @@ class _PlaySongPageState extends State<PlaySongPage> with SingleTickerProviderSt
     _isWating = false;
     _progressLostWiFi = LostWiFiController(const Duration(seconds: 10));
     _activateListenLostWiFi();
-
-    // _isWaitingController = StreamController<bool>.broadcast();
-    // _isWaitingSubscription = _isWaitingController.stream.listen((isWaiting) {
-    //   if (isWaiting) {
-    //     initWaiting();
-    //   }
-    // });
   }
 
   void _initControlValue() async {
@@ -165,32 +155,6 @@ class _PlaySongPageState extends State<PlaySongPage> with SingleTickerProviderSt
   void _resetControl() async {
     await _realTimeDBService.resetControl();
   }
-
-  // void initWaiting() {
-  //   print("hello 0");
-  //   print("isWaiting 1: $_isWating");
-  //   Future.delayed(const Duration(seconds: 15), () {
-  //     print("hello 1");
-  //     print("isWaiting 2: $_isWating");
-  //     // Check if _isWaitingController is still true
-  //     if (_isWating) {
-  //       print("hello 2");
-  //       toastification.show(
-  //         type: ToastificationType.error,
-  //         style: ToastificationStyle.minimal,
-  //         direction: TextDirection.ltr,
-  //         alignment: Alignment.topRight,
-  //         title: const Text("ESP 32 lost WiFi connection"),
-  //         autoCloseDuration: const Duration(seconds: 3),
-  //       );
-  //
-  //       if (_isBottomSheetOpen) {
-  //         Navigator.pop(context); // Close the bottom sheet
-  //       }
-  //       Navigator.pop(context); // Close the PlaySongPage
-  //     }
-  //   });
-  // }
 
   _activateListenLostWiFi() {
     _progressLostWiFi.progressStream.listen((duration) async {
@@ -254,59 +218,7 @@ class _PlaySongPageState extends State<PlaySongPage> with SingleTickerProviderSt
     });
   }
 
-  // Pre vs Next ấn liên tiếp ra bug
-
   void _activateListenEspPub() {
-    // _dailySpecialStream = FirebaseDatabase.instance.ref().child("Control/ESP_Pub").onValue.listen((event) async {
-    //   final data = event.snapshot.value as Map<dynamic, dynamic>;
-    //   final update = data['update'];
-    //   setState(() {
-    //     _isUpdate = update;
-    //   });
-    //
-    //   //await Future.delayed(Duration(milliseconds: 100), () async {
-    //   print("Onchange\npreVolume: $_preVolume \n Volume: $_volume");
-    //
-    //   if (_isUpdate == true && _isPlaying == true) {
-    //     if (_preVolume == _volume) {
-    //       setState(() {
-    //         _isPlaying = false;
-    //       });
-    //     }
-    //   } else if (_isUpdate == true && _isPlaying == false) {
-    //     if (_preVolume == _volume) {
-    //       setState(() {
-    //         _isPlaying = true;
-    //       });
-    //     }
-    //   }
-    //
-    //   if (_isUpdate == true && _isNext == true) {
-    //     setState(() {
-    //       _isPlaying = true;
-    //       _isNext = false;
-    //       _song = _nextSong;
-    //     });
-    //     _progressBarController.updateSongDuration(_song.duration);
-    //     _progressBarController.reset();
-    //   } else if (_isUpdate == true && _isPre == true) {
-    //     setState(() {
-    //       _isPlaying = true;
-    //       _isPre = false;
-    //       _song = _nextSong;
-    //     });
-    //     _progressBarController.updateSongDuration(_song.duration);
-    //     _progressBarController.reset();
-    //   } else if (_isUpdate == true && _isRepeat == true) {
-    //     await _realTimeDBService.updateOnceControlSignal("finished", false);
-    //   }
-    //
-    //   print("isUpdate: $_isUpdate\n isNex: $_isNext \n isPre: $_isPre");
-    //
-    //   await _realTimeDBService.updateSuccess("update", false);
-    // });
-    // //});
-
     _playStream = FirebaseDatabase.instance.ref().child("Control/ESP_Pub").onValue.listen((event) async {
       final data = event.snapshot.value as Map<dynamic, dynamic>;
       print("Data: $data");
@@ -392,7 +304,6 @@ class _PlaySongPageState extends State<PlaySongPage> with SingleTickerProviderSt
 
   void deactivate() {
     // TODO: implement deactivate
-    //_dailySpecialStream.cancel();
     _playStream.cancel();
     _songStream.cancel();
     _stopStream.cancel();
@@ -419,8 +330,12 @@ class _PlaySongPageState extends State<PlaySongPage> with SingleTickerProviderSt
 
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.black87,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios),
+          icon: const Icon(
+            Icons.arrow_back_ios,
+            color: Colors.white,
+          ),
           tooltip: 'Navigation menu',
           onPressed: () async {
             await _realTimeDBService.updateOnceControlSignal("stop", true);
@@ -430,11 +345,17 @@ class _PlaySongPageState extends State<PlaySongPage> with SingleTickerProviderSt
             });
           },
         ),
-        title: const Text('Example title'),
+        title: Text(
+          "Đang phát từ danh sách",
+          style: TextStyle(fontSize: 20, color: Colors.white),
+        ),
         centerTitle: true,
         actions: [
           IconButton(
-            icon: Icon(Icons.menu),
+            icon: const Icon(
+              Icons.timer_outlined,
+              color: Colors.white,
+            ),
             tooltip: 'Navigation menu',
             onPressed: showBottomSheet,
           ),
@@ -443,8 +364,8 @@ class _PlaySongPageState extends State<PlaySongPage> with SingleTickerProviderSt
       body: Center(
         child: Column(
           children: <Widget>[
-            Text(_song.album),
             const SizedBox(height: 16),
+            Text(_song.album),
             const Text("_ ___ _"),
             const SizedBox(height: 32),
             RotationTransition(
@@ -508,11 +429,11 @@ class _PlaySongPageState extends State<PlaySongPage> with SingleTickerProviderSt
             //   child: _progressBar(),
             // ),
             Padding(
-              padding: EdgeInsets.only(top: 16, left: 24, right: 24, bottom: 16),
+              padding: const EdgeInsets.only(top: 16, left: 35, right: 35, bottom: 16),
               child: _sliderVolume(),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 16, left: 24, right: 24, bottom: 16),
+              padding: const EdgeInsets.only(top: 16, left: 24, right: 24, bottom: 16),
               child: _mediaButton(),
             )
           ],
@@ -522,19 +443,27 @@ class _PlaySongPageState extends State<PlaySongPage> with SingleTickerProviderSt
   }
 
   _sliderVolume() {
-    return Slider(
-      value: _volume,
-      max: 10,
-      divisions: 10,
-      label: _volume.round().toString(),
-      onChanged: (double value) {
-        setState(() {
-          _volume = value;
-        });
-      },
-      onChangeEnd: (double value) async {
-        await _realTimeDBService.updateOnceControlSignal("volume", _volume);
-      },
+    return Row(
+      children: [
+        const Text("0"),
+        Expanded(
+          child: Slider(
+            value: _volume,
+            max: 10,
+            divisions: 10,
+            label: _volume.round().toString(),
+            onChanged: (double value) {
+              setState(() {
+                _volume = value;
+              });
+            },
+            onChangeEnd: (double value) async {
+              await _realTimeDBService.updateOnceControlSignal("volume", _volume);
+            },
+          ),
+        ),
+        const Text("10"),
+      ],
     );
   }
 
@@ -547,26 +476,26 @@ class _PlaySongPageState extends State<PlaySongPage> with SingleTickerProviderSt
             function: _setShuffle,
             icon: Icons.shuffle,
             size: 36,
-            color: (_isShuffle) ? Colors.deepPurple : Colors.grey,
+            color: (_isShuffle) ? null : Colors.grey,
           ),
           MediaButtonControl(
             function: _setPreSong,
             icon: Icons.skip_previous_rounded,
             size: 36,
-            color: Colors.deepPurple,
+            color: null,
           ),
           _playButton(),
           MediaButtonControl(
             function: _setNextSong,
             icon: Icons.skip_next_rounded,
             size: 36,
-            color: Colors.deepPurple,
+            color: null,
           ),
           MediaButtonControl(
             function: _setRepeat,
             icon: Icons.repeat,
             size: 36,
-            color: (_isRepeat) ? Colors.deepPurple : Colors.grey,
+            color: (_isRepeat) ? null : Colors.grey,
           ),
         ],
       ),
@@ -736,7 +665,6 @@ class _PlaySongPageState extends State<PlaySongPage> with SingleTickerProviderSt
             _isRepeat = false;
           }
         });
-        if (_isRepeat == false) await _realTimeDBService.updateOnceControlSignal("loop", _isRepeat);
       }
     });
   }
@@ -752,7 +680,6 @@ class _PlaySongPageState extends State<PlaySongPage> with SingleTickerProviderSt
             _isShuffle = false;
           }
         });
-        await _realTimeDBService.updateOnceControlSignal("loop", _isRepeat);
       }
     });
   }
@@ -770,7 +697,7 @@ class _PlaySongPageState extends State<PlaySongPage> with SingleTickerProviderSt
           ),
           child: Container(
             height: 400,
-            color: Colors.white,
+            color: Colors.black,
             child: TimeNavigator(
               timeController: _timeController,
             ),

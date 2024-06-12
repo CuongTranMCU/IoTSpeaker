@@ -48,11 +48,6 @@ dependencies:
   flex_color_scheme: ^7.3.1
 
 
-  http: ^1.1.0
-  just_audio: ^0.9.37
-  rxdart: ^0.27.7
-  audio_video_progress_bar: ^2.0.2
-
 dev_dependencies:
   flutter_test:
     sdk: flutter

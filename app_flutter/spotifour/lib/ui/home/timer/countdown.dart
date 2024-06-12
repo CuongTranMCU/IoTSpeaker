@@ -75,11 +75,11 @@ class _CustomCountDownState extends State<CustomCountDown> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  buildTimeColumn(hours, "Hours", labelTextStyle),
+                  buildTimeColumn(hours, "Giờ", labelTextStyle),
                   const SizedBox(width: 16),
-                  buildTimeColumn(minutes, "Minutes", labelTextStyle),
+                  buildTimeColumn(minutes, "Phút", labelTextStyle),
                   const SizedBox(width: 16),
-                  buildTimeColumn(seconds, "Seconds", labelTextStyle),
+                  buildTimeColumn(seconds, "Giây", labelTextStyle),
                 ],
               ),
             ),
@@ -135,15 +135,15 @@ class _CustomCountDownState extends State<CustomCountDown> {
         ShaderMask(
           blendMode: BlendMode.srcIn,
           shaderCallback: (bounds) => const LinearGradient(colors: [
-            Color(0xFF192256),
-            Color(0xFF9C254D),
+            Color(0xFFA5F5A5),
+            Color(0xFFA8F6E5),
           ]).createShader(Rect.fromLTWH(0, 0, bounds.width, bounds.height)),
           child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 8.0),
             child: timeWidget,
           ),
         ),
-        DefaultTextStyle(style: labelTextStyle, child: Text(label)),
+        DefaultTextStyle(style: labelTextStyle, child: Text(label, style: const TextStyle(color: Colors.white))),
       ],
     );
   }
@@ -160,7 +160,7 @@ class _CustomCountDownState extends State<CustomCountDown> {
             CircularProgressIndicator(
               value: (totalDuration.inSeconds != 0) ? 1 - (currentDuration.inSeconds / totalDuration.inSeconds) : 0,
               valueColor: const AlwaysStoppedAnimation(Colors.white),
-              strokeWidth: 12,
+              strokeWidth: 8,
               backgroundColor: Colors.greenAccent,
             ),
             Center(child: child),

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:toastification/toastification.dart';
 
 import '../../../cloud_functions/realtime_db.dart';
 import '../../../models/song.dart';
@@ -92,20 +91,23 @@ class _MusicPageState extends State<MusicPage> {
   }
 
   Widget getListView() {
-    return ListView.separated(
-      itemBuilder: (context, position) {
-        return getRow(position);
-      },
-      separatorBuilder: (context, index) {
-        return const Divider(
-          color: Colors.grey,
-          thickness: 1,
-          indent: 24,
-          endIndent: 24,
-        );
-      },
-      itemCount: songs.length,
-      shrinkWrap: true,
+    return Container(
+      color: Colors.black,
+      child: ListView.separated(
+        itemBuilder: (context, position) {
+          return getRow(position);
+        },
+        separatorBuilder: (context, index) {
+          return const Divider(
+            color: Colors.white54,
+            thickness: 1,
+            indent: 24,
+            endIndent: 24,
+          );
+        },
+        itemCount: songs.length,
+        shrinkWrap: true,
+      ),
     );
   }
 
@@ -131,35 +133,37 @@ class _SongItemSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      contentPadding: const EdgeInsets.only(left: 24, right: 8),
-      leading: ClipRRect(
-        borderRadius: BorderRadius.circular(16),
-        child: FadeInImage.assetNetwork(
-          placeholder: 'assets/images/itune.png',
-          image: song.image,
-          width: 48,
-          height: 48,
-          imageErrorBuilder: (context, error, stackTrace) {
-            return Image.asset(
-              'assets/images/itune.png',
-              width: 48,
-              height: 48,
-            );
-          },
+    return Container(
+      child: ListTile(
+        contentPadding: const EdgeInsets.only(left: 24, right: 8),
+        leading: ClipRRect(
+          borderRadius: BorderRadius.circular(16),
+          child: FadeInImage.assetNetwork(
+            placeholder: 'assets/images/itune.png',
+            image: song.image,
+            width: 48,
+            height: 48,
+            imageErrorBuilder: (context, error, stackTrace) {
+              return Image.asset(
+                'assets/images/itune.png',
+                width: 48,
+                height: 48,
+              );
+            },
+          ),
         ),
-      ),
-      title: Text(song.title),
-      subtitle: Text(song.artist),
-      trailing: IconButton(
-        icon: const Icon(Icons.more_horiz),
-        onPressed: () {
-          parent.showBottomSheet();
+        title: Text(
+          song.title,
+          style: TextStyle(color: Colors.white70, fontWeight: FontWeight.w400),
+        ),
+        subtitle: Text(
+          song.artist,
+          style: TextStyle(color: Colors.white70, fontWeight: FontWeight.w400),
+        ),
+        onTap: () {
+          parent.navigate(song, positon);
         },
       ),
-      onTap: () {
-        parent.navigate(song, positon);
-      },
     );
   }
 }
